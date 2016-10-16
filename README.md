@@ -1,11 +1,11 @@
-# Logux Shareable ESLint Config
+# Logux ESLint Config
 
-Code style and best practice for Logux parts.
+Shareable code style and best practice for Logux parts.
 
 ## Install
 
 ```sh
-npm install --save logux-config-logux
+npm install --save-dev logux-config-logux eslint-config-standard eslint-plugin-promise eslint-plugin-standard eslint
 ```
 
 ## Usage
