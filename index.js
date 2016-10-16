@@ -10,6 +10,7 @@ module.exports = {
     'block-scoped-var': 'error',
     'no-invalid-this': 'error',
     'global-require': 'error',
+    'no-unused-vars': [2, { 'vars': 'all', 'args': 'after-used' }],
     'no-lonely-if': 'error',
     'no-undefined': 'error',
     'valid-jsdoc': 'error',
