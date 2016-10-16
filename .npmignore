@@ -1,0 +1,10 @@
+.gitignore
+.npmignore
+.editorconfig
+
+node_modules/
+npm-debug.log
+
+.travis.yml
+
+.yaspellerrc
