@@ -12,7 +12,6 @@ module.exports = {
     'global-require': 'error',
     'no-unused-vars': [2, { 'vars': 'all', 'args': 'after-used' }],
     'no-lonely-if': 'error',
-    'no-undefined': 'error',
     'valid-jsdoc': 'error',
     'func-style': ['error', 'declaration'],
     'no-shadow': 'error',
