@@ -3,6 +3,7 @@
   "ignoreCapitalization": true,
   "dictionary": [
     "Logux",
-    "ESLint"
+    "ESLint",
+    "Versioning"
   ]
 }
