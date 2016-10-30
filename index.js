@@ -4,6 +4,7 @@ module.exports = {
     'computed-property-spacing': ['error', 'never'],
     'array-bracket-spacing': ['error', 'never'],
     'func-name-matching': 'error',
+    'no-useless-return': 'error',
     'consistent-return': 'error',
     'multiline-ternary': ['error', 'never'],
     'no-nested-ternary': 'error',
