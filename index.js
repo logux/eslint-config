@@ -1,5 +1,9 @@
 module.exports = {
-  extends: 'standard',
+  extends: [
+    'standard',
+    'plugin:es5/no-es2015',
+    'plugin:es5/no-es2016'
+  ],
   rules: {
     'computed-property-spacing': ['error', 'never'],
     'array-bracket-spacing': ['error', 'never'],
