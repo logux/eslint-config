@@ -1,6 +1,5 @@
 module.exports = {
   extends: [
-    'standard',
     'plugin:plugin/node/no-deprecated-api',
     'plugin:plugin/node/no-unsupported-features'
   ],
@@ -14,9 +13,6 @@ module.exports = {
     'no-var': 'error'
   },
   env: {
-    browser: true,
-    node: true,
-    jest: true,
     es6: true
   }
 }
