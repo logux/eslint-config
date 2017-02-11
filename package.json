@@ -37,7 +37,6 @@
   "eslintConfig": {
     "extends": "./index.js"
   },
-  "files": ["node4.js"],
   "lint-staged": {
     "*.md": "yaspeller",
     "*.js": "eslint"

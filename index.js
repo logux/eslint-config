@@ -1,9 +1,4 @@
-var node4 = require('./node4')
-
 module.exports = {
-  configs: {
-    node4: node4
-  },
   extends: [
     'standard',
     'plugin:es5/no-es2015',
