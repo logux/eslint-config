@@ -9,13 +9,13 @@ Shareable code style and best practice for [Logux] projects.
 
 ## Install
 
-ES5:
+For browser and universal project:
 
 ```sh
 npm install --save-dev logux-config-logux eslint-config-standard eslint-plugin-promise eslint-plugin-es5 eslint-plugin-standard eslint
 ```
 
-ES2015+:
+For server-only project you can use config with ES2015+ support:
 
 ```sh
 npm install --save-dev logux-config-logux eslint-config-standard eslint-plugin-promise eslint-plugin-node eslint-plugin-standard eslint
@@ -23,7 +23,7 @@ npm install --save-dev logux-config-logux eslint-config-standard eslint-plugin-p
 
 ## Usage
 
-ES5:
+Browser and universal project:
 
 Add to `package.json` or other ESLint config:
 
@@ -33,7 +33,7 @@ Add to `package.json` or other ESLint config:
   }
 ```
 
-ES2015+:
+Server-only project:
 
 Add to `package.json` or other ESLint config:
 
