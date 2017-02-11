@@ -10,7 +10,7 @@ Shareable code style and best practice for [Logux] projects.
 ## Install
 
 ```sh
-npm install --save-dev logux-config-logux eslint-config-standard eslint-plugin-promise eslint-plugin-es5 eslint-plugin-standard eslint
+npm install --save-dev logux-config-logux eslint-config-standard eslint-plugin-promise eslint-plugin-es5 eslint-plugin-standard eslint-plugin-node eslint
 ```
 
 ## Usage
