@@ -22,3 +22,13 @@ Add to `package.json` or other ESLint config:
     "extends": "eslint-config-logux"
   }
 ```
+
+## Usage with ES6
+
+Logux works with node 4 and support ES6-features. Add to `package.json` or other ESLint config:
+
+```sh
+  "eslintConfig": {
+    "extends": "eslint-config-logux/node4"
+  }
+```

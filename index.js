@@ -1,3 +1,5 @@
+var node4 = require('./node4')
+
 module.exports = {
   extends: [
     'standard',
@@ -28,5 +30,8 @@ module.exports = {
     browser: true,
     node: true,
     jest: true
+  },
+  configs: {
+    node4: node4
   }
 }
