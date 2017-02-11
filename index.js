@@ -1,6 +1,6 @@
-var node4 = require('./node4')
+const node4 = require('./node4')
 
-var allRules = {
+const allRules = {
   'computed-property-spacing': ['error', 'never'],
   'array-bracket-spacing': ['error', 'never'],
   'func-name-matching': 'error',
@@ -36,7 +36,7 @@ module.exports = {
   configs: {
     node4: {
       extends: node4.extends,
-      rules: node4.rules.concat(allRules),
+      rules: Object.assign(allRules, node4.rules),
       env: node4.env
     }
   }
