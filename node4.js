@@ -1,10 +1,14 @@
 module.exports = {
+  plugins: ['node'],
+  parserOptions: {
+    'ecmaVersion': 2017
+  },
   extends: [
     'standard'
   ],
   rules: {
-    'node/no-deprecated-api': 'error',
-    'node/no-unsupported-features': 'error',
+    'node/no-deprecated-api': ['error'],
+    'node/no-unsupported-features': ['error', {version: 4}],
     'arrow-parens': 'error',
     'arrow-body-style': ['error', 'always'],
     'prefer-arrow-callback': 'error',
@@ -29,7 +33,8 @@ module.exports = {
     'valid-jsdoc': 'error',
     'no-lonely-if': 'error',
     'no-invalid-this': 'error',
-    'block-scoped-var': 'error'
+    'block-scoped-var': 'error',
+    'template-curly-spacing': ['error', 'always']
   },
   env: {
     browser: true,

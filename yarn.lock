@@ -397,6 +397,10 @@ escope@^3.6.0:
     esrecurse "^4.1.0"
     estraverse "^4.1.1"
 
+"eslint-config-logux@git+ssh://git@github.com/lamartire/eslint-config-logux":
+  version "4.0.0"
+  resolved "git+ssh://git@github.com/lamartire/eslint-config-logux#e10868b975e3ab7914e15cee3c3f8669cca91ad0"
+
 eslint-config-standard@^6.2.1:
   version "6.2.1"
   resolved "https://registry.yarnpkg.com/eslint-config-standard/-/eslint-config-standard-6.2.1.tgz#d3a68aafc7191639e7ee441e7348739026354292"
