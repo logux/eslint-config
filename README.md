@@ -23,19 +23,17 @@ npm install --save-dev logux-config-logux eslint-config-standard eslint-plugin-p
 
 ## Usage
 
-Browser and universal project:
+Add this config to `package.json` or other ESLint config.
 
-Add to `package.json` or other ESLint config:
+Browser and universal project:
 
 ```sh
   "eslintConfig": {
-    "extends": "eslint-config-logux"
+    "extends": "eslint-config-logux/browser"
   }
 ```
 
 Server-only project:
-
-Add to `package.json` or other ESLint config:
 
 ```sh
   "eslintConfig": {

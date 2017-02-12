@@ -36,7 +36,7 @@
     "test": "npm run lint && npm run spellcheck"
   },
   "eslintConfig": {
-    "extends": "./index.js"
+    "extends": "./browser.js"
   },
   "lint-staged": {
     "*.md": "yaspeller",

@@ -3,6 +3,7 @@ module.exports = {
   rules: {
     'computed-property-spacing': ['error', 'never'],
     'array-bracket-spacing': ['error', 'never'],
+    'object-curly-spacing': ['error', 'always'],
     'func-name-matching': 'error',
     'no-useless-return': 'error',
     'consistent-return': 'error',
@@ -11,7 +12,7 @@ module.exports = {
     'block-scoped-var': 'error',
     'no-invalid-this': 'error',
     'global-require': 'error',
-    'no-unused-vars': [2, { 'vars': 'all', 'args': 'after-used' }],
+    'no-unused-vars': [2, { vars: 'all', args: 'after-used' }],
     'no-lonely-if': 'error',
     'valid-jsdoc': 'error',
     'func-style': ['error', 'declaration'],
