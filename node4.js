@@ -18,7 +18,10 @@ module.exports = {
     'generator-star-spacing': ['error', { before: true }],
     'prefer-arrow-callback': 'error',
     'arrow-parens': ['error', 'as-needed'],
-    'arrow-body-style': ['error', 'always']
+    'arrow-body-style': ['error', 'always'],
+    'prefer-template': 'error',
+    'template-curly-spacing': ['error', 'always'],
+    'prefer-const': 'error'
   },
   env: {
     es6: true
