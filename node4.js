@@ -1,11 +1,10 @@
 module.exports = {
   extends: [
-    'standard',
-    'plugin:node/no-deprecated-api',
-    'plugin:node/no-unsupported-features'
+    'standard'
   ],
   rules: {
-    'es5/no-block-scoping': [0],
+    'node/no-deprecated-api': 'error',
+    'node/no-unsupported-features': 'error',
     'arrow-parens': 'error',
     'arrow-body-style': ['error', 'always'],
     'prefer-arrow-callback': 'error',
