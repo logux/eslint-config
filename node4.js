@@ -4,7 +4,7 @@ module.exports = {
   ],
   plugins: [
     'node',
-    'es5',
+    'es5'
   ],
   rules: {
     'es5/no-block-scoping': 'error',
@@ -21,7 +21,7 @@ module.exports = {
     'arrow-parens': ['error', 'as-needed'],
     'arrow-body-style': ['error', 'always'],
     'prefer-template': 'error',
-    'template-curly-spacing': ['error', 'always'],
+    'template-curly-spacing': ['error', 'always']
   },
   env: {
     es6: true
