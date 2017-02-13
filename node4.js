@@ -3,15 +3,16 @@ module.exports = {
     './base.js'
   ],
   plugins: [
-    'node'
+    'node',
+    'es5',
   ],
   rules: {
+    'es5/no-block-scoping': 'error',
     'node/no-unsupported-features': 'error',
     'node/no-deprecated-api': 'error',
     'no-const-assign': 'error',
     'no-dupe-class-members': 'error',
     'no-new-symbol': 'error',
-    'no-var': 'error',
     'require-yield': 'error',
     'constructor-super': 'error',
     'no-this-before-super': 'error',
@@ -21,7 +22,6 @@ module.exports = {
     'arrow-body-style': ['error', 'always'],
     'prefer-template': 'error',
     'template-curly-spacing': ['error', 'always'],
-    'prefer-const': 'error'
   },
   env: {
     es6: true

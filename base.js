@@ -18,7 +18,6 @@ module.exports = {
     'func-style': ['error', 'declaration'],
     'no-shadow': 'error',
     'max-len': [2, 80],
-    'strict': ['error', 'global'],
     'no-new': 'off'
   },
   env: {
