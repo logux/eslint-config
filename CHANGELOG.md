@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 5.0
+* Rename `eslint-config-logux` to `eslint-config-logux/browser`.
+* Add `node4` config for node-only projects (by Roman Fursov).
+
 ## 4.0
 * Deny ES2015+ features (by Nikita Gusakov).
 
