@@ -7,23 +7,25 @@ module.exports = {
     'es5'
   ],
   rules: {
-    'es5/no-block-scoping': 'error',
     'node/no-unsupported-features': 'error',
     'node/no-deprecated-api': 'error',
-    'no-const-assign': 'error',
-    'no-dupe-class-members': 'error',
-    'no-new-symbol': 'error',
-    'require-yield': 'error',
-    'constructor-super': 'error',
-    'no-this-before-super': 'error',
+
+    'es5/no-block-scoping': 'error',
+
     'generator-star-spacing': ['error', { before: true }],
+    'template-curly-spacing': ['error', 'always'],
     'prefer-arrow-callback': 'error',
-    'arrow-parens': ['error', 'as-needed'],
+    'no-dupe-class-members': 'error',
+    'no-this-before-super': 'error',
+    'constructor-super': 'error',
     'arrow-body-style': 'error',
     'object-shorthand': 'error',
-    'arrow-spacing': 'error',
+    'no-const-assign': 'error',
     'prefer-template': 'error',
-    'template-curly-spacing': ['error', 'always']
+    'no-new-symbol': 'error',
+    'require-yield': 'error',
+    'arrow-spacing': 'error',
+    'arrow-parens': ['error', 'as-needed']
   },
   env: {
     es6: true

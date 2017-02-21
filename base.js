@@ -4,10 +4,11 @@ module.exports = {
     'jest'
   ],
   rules: {
-    'computed-property-spacing': ['error', 'never'],
     'jest/no-identical-title': 'error',
     'jest/no-disabled-tests': 'error',
     'jest/no-focused-tests': 'error',
+
+    'computed-property-spacing': ['error', 'never'],
     'array-bracket-spacing': ['error', 'never'],
     'object-curly-spacing': ['error', 'always'],
     'func-name-matching': 'error',
