@@ -1,7 +1,13 @@
 module.exports = {
   extends: 'standard',
+  plugins: [
+    'jest'
+  ],
   rules: {
     'computed-property-spacing': ['error', 'never'],
+    'jest/no-identical-title': 'error',
+    'jest/no-disabled-tests': 'error',
+    'jest/no-focused-tests': 'error',
     'array-bracket-spacing': ['error', 'never'],
     'object-curly-spacing': ['error', 'always'],
     'func-name-matching': 'error',

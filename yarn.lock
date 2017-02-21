@@ -402,6 +402,10 @@ eslint-plugin-es5@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/eslint-plugin-es5/-/eslint-plugin-es5-1.0.1.tgz#bafe65e479da2c24b39e6957e1a06ba54036d32b"
 
+eslint-plugin-jest@^19.0.0:
+  version "19.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-19.0.0.tgz#edb9b278d441e330f6b50b50178b8dd807e429da"
+
 eslint-plugin-node@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/eslint-plugin-node/-/eslint-plugin-node-4.0.1.tgz#02eba2eb3eb522378de15881db19d3e5570110f6"
