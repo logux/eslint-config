@@ -5,7 +5,7 @@
 
 Shareable code style and best practice for [Logux] projects.
 
-[Logux]: https://github.con/logux/logux
+[Logux]: https://github.com/logux/logux
 
 ## Install
 
