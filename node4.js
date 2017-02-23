@@ -23,6 +23,7 @@ module.exports = {
     'require-yield': 'error',
     'arrow-spacing': 'error',
     'arrow-parens': ['error', 'as-needed'],
+    'prefer-const': 'error',
     'strict': ['error', 'global'],
     'no-var': 'error'
   },
