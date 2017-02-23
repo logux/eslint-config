@@ -3,14 +3,11 @@ module.exports = {
     './base.js'
   ],
   plugins: [
-    'node',
-    'es5'
+    'node'
   ],
   rules: {
     'node/no-unsupported-features': 'error',
     'node/no-deprecated-api': 'error',
-
-    'es5/no-block-scoping': 'error',
 
     'generator-star-spacing': ['error', { before: true }],
     'template-curly-spacing': ['error', 'always'],
@@ -25,7 +22,9 @@ module.exports = {
     'no-new-symbol': 'error',
     'require-yield': 'error',
     'arrow-spacing': 'error',
-    'arrow-parens': ['error', 'as-needed']
+    'arrow-parens': ['error', 'as-needed'],
+    'strict': ['error', 'global'],
+    'no-var': 'error'
   },
   env: {
     es6: true

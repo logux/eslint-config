@@ -18,7 +18,7 @@ npm install --save-dev logux-config-logux eslint-config-standard eslint-plugin-p
 For server-only project you can use config with ES2015+ support:
 
 ```sh
-npm install --save-dev logux-config-logux eslint-config-standard eslint-plugin-promise eslint-plugin-es5 eslint-plugin-node eslint-plugin-standard eslint
+npm install --save-dev logux-config-logux eslint-config-standard eslint-plugin-promise eslint-plugin-node eslint-plugin-standard eslint
 ```
 
 ## Usage
