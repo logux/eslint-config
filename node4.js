@@ -1,15 +1,12 @@
 'use strict'
 
 module.exports = {
-  extends: [
-    './base.js'
-  ],
+  extends: './base.js',
   plugins: [
     'node'
   ],
   rules: {
     'node/no-unsupported-features': 'error',
-    'node/no-deprecated-api': 'error',
 
     'generator-star-spacing': ['error', { before: true }],
     'template-curly-spacing': ['error', 'always'],
