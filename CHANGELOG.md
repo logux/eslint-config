@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 8.0
+* Use ESLint Standard config 7.0.
+
 ## 7.0
 * Use `use strict` and `const` in Node.js 4 config.
 
