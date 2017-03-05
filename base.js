@@ -16,6 +16,7 @@ module.exports = {
     'jest/no-disabled-tests': 'error',
     'jest/no-focused-tests': 'error',
 
+    'nonblock-statement-body-position': 'error',
     'computed-property-spacing': ['error', 'never'],
     'array-bracket-spacing': ['error', 'never'],
     'object-curly-spacing': ['error', 'always'],
