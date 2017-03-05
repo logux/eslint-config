@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 9.0
+* Add `nonblock-statement-body-position` rule.
+
 ## 8.0
 * Use ESLint Standard config 7.0.
 
