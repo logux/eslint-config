@@ -12,13 +12,13 @@ Shareable code style and best practice for [Logux] projects.
 For browser and universal project:
 
 ```sh
-yarn add --dev logux-config-logux eslint-config-standard eslint-plugin-promise eslint-plugin-node eslint-plugin-es5 eslint-plugin-standard eslint
+yarn add --dev logux-config-logux eslint-config-standard eslint-plugin-promise eslint-plugin-node eslint-plugin-es5 eslint-plugin-standard eslint-plugin-security eslint
 ```
 
 For server-only project you can use config with ES2015+ support:
 
 ```sh
-yarn add --dev logux-config-logux eslint-config-standard eslint-plugin-promise eslint-plugin-node eslint-plugin-standard eslint
+yarn add --dev logux-config-logux eslint-config-standard eslint-plugin-promise eslint-plugin-node eslint-plugin-standard eslint-plugin-security eslint
 ```
 
 ## Usage
