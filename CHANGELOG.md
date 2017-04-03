@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 10.0
+* Add `eslint-plugin-security` plugin.
+
 ## 9.0
 * Add `nonblock-statement-body-position` rule.
 
