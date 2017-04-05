@@ -7,12 +7,6 @@ module.exports = {
     'security'
   ],
   rules: {
-    'import/export': 'off',
-    'import/first': 'off',
-    'import/no-absolute-path': 'off',
-    'import/no-duplicates': 'off',
-    'import/no-webpack-loader-syntax': 'off',
-
     'jest/no-identical-title': 'error',
     'jest/no-disabled-tests': 'error',
     'jest/no-focused-tests': 'error',
