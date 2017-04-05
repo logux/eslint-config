@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 11.0
+* Use ESLint Standard config 10.
+
 ## 10.0
 * Add `eslint-plugin-security` plugin.
 
