@@ -12,6 +12,7 @@ module.exports = {
     'jest/no-identical-title': 'error',
     'jest/no-disabled-tests': 'error',
     'jest/no-focused-tests': 'error',
+    'jest/valid-expect': 'error',
 
     'security/detect-buffer-noassert': 'error',
     'security/detect-child-process': 'error',
