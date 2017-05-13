@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 12.0
+* Add `jest/valid-expect` rule.
+
 ## 11.0.2
 * Update Standard dependencies.
 
