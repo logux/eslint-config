@@ -37,6 +37,7 @@ module.exports = {
     'no-invalid-this': 'error',
     'global-require': 'error',
     'no-unused-vars': [2, { vars: 'all', args: 'after-used' }],
+    'for-direction': 'error',
     'no-lonely-if': 'error',
     'valid-jsdoc': 'error',
     'func-style': ['error', 'declaration'],
