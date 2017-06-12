@@ -1,6 +1,10 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 13.0
+* Use ESLint 4.0.
+* Add `for-direction` rule.
+
 ## 12.0
 * Add `jest/valid-expect` rule.
 
