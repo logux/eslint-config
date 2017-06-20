@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 13.1
+* Remove `arrow-body-style` rule from Node 4 config.
+
 ## 13.0
 * Use ESLint 4.0.
 * Add `for-direction` rule.
