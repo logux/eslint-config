@@ -14,7 +14,6 @@ module.exports = {
     'no-dupe-class-members': 'error',
     'no-this-before-super': 'error',
     'constructor-super': 'error',
-    'arrow-body-style': 'error',
     'object-shorthand': 'error',
     'no-const-assign': 'error',
     'prefer-template': 'error',
