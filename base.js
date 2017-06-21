@@ -20,7 +20,6 @@ module.exports = {
     'security/detect-non-literal-regexp': 'error',
     'security/detect-pseudoRandomBytes': 'error',
     'security/detect-buffer-noassert': 'error',
-    'security/detect-child-process': 'error',
     'security/detect-unsafe-regex': 'error',
     'security/detect-new-buffer': 'error',
 
