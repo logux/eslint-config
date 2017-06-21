@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 13.2
+* Remove `security/detect-child-process` rule.
+
 ## 13.1
 * Remove `arrow-body-style` rule from Node 4 config.
 
