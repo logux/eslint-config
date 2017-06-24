@@ -48,5 +48,8 @@
   },
   "pre-commit": [
     "lint-staged"
-  ]
+  ],
+  "dependencies": {
+    "globals": "^10.0.0"
+  }
 }

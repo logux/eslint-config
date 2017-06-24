@@ -1,5 +1,12 @@
 'use strict'
 
+const globals = require('globals')
+
+const jest = { }
+for (const i in globals.jest) {
+  if (i !== 'test' && i !== 'xtest') jest[i] = globals.jest[i]
+}
+
 module.exports = {
   extends: 'standard',
   plugins: [
@@ -51,8 +58,6 @@ module.exports = {
       'jest/no-focused-tests': 'error',
       'jest/valid-expect': 'error'
     },
-    env: {
-      jest: true
-    }
+    globals: jest
   }
 }
