@@ -9,11 +9,6 @@ module.exports = {
   rules: {
     'standard/no-callback-literal': 'off',
 
-    'jest/no-identical-title': 'error',
-    'jest/no-disabled-tests': 'error',
-    'jest/no-focused-tests': 'error',
-    'jest/valid-expect': 'error',
-
     'security/detect-possible-timing-attacks': 'error',
     'security/detect-eval-with-expression': 'error',
     'security/detect-non-literal-require': 'error',
@@ -46,7 +41,18 @@ module.exports = {
   },
   env: {
     browser: true,
-    node: true,
-    jest: true
+    node: true
+  },
+  overrides: {
+    files: ['test/{**/,}*.test.js'],
+    rules: {
+      'jest/no-identical-title': 'error',
+      'jest/no-disabled-tests': 'error',
+      'jest/no-focused-tests': 'error',
+      'jest/valid-expect': 'error'
+    },
+    env: {
+      jest: true
+    }
   }
 }
