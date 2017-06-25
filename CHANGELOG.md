@@ -1,6 +1,11 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 14.0
+* Use ESLint 4.1.
+* Use Jest rules only in test files.
+* Remove `test` from global names.
+
 ## 13.2
 * Remove `security/detect-child-process` rule.
 
