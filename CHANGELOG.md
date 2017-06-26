@@ -1,6 +1,11 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 15.0
+* Add `node/no-unpublished-require` rule.
+* Add `node/no-extraneous-require` rule.
+* Add `node/no-missing-require` rule.
+
 ## 14.0
 * Use ESLint 4.1.
 * Use Jest rules only in test files.
