@@ -11,7 +11,8 @@ module.exports = {
   extends: 'standard',
   plugins: [
     'jest',
-    'security'
+    'security',
+    'node'
   ],
   rules: {
     'standard/no-callback-literal': 'off',
@@ -24,6 +25,10 @@ module.exports = {
     'security/detect-buffer-noassert': 'error',
     'security/detect-unsafe-regex': 'error',
     'security/detect-new-buffer': 'error',
+
+    'node/no-unpublished-require': 'error',
+    'node/no-extraneous-require': 'error',
+    'node/no-missing-require': 'error',
 
     'nonblock-statement-body-position': 'error',
     'computed-property-spacing': ['error', 'never'],
