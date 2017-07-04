@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 15.0.1
+* Fix Jest files pattern for tests in project root.
+
 ## 15.0
 * Add `node/no-unpublished-require` rule.
 * Add `node/no-extraneous-require` rule.
