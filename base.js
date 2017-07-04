@@ -56,7 +56,7 @@ module.exports = {
     node: true
   },
   overrides: {
-    files: ['test/{**/,}*.test.js'],
+    files: ['*.test.js'],
     rules: {
       'jest/no-identical-title': 'error',
       'jest/no-disabled-tests': 'error',
