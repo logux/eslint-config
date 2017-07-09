@@ -1,6 +1,10 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 16.0
+* Use ESLint 4.2.
+* Add `getter-return` rule.
+
 ## 15.0.1
 * Fix Jest files pattern for tests in project root.
 
