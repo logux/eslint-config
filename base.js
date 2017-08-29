@@ -56,14 +56,23 @@ module.exports = {
     browser: true,
     node: true
   },
-  overrides: {
-    files: ['*.test.js'],
-    rules: {
-      'jest/no-identical-title': 'error',
-      'jest/no-disabled-tests': 'error',
-      'jest/no-focused-tests': 'error',
-      'jest/valid-expect': 'error'
+  overrides: [
+    {
+      files: ['test/*.js'],
+      rules: {
+        'node/no-unpublished-require': 'off'
+      },
+      globals: jest
     },
-    globals: jest
-  }
+    {
+      files: ['*.test.js'],
+      rules: {
+        'jest/no-identical-title': 'error',
+        'jest/no-disabled-tests': 'error',
+        'jest/no-focused-tests': 'error',
+        'jest/valid-expect': 'error'
+      },
+      globals: jest
+    }
+  ]
 }
