@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 16.1
+* Disable `node/no-unpublished-require` rule for test files.
+
 ## 16.0
 * Use ESLint 4.2.
 * Add `getter-return` rule.
