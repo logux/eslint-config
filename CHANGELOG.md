@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 16.1.1
+* Update Jest plugin in `peerDependencies`.
+
 ## 16.1
 * Disable `node/no-unpublished-require` rule for test files.
 
