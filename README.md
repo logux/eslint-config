@@ -1,6 +1,6 @@
 # Logux ESLint Config
 
-<img align="right" width="95" height="95" title="Logux logo"
+<img align="right" width="95" height="95" alt="Logux logo"
      src="https://cdn.rawgit.com/logux/logux/master/logo.svg">
 
 Shareable code style and best practice for [Logux] projects.
