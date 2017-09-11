@@ -8,7 +8,6 @@ module.exports = {
   rules: {
     'node/no-unsupported-features': 'error',
 
-    'generator-star-spacing': ['error', { before: true }],
     'template-curly-spacing': ['error', 'always'],
     'prefer-arrow-callback': 'error',
     'no-dupe-class-members': 'error',
