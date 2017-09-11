@@ -16,7 +16,6 @@ module.exports = {
     'constructor-super': 'error',
     'object-shorthand': 'error',
     'no-const-assign': 'error',
-    'prefer-template': 'error',
     'no-new-symbol': 'error',
     'require-yield': 'error',
     'arrow-spacing': 'error',
