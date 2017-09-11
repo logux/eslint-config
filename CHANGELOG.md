@@ -1,6 +1,10 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 16.2
+* Remove `prefer-template` rule.
+* Remove `generator-star-spacing` rule.
+
 ## 16.1.1
 * Update Jest plugin in `peerDependencies`.
 
