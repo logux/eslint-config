@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 17.0
+* Add `jest/prefer-to-have-length` rule.
+
 ## 16.2
 * Remove `prefer-template` rule.
 * Remove `generator-star-spacing` rule.
