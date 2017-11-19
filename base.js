@@ -67,6 +67,7 @@ module.exports = {
     {
       files: ['*.test.js'],
       rules: {
+        'jest/prefer-to-have-length': 'error',
         'jest/no-identical-title': 'error',
         'jest/no-disabled-tests': 'error',
         'jest/no-focused-tests': 'error',
