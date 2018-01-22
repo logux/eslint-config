@@ -67,9 +67,12 @@ module.exports = {
     {
       files: ['*.test.js'],
       rules: {
+        'jest/valid-expect-in-promise': 'error',
+        'jest/prefer-to-be-undefined': 'error',
         'jest/prefer-to-have-length': 'error',
         'jest/no-identical-title': 'error',
         'jest/no-disabled-tests': 'error',
+        'jest/prefer-to-be-null': 'error',
         'jest/no-focused-tests': 'error',
         'jest/valid-expect': 'error'
       },
