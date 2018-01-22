@@ -1,6 +1,11 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 18.0
+* Add `jest/valid-expect-in-promise` rule.
+* Add `jest/prefer-to-be-undefined` rule.
+* Add `jest/prefer-to-be-null` rule.
+
 ## 17.0
 * Add `jest/prefer-to-have-length` rule.
 
