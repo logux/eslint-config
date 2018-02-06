@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 19.0
+* Update `eslint-plugin-node` 6.0.
+
 ## 18.0
 * Add `jest/valid-expect-in-promise` rule.
 * Add `jest/prefer-to-be-undefined` rule.
