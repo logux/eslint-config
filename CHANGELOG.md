@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 20.0
+* Add `jest/consistent-test-it` rule with `it` function.
+
 ## 19.0
 * Update `eslint-plugin-node` 6.0.
 
