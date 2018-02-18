@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 21.0
+* Use ESLint Standard config 11.
+
 ## 20.0
 * Add `jest/consistent-test-it` rule with `it` function.
 
