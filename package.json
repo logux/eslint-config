@@ -40,7 +40,7 @@
     "test": "npm run lint && npm run spellcheck"
   },
   "eslintConfig": {
-    "extends": "./node4.js"
+    "extends": "./node.js"
   },
   "lint-staged": {
     "*.md": "yaspeller-ci",

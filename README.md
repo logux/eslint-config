@@ -37,6 +37,6 @@ Server-only project:
 
 ```sh
   "eslintConfig": {
-    "extends": "eslint-config-logux/node4"
+    "extends": "eslint-config-logux/node"
   }
 ```
