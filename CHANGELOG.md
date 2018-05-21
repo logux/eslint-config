@@ -1,6 +1,11 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 22.0
+* Rename `node4.js` to `node.js`.
+* Add `optimize-regex` ESLint plugin.
+* Add `prefer-rest-params` to `eslint-config-logux/node`.
+
 ## 21.0
 * Use ESLint Standard config 11.
 
