@@ -1,5 +1,3 @@
-'use strict'
-
 module.exports = {
   extends: './base.js',
   plugins: [
@@ -21,7 +19,6 @@ module.exports = {
     'arrow-spacing': 'error',
     'arrow-parens': ['error', 'as-needed'],
     'prefer-const': 'error',
-    'strict': ['error', 'global'],
     'no-var': 'error'
   },
   env: {

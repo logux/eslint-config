@@ -1,5 +1,3 @@
-'use strict'
-
 const globals = require('globals')
 
 const jest = { }

@@ -1,6 +1,9 @@
 {
   "name": "eslint-config-logux",
   "version": "22.1.0",
+  "engines": {
+    "node": ">=6.0.0"
+  },
   "description": "An ESLint shareable config for Logux",
   "keywords": [
     "logux",
