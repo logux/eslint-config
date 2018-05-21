@@ -1,6 +1,10 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 23.0
+* Remove `strict` rule.
+* Remove Node.js 4 support.
+
 ## 22.1
 * Remove `optimize-regex` ESLint plugin.
 
