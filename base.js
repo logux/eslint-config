@@ -12,7 +12,8 @@ module.exports = {
   plugins: [
     'jest',
     'security',
-    'node'
+    'node',
+    'optimize-regex'
   ],
   rules: {
     'standard/no-callback-literal': 'off',
@@ -29,6 +30,8 @@ module.exports = {
     'node/no-unpublished-require': 'error',
     'node/no-extraneous-require': 'error',
     'node/no-missing-require': 'error',
+
+    'optimize-regex/optimize-regex': 'error',
 
     'nonblock-statement-body-position': 'error',
     'computed-property-spacing': ['error', 'never'],
