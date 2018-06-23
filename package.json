@@ -13,6 +13,9 @@
   "author": "Andrey Sitnik <andrey@sitnik.ru>",
   "license": "MIT",
   "repository": "logux/eslint-config-logux",
+  "dependencies": {
+    "globals": "^11.7.0"
+  },
   "peerDependencies": {
     "eslint": "^5.0.0",
     "eslint-config-standard": "^11.0.0",
@@ -42,17 +45,7 @@
     "lint": "eslint *.js",
     "test": "npm run lint && npm run spellcheck"
   },
-  "eslintConfig": {
-    "extends": "./node.js"
-  },
-  "lint-staged": {
-    "*.md": "yaspeller-ci",
-    "*.js": "eslint"
-  },
   "pre-commit": [
     "lint-staged"
-  ],
-  "dependencies": {
-    "globals": "^11.7.0"
-  }
+  ]
 }
