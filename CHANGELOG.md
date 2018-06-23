@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 23.0.2
+* Reduce package size.
+
 ## 23.0.1
 * Use ESLint 5.
 
