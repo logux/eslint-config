@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-logux",
-  "version": "23.0.2",
+  "version": "23.0.3",
   "engines": {
     "node": ">=6.0.0"
   },
