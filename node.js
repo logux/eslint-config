@@ -4,7 +4,9 @@ module.exports = {
     'node'
   ],
   rules: {
-    'node/no-unsupported-features': 'error',
+    'node/no-unsupported-features/node-builtins': 'error',
+    'node/no-unsupported-features/es-builtins': 'error',
+    'node/no-unsupported-features/es-syntax': 'error',
 
     'template-curly-spacing': ['error', 'always'],
     'prefer-arrow-callback': 'error',
