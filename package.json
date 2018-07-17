@@ -48,5 +48,26 @@
   },
   "pre-commit": [
     "lint-staged"
-  ]
+  ],
+  "lint-staged": {
+    "*.md": "yaspeller-ci",
+    "*.js": "eslint"
+  },
+  "eslintConfig": {
+    "extends": "./node.js"
+  },
+  "yaspeller": {
+    "lang": "en",
+    "ignoreCapitalization": true,
+    "dictionary": [
+      "Logux",
+      "ESLint",
+      "Versioning",
+      "ES2015",
+      "Nikita",
+      "Gusakov",
+      "Fursov",
+      "js"
+    ]
+  }
 }
