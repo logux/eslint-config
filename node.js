@@ -15,12 +15,10 @@ module.exports = {
     'prefer-rest-params': 'error',
     'constructor-super': 'error',
     'object-shorthand': 'error',
-    'no-const-assign': 'error',
     'no-new-symbol': 'error',
     'require-yield': 'error',
     'arrow-spacing': 'error',
     'arrow-parens': ['error', 'as-needed'],
-    'prefer-const': 'error',
     'no-var': 'error'
   },
   env: {
