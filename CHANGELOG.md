@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 23.1.0
+* Do not prefer `const` anymore.
+
 ## 23.0.4
 * Fix peer dependencies.
 
