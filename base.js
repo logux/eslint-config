@@ -1,7 +1,7 @@
-const globals = require('globals')
+let globals = require('globals')
 
-const jest = { }
-for (const i in globals.jest) {
+let jest = { }
+for (let i in globals.jest) {
   if (i !== 'test' && i !== 'xtest') jest[i] = globals.jest[i]
 }
 
