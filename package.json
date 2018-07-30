@@ -17,7 +17,7 @@
     "globals": "^11.7.0"
   },
   "peerDependencies": {
-    "eslint": "^5.1.0",
+    "eslint": "^5.2.0",
     "eslint-config-standard": "^11.0.0",
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-jest": "^21.18.0",
@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "clean-publish": "^1.0.7",
-    "eslint": "^5.1.0",
+    "eslint": "^5.2.0",
     "eslint-config-standard": "^11.0.0",
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-jest": "^21.18.0",
