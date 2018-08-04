@@ -1,12 +1,15 @@
 module.exports = {
   extends: './base.js',
   plugins: [
+    'prefer-let',
     'node'
   ],
   rules: {
     'node/no-unsupported-features/node-builtins': 'error',
     'node/no-unsupported-features/es-builtins': 'error',
     'node/no-unsupported-features/es-syntax': 'error',
+
+    'prefer-let/prefer-let': 'error',
 
     'template-curly-spacing': ['error', 'always'],
     'require-atomic-updates': 'error',
