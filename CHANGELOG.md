@@ -1,6 +1,11 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 24.0
+* Add `no-misleading-character-class` rule.
+* Add `require-atomic-updates` rule to `eslint-config-logux/node`.
+* Add `prefer-let` rule to `eslint-config-logux/node`.
+
 ## 23.1.0
 * Do not prefer `const` anymore.
 
