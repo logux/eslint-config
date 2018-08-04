@@ -29,6 +29,7 @@ module.exports = {
     'node/no-missing-require': 'error',
 
     'nonblock-statement-body-position': 'error',
+    'no-misleading-character-class': 'error',
     'computed-property-spacing': ['error', 'never'],
     'array-bracket-spacing': ['error', 'never'],
     'object-curly-spacing': ['error', 'always'],

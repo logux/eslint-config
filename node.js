@@ -9,6 +9,7 @@ module.exports = {
     'node/no-unsupported-features/es-syntax': 'error',
 
     'template-curly-spacing': ['error', 'always'],
+    'require-atomic-updates': 'error',
     'prefer-arrow-callback': 'error',
     'no-dupe-class-members': 'error',
     'no-this-before-super': 'error',
