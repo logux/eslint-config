@@ -74,6 +74,7 @@ module.exports = {
         'jest/no-disabled-tests': 'error',
         'jest/prefer-to-be-null': 'error',
         'jest/no-focused-tests': 'error',
+        'jest/expect-expect': 'error',
         'jest/valid-expect': 'error'
       },
       globals: jest
