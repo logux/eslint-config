@@ -1,6 +1,10 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 25.0
+* Add `jest/expect-expect` rule.
+* Use `eslint-plugin-promise` 4.x.
+
 ## 24.0
 * Add `no-misleading-character-class` rule.
 * Add `require-atomic-updates` rule to `eslint-config-logux/node`.
