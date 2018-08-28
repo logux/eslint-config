@@ -32,7 +32,6 @@ module.exports = {
     'no-misleading-character-class': 'error',
     'computed-property-spacing': ['error', 'never'],
     'array-bracket-spacing': ['error', 'never'],
-    'object-curly-spacing': ['error', 'always'],
     'func-name-matching': 'error',
     'no-useless-return': 'error',
     'consistent-return': 'error',
