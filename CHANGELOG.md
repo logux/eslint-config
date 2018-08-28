@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 25.0.1
+* Use ESLint Standard config 11.
+
 ## 25.0
 * Add `jest/expect-expect` rule.
 * Use `eslint-plugin-promise` 4.x.
