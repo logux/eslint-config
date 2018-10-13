@@ -56,9 +56,12 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['test/*.js'],
+      files: ['test/*', 'test/**/*'],
       rules: {
-        'node/no-unpublished-require': 'off'
+        'node/no-unpublished-require': 'off',
+        'node/no-missing-require': ['error', {
+          allowModules: ['worker_threads']
+        }]
       },
       globals: jest
     },
