@@ -1,6 +1,10 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 25.0.2
+* Allow import `worker_threads` in tests.
+* Use test rules for any files in `test/`.
+
 ## 25.0.1
 * Use ESLint Standard config 11.
 
