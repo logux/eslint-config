@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 26.0.1
+* Use ESLint Plugin Node 8.x.
+
 ## 26.0
 * Add `jest/prefer-to-contain` rule.
 * Remove `jest/expect-expect` rule.
