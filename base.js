@@ -77,6 +77,7 @@ module.exports = {
         'jest/prefer-to-be-null': 'error',
         'jest/prefer-to-contain': 'error',
         'jest/no-focused-tests': 'error',
+        'jest/prefer-spy-on': 'error',
         'jest/valid-expect': 'error'
       },
       globals: jest
