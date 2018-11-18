@@ -1,18 +1,23 @@
 {
   "name": "eslint-config-logux",
   "version": "26.0.1",
-  "engines": {
-    "node": ">=6.0.0"
-  },
   "description": "An ESLint shareable config for Logux",
   "keywords": [
     "logux",
     "eslint",
     "eslint-config"
   ],
+  "scripts": {
+    "spellcheck": "yaspeller-ci *.md",
+    "lint": "eslint *.js",
+    "test": "npm run lint && npm run spellcheck"
+  },
   "author": "Andrey Sitnik <andrey@sitnik.ru>",
   "license": "MIT",
   "repository": "logux/eslint-config-logux",
+  "engines": {
+    "node": ">=6.0.0"
+  },
   "dependencies": {
     "globals": "^11.9.0"
   },
@@ -40,11 +45,6 @@
     "husky": "^1.1.4",
     "lint-staged": "^8.0.5",
     "yaspeller-ci": "^1.0.0"
-  },
-  "scripts": {
-    "spellcheck": "yaspeller-ci *.md",
-    "lint": "eslint *.js",
-    "test": "npm run lint && npm run spellcheck"
   },
   "husky": {
     "pre-commit": [
