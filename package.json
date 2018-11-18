@@ -47,9 +47,11 @@
     "yaspeller-ci": "^1.0.0"
   },
   "husky": {
-    "pre-commit": [
-      "lint-staged"
-    ]
+    "hooks": {
+      "pre-commit": [
+        "lint-staged"
+      ]
+    }
   },
   "lint-staged": {
     "*.md": "yaspeller-ci",
