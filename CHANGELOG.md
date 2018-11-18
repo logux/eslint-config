@@ -1,6 +1,10 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 27.0
+* Use ESLint Plugin Jest 22.x.
+* Add `jest/prefer-spy-on` rule.
+
 ## 26.0.1
 * Use ESLint Plugin Node 8.x.
 
