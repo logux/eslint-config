@@ -12,13 +12,13 @@ Shareable code style and best practice for [Logux] projects.
 For browser and universal project:
 
 ```sh
-yarn add --dev eslint-config-logux eslint-config-standard eslint-plugin-promise eslint-plugin-jest eslint-plugin-node eslint-plugin-es5 eslint-plugin-standard eslint-plugin-security eslint-plugin-import eslint
+yarn add --dev @logux/eslint-config eslint-config-standard eslint-plugin-promise eslint-plugin-jest eslint-plugin-node eslint-plugin-es5 eslint-plugin-standard eslint-plugin-security eslint-plugin-import eslint
 ```
 
 For server-only project you can use config with ES2015+ support:
 
 ```sh
-yarn add --dev eslint-config-logux eslint-config-standard eslint-plugin-promise eslint-plugin-jest eslint-plugin-node eslint-plugin-standard eslint-plugin-security eslint-plugin-import eslint-plugin-prefer-let eslint
+yarn add --dev @logux/eslint-config eslint-config-standard eslint-plugin-promise eslint-plugin-jest eslint-plugin-node eslint-plugin-standard eslint-plugin-security eslint-plugin-import eslint-plugin-prefer-let eslint
 ```
 
 ## Usage
@@ -29,7 +29,7 @@ Browser and universal project:
 
 ```sh
   "eslintConfig": {
-    "extends": "eslint-config-logux/browser"
+    "extends": "@logux/eslint-config/browser"
   }
 ```
 
@@ -37,6 +37,6 @@ Server-only project:
 
 ```sh
   "eslintConfig": {
-    "extends": "eslint-config-logux/node"
+    "extends": "@logux/eslint-config-logux/node"
   }
 ```
