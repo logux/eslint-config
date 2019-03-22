@@ -1,6 +1,10 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 28.0
+* Add `import-helpers/order-imports` rule.
+* Add `jest/no-empty-title` rule for tests.
+
 ## 27.0
 * Use ESLint Plugin Jest 22.x.
 * Add `jest/prefer-spy-on` rule.
