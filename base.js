@@ -10,7 +10,8 @@ module.exports = {
   plugins: [
     'jest',
     'security',
-    'node'
+    'node',
+    'import-helpers'
   ],
   rules: {
     'standard/no-callback-literal': 'off',
@@ -28,6 +29,14 @@ module.exports = {
     'node/no-extraneous-require': 'error',
     'node/no-missing-require': 'error',
 
+    'import-helpers/order-imports': ['error', {
+      'groups': [
+        ['builtin', 'external', 'internal'],
+        ['parent', 'sibling', 'index']
+      ],
+      'newlines-between': 'always'
+    }],
+
     'nonblock-statement-body-position': 'error',
     'no-misleading-character-class': 'error',
     'computed-property-spacing': ['error', 'never'],
@@ -40,14 +49,17 @@ module.exports = {
     'block-scoped-var': 'error',
     'no-invalid-this': 'error',
     'global-require': 'error',
-    'no-unused-vars': [2, { vars: 'all', args: 'after-used' }],
+    'no-unused-vars': ['error', {
+      args: 'after-used',
+      vars: 'all'
+    }],
     'getter-return': 'error',
     'for-direction': 'error',
     'no-lonely-if': 'error',
     'valid-jsdoc': 'error',
     'func-style': ['error', 'declaration'],
     'no-shadow': 'error',
-    'max-len': [2, 80],
+    'max-len': ['error', 80],
     'no-new': 'off'
   },
   env: {
@@ -77,6 +89,7 @@ module.exports = {
         'jest/prefer-to-be-null': 'error',
         'jest/prefer-to-contain': 'error',
         'jest/no-focused-tests': 'error',
+        'jest/no-empty-title': 'error',
         'jest/prefer-spy-on': 'error',
         'jest/valid-expect': 'error'
       },
