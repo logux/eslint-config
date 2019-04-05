@@ -14,7 +14,7 @@
   },
   "author": "Andrey Sitnik <andrey@sitnik.ru>",
   "license": "MIT",
-  "repository": "logux/config-logux",
+  "repository": "logux/eslint-config",
   "engines": {
     "node": ">=6.0.0"
   },
