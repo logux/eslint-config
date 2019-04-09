@@ -68,7 +68,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['test/*', 'test/**/*'],
+      files: ['test/*', 'test/**/*', '*.test.js'],
       rules: {
         'node/no-unpublished-require': 'off',
         'node/no-missing-require': ['error', {
@@ -91,7 +91,8 @@ module.exports = {
         'jest/no-focused-tests': 'error',
         'jest/no-empty-title': 'error',
         'jest/prefer-spy-on': 'error',
-        'jest/valid-expect': 'error'
+        'jest/valid-expect': 'error',
+        'global-require': 'off'
       },
       globals: jest
     }
