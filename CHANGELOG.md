@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 28.1
+* Disable `global-require` in tests.
+
 ## 28.0
 * Add `import-helpers/order-imports` rule.
 * Add `jest/no-empty-title` rule for tests.
