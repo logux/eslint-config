@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 28.2
+* Remove `valid-jsdoc` rule.
+
 ## 28.1
 * Disable `global-require` in tests.
 
