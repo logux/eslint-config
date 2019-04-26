@@ -56,7 +56,6 @@ module.exports = {
     'getter-return': 'error',
     'for-direction': 'error',
     'no-lonely-if': 'error',
-    'valid-jsdoc': 'error',
     'func-style': ['error', 'declaration'],
     'no-shadow': 'error',
     'max-len': ['error', 80],
