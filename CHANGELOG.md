@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 28.2.2
+* Update `eslint-plugin-import-helpers`.
+
 ## 28.2.1
 * Update `eslint-plugin-node`.
 
