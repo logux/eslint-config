@@ -30,11 +30,11 @@ module.exports = {
     'node/no-missing-require': 'error',
 
     'import-helpers/order-imports': ['error', {
-      'groups': [
-        ['builtin', 'external', 'internal'],
+      groups: [
+        ['absolute', 'module'],
         ['parent', 'sibling', 'index']
       ],
-      'newlines-between': 'always'
+      newlinesBetween: 'always'
     }],
 
     'nonblock-statement-body-position': 'error',
