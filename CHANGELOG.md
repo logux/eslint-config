@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 28.2.3
+* Fix warning on ESLint 6.
+
 ## 28.2.2
 * Update `eslint-plugin-import-helpers`.
 
