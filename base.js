@@ -29,7 +29,7 @@ module.exports = {
     'node/no-missing-require': 'error',
 
     'import/order': ['error', {
-      groups: [
+      'groups': [
         ['builtin', 'external'],
         ['internal', 'parent', 'sibling', 'index']
       ],
@@ -56,6 +56,7 @@ module.exports = {
     'for-direction': 'error',
     'no-lonely-if': 'error',
     'prefer-const': 'off',
+    'quote-props': ['error', 'consistent-as-needed'],
     'func-style': ['error', 'declaration'],
     'no-shadow': 'error',
     'max-len': ['error', 80],
