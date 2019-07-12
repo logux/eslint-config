@@ -10,8 +10,7 @@ module.exports = {
   plugins: [
     'jest',
     'security',
-    'node',
-    'import-helpers'
+    'node'
   ],
   rules: {
     'standard/no-callback-literal': 'off',
@@ -29,12 +28,12 @@ module.exports = {
     'node/no-extraneous-require': 'error',
     'node/no-missing-require': 'error',
 
-    'import-helpers/order-imports': ['error', {
+    'import/order': ['error', {
       groups: [
-        ['absolute', 'module'],
-        ['parent', 'sibling', 'index']
+        ['builtin', 'external'],
+        ['internal', 'parent', 'sibling', 'index']
       ],
-      newlinesBetween: 'always'
+      'newlines-between': 'always'
     }],
 
     'nonblock-statement-body-position': 'error',
@@ -56,6 +55,7 @@ module.exports = {
     'getter-return': 'error',
     'for-direction': 'error',
     'no-lonely-if': 'error',
+    'prefer-const': 'off',
     'func-style': ['error', 'declaration'],
     'no-shadow': 'error',
     'max-len': ['error', 80],
