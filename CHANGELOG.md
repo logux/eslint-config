@@ -1,6 +1,11 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 29.0
+* Use ESLint Standard config 13.
+* Use `import/order` instead of `import-helpers/order-imports`.
+* Drop Node.js 6 support.
+
 ## 28.2.3
 * Fix warning on ESLint 6.
 
