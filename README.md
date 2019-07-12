@@ -27,7 +27,7 @@ Add this config to `package.json` or other ESLint configs.
 
 Browser and universal project:
 
-```sh
+```js
   "eslintConfig": {
     "extends": "@logux/eslint-config/browser"
   }
@@ -35,7 +35,7 @@ Browser and universal project:
 
 Server-only project:
 
-```sh
+```js
   "eslintConfig": {
     "extends": "@logux/eslint-config/node"
   }
