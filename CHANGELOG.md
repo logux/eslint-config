@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 29.0.1
+* Fix `quote-props` consistency.
+
 ## 29.0
 * Use ESLint Standard config 13.
 * Use `import/order` instead of `import-helpers/order-imports`.
