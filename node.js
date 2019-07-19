@@ -12,7 +12,6 @@ module.exports = {
     'prefer-let/prefer-let': 'error',
 
     'template-curly-spacing': ['error', 'always'],
-    'require-atomic-updates': 'error',
     'prefer-arrow-callback': 'error',
     'no-dupe-class-members': 'error',
     'no-this-before-super': 'error',

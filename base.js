@@ -39,7 +39,6 @@ module.exports = {
     'nonblock-statement-body-position': 'error',
     'no-misleading-character-class': 'error',
     'computed-property-spacing': ['error', 'never'],
-    'require-atomic-updates': 'off',
     'array-bracket-spacing': ['error', 'never'],
     'func-name-matching': 'error',
     'no-useless-return': 'error',
