@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 29.1
+* Disable `require-atomic-updates` rule.
+
 ## 29.0.1
 * Fix `quote-props` consistency.
 
