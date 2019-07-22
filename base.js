@@ -91,6 +91,7 @@ module.exports = {
         'jest/no-focused-tests': 'error',
         'jest/no-empty-title': 'error',
         'jest/prefer-spy-on': 'error',
+        'jest/no-try-expect': 'error',
         'jest/valid-expect': 'error',
         'global-require': 'off'
       },
