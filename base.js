@@ -52,6 +52,7 @@ module.exports = {
       args: 'after-used',
       vars: 'all'
     }],
+    'no-new-symbol': 'error',
     'getter-return': 'error',
     'for-direction': 'error',
     'no-lonely-if': 'error',
