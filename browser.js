@@ -20,26 +20,10 @@ module.exports = {
   overrides: [
     {
       files: ['test/*', 'test/**/*', '*.test.js'],
-      rules: {
-        'prefer-let/prefer-let': 'error',
-
-        ...es5disabled,
-
-        'template-curly-spacing': ['error', 'always'],
-        'prefer-arrow-callback': 'error',
-        'no-dupe-class-members': 'error',
-        'no-this-before-super': 'error',
-        'prefer-rest-params': 'error',
-        'constructor-super': 'error',
-        'object-shorthand': 'error',
-        'require-yield': 'error',
-        'arrow-spacing': 'error',
-        'arrow-parens': ['error', 'as-needed'],
-        'no-var': 'error'
-      },
-      env: {
-        es6: true
-      }
+      extends: [
+        './node.js'
+      ],
+      rules: es5disabled
     }
   ]
 }
