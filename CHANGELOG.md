@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 30.0.1
+* Fix config syntax.
+
 ## 30.0
 * Use ES2015+ in tests.
 * Add `jest/no-standalone-expect` rule for tests.
