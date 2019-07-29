@@ -1,6 +1,11 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 30.0
+* Use ES2015+ in tests.
+* Add `jest/no-standalone-expect` rule for tests.
+* Add `jest/no-try-expect` rule for tests.
+
 ## 29.1.1
 * Fix `require-atomic-updates` disabling.
 
