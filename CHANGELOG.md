@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 30.0.2
+* Fix `peerDependencies`.
+
 ## 30.0.1
 * Fix config syntax.
 
