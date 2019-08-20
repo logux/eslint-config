@@ -1,6 +1,10 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 31.0
+* Use Standard 14.
+* Remove `jest/valid-expect-in-promise` rule.
+
 ## 30.0.2
 * Fix `peerDependencies`.
 
