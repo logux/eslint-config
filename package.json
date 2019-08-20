@@ -8,9 +8,7 @@
     "eslint-config"
   ],
   "scripts": {
-    "spellcheck": "yaspeller-ci *.md",
-    "lint": "eslint *.js",
-    "test": "npm run lint && npm run spellcheck"
+    "test": "eslint . && yaspeller *.md"
   },
   "author": "Andrey Sitnik <andrey@sitnik.ru>",
   "license": "MIT",
@@ -34,6 +32,7 @@
     "eslint-plugin-standard": "^4.0.1"
   },
   "devDependencies": {
+    "@logux/sharec-config": "^0.4.1",
     "clean-publish": "^1.1.2",
     "eslint": "^6.2.1",
     "eslint-config-standard": "^14.0.0",
@@ -47,7 +46,7 @@
     "eslint-plugin-standard": "^4.0.1",
     "husky": "^3.0.4",
     "lint-staged": "^9.2.3",
-    "yaspeller-ci": "^1.0.1"
+    "yaspeller": "^6.0.0"
   },
   "husky": {
     "hooks": {
@@ -59,8 +58,11 @@
     "*.js": "eslint"
   },
   "eslintConfig": {
-    "extends": "./node.js"
+    "extends": "./node"
   },
+  "eslintIgnore": [
+    "node_modules"
+  ],
   "yaspeller": {
     "lang": "en",
     "ignoreCapitalization": true,
@@ -76,5 +78,8 @@
       "js",
       "configs"
     ]
+  },
+  "sharec": {
+    "version": "0.4.1"
   }
 }
