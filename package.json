@@ -8,7 +8,7 @@
     "eslint-config"
   ],
   "scripts": {
-    "test": "eslint . && yaspeller *.md"
+    "test": "eslint . && ./check-peer && yaspeller *.md"
   },
   "author": "Andrey Sitnik <andrey@sitnik.ru>",
   "license": "MIT",
@@ -55,7 +55,8 @@
   },
   "lint-staged": {
     "*.md": "yaspeller",
-    "*.js": "eslint"
+    "*.js": "eslint",
+    "package.json": "./check-peer"
   },
   "eslintConfig": {
     "extends": "./node"
