@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 31.0.2
+* Fix `peerDependencies`.
+
 ## 31.0.1
 * Update `eslint-plugin-node`.
 
