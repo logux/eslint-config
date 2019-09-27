@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 32.0
+* Add many rules from `eslint-plugin-unicorn`.
+
 ## 31.0.2
 * Fix `peerDependencies`.
 
