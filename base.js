@@ -29,7 +29,6 @@ module.exports = {
     'node/no-extraneous-require': 'error',
     'node/no-missing-require': 'error',
 
-    'unicorn/consistent-function-scoping': 'error',
     'unicorn/custom-error-definition': 'error',
     'unicorn/prefer-starts-ends-with': 'error',
     'unicorn/no-unused-properties': 'error',
@@ -37,7 +36,6 @@ module.exports = {
     'unicorn/prefer-event-key': 'error',
     'unicorn/regex-shorthand': 'error',
     'unicorn/prefer-includes': 'error',
-    'unicorn/import-index': 'error',
     'unicorn/no-for-loop': 'error',
 
     'import/order': ['error', {
