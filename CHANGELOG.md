@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 32.2
+* Move ES6 rules from `unicorn` to `@logux/eslint-config/node`.
+
 ## 32.1
 * Disable buggy `unicorn/consistent-function-scoping` rule.
 * Disable `unicorn/import-index` rules because of conflict with `import/order`.
