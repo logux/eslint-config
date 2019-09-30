@@ -30,13 +30,10 @@ module.exports = {
     'node/no-missing-require': 'error',
 
     'unicorn/custom-error-definition': 'error',
-    'unicorn/prefer-starts-ends-with': 'error',
     'unicorn/no-unused-properties': 'error',
     'unicorn/no-array-instanceof': 'error',
     'unicorn/prefer-event-key': 'error',
     'unicorn/regex-shorthand': 'error',
-    'unicorn/prefer-includes': 'error',
-    'unicorn/no-for-loop': 'error',
 
     'import/order': ['error', {
       'groups': [
