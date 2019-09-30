@@ -1,6 +1,10 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 32.1
+* Disable buggy `unicorn/consistent-function-scoping` rule.
+* Disable `unicorn/import-index` rules because of conflict with `import/order`.
+
 ## 32.0
 * Add many rules from `eslint-plugin-unicorn`.
 
