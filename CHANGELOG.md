@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 33.0
+* Add `jest/prefer-hooks-on-top` rule.
+
 ## 32.2
 * Move ES6 rules from `unicorn` to `@logux/eslint-config/node`.
 
