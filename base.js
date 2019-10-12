@@ -91,6 +91,7 @@ module.exports = {
         'jest/prefer-to-be-undefined': 'error',
         'jest/prefer-to-have-length': 'error',
         'jest/no-standalone-expect': 'error',
+        'jest/prefer-hooks-on-top': 'error',
         'jest/no-identical-title': 'error',
         'jest/consistent-test-it': ['error', { fn: 'it' }],
         'jest/no-disabled-tests': 'error',
