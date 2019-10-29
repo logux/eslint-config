@@ -87,32 +87,24 @@ module.exports = {
     },
     {
       files: ['*.test.js'],
+      extends: [
+        'plugin:jest/recommended',
+        'plugin:jest/style'
+      ],
       rules: {
         'jest/require-to-throw-message': 'error',
-        'jest/prefer-to-be-undefined': 'error',
-        'jest/no-commented-out-tests': 'error',
-        'jest/prefer-to-have-length': 'error',
-        'jest/no-standalone-expect': 'error',
+        'jest/valid-expect-in-promise': 'off',
         'jest/prefer-hooks-on-top': 'error',
-        'jest/no-jasmine-globals': 'error',
-        'jest/no-identical-title': 'error',
         'jest/no-duplicate-hooks': 'error',
         'jest/consistent-test-it': ['error', { fn: 'it' }],
         'jest/prefer-called-with': 'error',
-        'jest/no-disabled-tests': 'error',
-        'jest/prefer-to-be-null': 'error',
-        'jest/prefer-to-contain': 'error',
-        'jest/no-test-prefixes': 'error',
-        'jest/no-test-callback': 'error',
-        'jest/no-focused-tests': 'error',
         'jest/no-truthy-falsy': 'error',
         'jest/lowercase-name': 'error',
-        'jest/valid-describe': 'error',
-        'jest/no-try-expect': 'error',
         'jest/prefer-spy-on': 'error',
-        'jest/valid-expect': 'error',
+        'jest/expect-expect': 'off',
         'jest/valid-title': 'error',
         'jest/prefer-todo': 'error',
+
         'global-require': 'off'
       },
       globals: jest
