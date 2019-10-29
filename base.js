@@ -98,10 +98,10 @@ module.exports = {
         'jest/prefer-to-be-null': 'error',
         'jest/prefer-to-contain': 'error',
         'jest/no-focused-tests': 'error',
-        'jest/no-empty-title': 'error',
         'jest/prefer-spy-on': 'error',
         'jest/no-try-expect': 'error',
         'jest/valid-expect': 'error',
+        'jest/valid-title': 'error',
         'global-require': 'off'
       },
       globals: jest
