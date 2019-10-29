@@ -1,6 +1,21 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 34.0
+* Add `jest/no-commented-out-tests` rule.
+* Add `jest/no-jasmine-globals` rule.
+* Add `jest/no-duplicate-hooks` rule.
+* Add `jest/prefer-called-with` rule.
+* Add `jest/no-test-prefixes` rule.
+* Add `jest/no-test-callback` rule.
+* Add `jest/no-truthy-falsy` rule.
+* Add `jest/lowercase-name` rule.
+* Add `jest/valid-describe` rule.
+* Add `jest/prefer-todo` rule.
+* Add `jest/require-to-throw-message` rule.
+* Use `plugin:jest/recommended` and `plugin:jest/style`.
+* Use `eslint-plugin-jest` 23.
+
 ## 33.0
 * Add `jest/prefer-hooks-on-top` rule.
 
