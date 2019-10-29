@@ -88,6 +88,7 @@ module.exports = {
     {
       files: ['*.test.js'],
       rules: {
+        'jest/require-to-throw-message': 'error',
         'jest/prefer-to-be-undefined': 'error',
         'jest/prefer-to-have-length': 'error',
         'jest/no-standalone-expect': 'error',
