@@ -33,7 +33,6 @@
     "eslint-plugin-unicorn": "^12.1.0"
   },
   "devDependencies": {
-    "@logux/eslint-config": "^32.2.0",
     "@logux/sharec-config": "^0.5.3",
     "@size-limit/preset-small-lib": "^2.1.6",
     "clean-publish": "^1.1.2",
