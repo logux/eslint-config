@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 34.0.1
+* Update `eslint-plugin-unicorn`.
+
 ## 34.0
 * Add `jest/no-commented-out-tests` rule.
 * Add `jest/no-jasmine-globals` rule.
