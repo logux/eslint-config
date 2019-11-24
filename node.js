@@ -16,6 +16,7 @@ module.exports = {
 
     'prefer-let/prefer-let': 'error',
 
+    'prefer-exponentiation-operator': 'error',
     'template-curly-spacing': ['error', 'always'],
     'prefer-arrow-callback': 'error',
     'no-dupe-class-members': 'error',
@@ -23,6 +24,7 @@ module.exports = {
     'prefer-rest-params': 'error',
     'constructor-super': 'error',
     'object-shorthand': 'error',
+    'no-setter-return': 'error',
     'require-yield': 'error',
     'arrow-spacing': 'error',
     'arrow-parens': ['error', 'as-needed'],

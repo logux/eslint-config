@@ -54,6 +54,7 @@ module.exports = {
     'no-nested-ternary': 'error',
     'block-scoped-var': 'error',
     'no-invalid-this': 'error',
+    'no-dupe-else-if': 'error',
     'global-require': 'error',
     'no-unused-vars': ['error', {
       args: 'after-used',
