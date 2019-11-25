@@ -1,6 +1,12 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 35.0
+* Add `no-dupe-else-if` rule.
+* Add `prefer-exponentiation-operator` rule.
+* Add `no-setter-return` rule.
+* Fix `import` and Web Workers support.
+
 ## 34.0.1
 * Update `eslint-plugin-unicorn`.
 
