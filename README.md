@@ -7,6 +7,11 @@ Shareable code style and best practice for [Logux] projects.
 
 [Logux]: https://github.com/logux/logux
 
+<a href="https://evilmartians.com/?utm_source=logux-docs">
+  <img src="https://evilmartians.com/badges/sponsored-by-evil-martians.svg"
+       alt="Sponsored by Evil Martians" width="236" height="54">
+</a>
+
 ## Install
 
 ```sh
