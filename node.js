@@ -6,9 +6,13 @@ module.exports = {
     'node'
   ],
   rules: {
-    'node/no-unsupported-features/node-builtins': 'error',
+    'node/no-unsupported-features/node-builtins': ['error', {
+      ignores: ['worker_threads']
+    }],
     'node/no-unsupported-features/es-builtins': 'error',
-    'node/no-unsupported-features/es-syntax': 'error',
+    'node/no-unsupported-features/es-syntax': ['error', {
+      ignores: ['modules', 'dynamicImport']
+    }],
 
     'unicorn/prefer-starts-ends-with': 'error',
     'unicorn/prefer-includes': 'error',
@@ -34,6 +38,6 @@ module.exports = {
     es6: true
   },
   parserOptions: {
-    sourceType: 'script'
+    sourceType: 'module'
   }
 }
