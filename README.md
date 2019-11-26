@@ -1,11 +1,11 @@
 # Logux ESLint Config
 
-<img align="right" width="95" height="95" alt="Logux logo"
-     src="https://cdn.rawgit.com/logux/logux/master/logo.svg">
+<img align="right" width="95" height="148" title="Logux logotype"
+     src="https://logux.io/logotype.svg">
 
 Shareable code style and best practice for [Logux] projects.
 
-[Logux]: https://github.com/logux/logux
+[Logux]: https://logux.io/
 
 <a href="https://evilmartians.com/?utm_source=logux-docs">
   <img src="https://evilmartians.com/badges/sponsored-by-evil-martians.svg"
