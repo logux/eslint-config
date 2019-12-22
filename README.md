@@ -1,7 +1,7 @@
 # Logux ESLint Config
 
 <img align="right" width="95" height="148" title="Logux logotype"
-     src="https://logux.io/logotype.svg">
+     src="https://logux.io/branding/logotype.svg">
 
 Shareable code style and best practice for [Logux] projects.
 
