@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 35.0.3
+* Update `eslint-plugin-node`.
+
 ## 35.0.2
 * Update `eslint-plugin-unicorn`.
 
