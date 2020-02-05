@@ -11,7 +11,9 @@ module.exports = {
     'jest',
     'security',
     'node',
-    'unicorn'
+    'unicorn',
+    'prefer-let',
+    'node'
   ],
   rules: {
     'standard/no-callback-literal': 'off',
@@ -25,9 +27,22 @@ module.exports = {
     'security/detect-unsafe-regex': 'error',
     'security/detect-new-buffer': 'error',
 
+    'node/no-unsupported-features/node-builtins': ['error', {
+      ignores: ['worker_threads']
+    }],
+    'node/no-unsupported-features/es-builtins': 'error',
+    'node/no-unsupported-features/es-syntax': ['error', {
+      ignores: ['modules', 'dynamicImport']
+    }],
     'node/no-unpublished-require': 'error',
     'node/no-extraneous-require': 'error',
     'node/no-missing-require': 'error',
+
+    'unicorn/prefer-starts-ends-with': 'error',
+    'unicorn/prefer-includes': 'error',
+    'unicorn/no-for-loop': 'error',
+
+    'prefer-let/prefer-let': 'error',
 
     'unicorn/custom-error-definition': 'error',
     'unicorn/no-unused-properties': 'error',
@@ -44,15 +59,24 @@ module.exports = {
     }],
 
     'nonblock-statement-body-position': 'error',
+    'prefer-exponentiation-operator': 'error',
     'no-misleading-character-class': 'error',
     'computed-property-spacing': ['error', 'never'],
+    'template-curly-spacing': ['error', 'always'],
     'array-bracket-spacing': ['error', 'never'],
+    'prefer-arrow-callback': 'error',
+    'no-dupe-class-members': 'error',
+    'no-this-before-super': 'error',
     'func-name-matching': 'error',
+    'prefer-rest-params': 'error',
     'no-useless-return': 'error',
     'consistent-return': 'error',
     'multiline-ternary': ['error', 'never'],
     'no-nested-ternary': 'error',
+    'constructor-super': 'error',
     'block-scoped-var': 'error',
+    'object-shorthand': 'error',
+    'no-setter-return': 'error',
     'no-invalid-this': 'error',
     'no-dupe-else-if': 'error',
     'global-require': 'error',
@@ -60,20 +84,28 @@ module.exports = {
       args: 'after-used',
       vars: 'all'
     }],
+    'require-yield': 'error',
+    'arrow-spacing': 'error',
     'no-new-symbol': 'error',
     'getter-return': 'error',
     'for-direction': 'error',
+    'arrow-parens': ['error', 'as-needed'],
     'no-lonely-if': 'error',
     'prefer-const': 'off',
     'quote-props': ['error', 'consistent-as-needed'],
     'func-style': ['error', 'declaration'],
     'no-shadow': 'error',
     'max-len': ['error', 80],
+    'no-var': 'error',
     'no-new': 'off'
+  },
+  parserOptions: {
+    sourceType: 'module'
   },
   env: {
     browser: true,
-    node: true
+    node: true,
+    es6: true
   },
   overrides: [
     {

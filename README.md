@@ -15,7 +15,7 @@ Shareable code style and best practice for [Logux] projects.
 ## Install
 
 ```sh
-yarn add --dev @logux/eslint-config eslint-config-standard eslint-plugin-promise eslint-plugin-jest eslint-plugin-node eslint-plugin-es5 eslint-plugin-standard eslint-plugin-security eslint-plugin-import eslint-plugin-prefer-let eslint-plugin-unicorn eslint
+yarn add --dev @logux/eslint-config eslint-config-standard eslint-plugin-promise eslint-plugin-jest eslint-plugin-node eslint-plugin-standard eslint-plugin-security eslint-plugin-import eslint-plugin-prefer-let eslint-plugin-unicorn eslint
 ```
 
 
@@ -23,18 +23,8 @@ yarn add --dev @logux/eslint-config eslint-config-standard eslint-plugin-promise
 
 Add this config to `package.json` or other ESLint configs.
 
-Browser and universal project:
-
 ```js
   "eslintConfig": {
-    "extends": "@logux/eslint-config/browser"
-  }
-```
-
-Server-only project:
-
-```js
-  "eslintConfig": {
-    "extends": "@logux/eslint-config/node"
+    "extends": "@logux/eslint-config"
   }
 ```
