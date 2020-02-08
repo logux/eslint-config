@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 36.0
+* Remove separated `browser` and `node` configs.
+
 ## 35.0.4
 * Update `eslint-plugin-unicorn`.
 
