@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 36.1
+* Remove `func-style` rule.
+
 ## 36.0
 * Remove separated `browser` and `node` configs.
 
