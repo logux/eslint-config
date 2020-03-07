@@ -93,7 +93,6 @@ module.exports = {
     'no-lonely-if': 'error',
     'prefer-const': 'off',
     'quote-props': ['error', 'consistent-as-needed'],
-    'func-style': ['error', 'declaration'],
     'no-shadow': 'error',
     'max-len': ['error', 80],
     'no-var': 'error',
