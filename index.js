@@ -48,7 +48,7 @@ module.exports = {
     'unicorn/no-unused-properties': 'error',
     'unicorn/no-array-instanceof': 'error',
     'unicorn/prefer-event-key': 'error',
-    'unicorn/regex-shorthand': 'error',
+    'unicorn/better-regex': 'error',
 
     'import/order': ['error', {
       'groups': [
