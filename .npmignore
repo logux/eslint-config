@@ -5,4 +5,4 @@ yarn.lock
 .editorconfig
 .travis.yml
 
-check-peer
+check-peer.js
