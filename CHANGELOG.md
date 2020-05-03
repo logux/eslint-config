@@ -1,6 +1,10 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 36.1.3
+* Update `eslint-plugin-unicorn`.
+* Update `globals`.
+
 ## 36.1.2
 * Update `eslint-plugin-unicorn`.
 
