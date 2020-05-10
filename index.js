@@ -108,7 +108,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['test/*', 'test/**/*', '*.test.js'],
+      files: ['test/*', 'test/**/*', '*.test.js', '*.test.ts'],
       rules: {
         'node/no-unpublished-require': 'off',
         'node/no-missing-require': ['error', {
@@ -118,7 +118,7 @@ module.exports = {
       globals: jest
     },
     {
-      files: ['*.test.js'],
+      files: ['*.test.js', '*.test.ts'],
       extends: [
         'plugin:jest/recommended',
         'plugin:jest/style'
