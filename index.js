@@ -125,6 +125,7 @@ module.exports = {
       ],
       rules: {
         'jest/require-to-throw-message': 'error',
+        'jest/no-deprecated-functions': 'error',
         'jest/valid-expect-in-promise': 'off',
         'jest/prefer-hooks-on-top': 'error',
         'jest/no-duplicate-hooks': 'error',
