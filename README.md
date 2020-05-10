@@ -14,17 +14,33 @@ Shareable code style and best practice for [Logux] projects.
 
 ## Install
 
+Pure JavaScript:
+
 ```sh
 yarn add --dev @logux/eslint-config eslint-config-standard eslint-plugin-promise eslint-plugin-jest eslint-plugin-node eslint-plugin-standard eslint-plugin-security eslint-plugin-import eslint-plugin-prefer-let eslint-plugin-unicorn eslint
+```
+
+TypeScript:
+
+```sh
+yarn add --dev @logux/eslint-config @typescript-eslint/eslint-plugin @typescript-eslint/parser typescript eslint-config-standard eslint-plugin-promise eslint-plugin-jest eslint-plugin-node eslint-plugin-standard eslint-plugin-security eslint-plugin-import eslint-plugin-prefer-let eslint-plugin-unicorn eslint
 ```
 
 
 ## Usage
 
-Add this config to `package.json` or other ESLint configs.
+For JavaScript add config to `package.json` or other ESLint configs.
 
 ```js
   "eslintConfig": {
     "extends": "@logux/eslint-config"
+  }
+```
+
+For TypeScript:
+
+```js
+  "eslintConfig": {
+    "extends": "@logux/eslint-config/ts"
   }
 ```

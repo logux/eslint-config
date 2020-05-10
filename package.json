@@ -33,6 +33,8 @@
   },
   "devDependencies": {
     "@logux/sharec-config": "^0.6.4",
+    "@typescript-eslint/eslint-plugin": "^2.31.0",
+    "@typescript-eslint/parser": "^2.31.0",
     "clean-publish": "^1.1.7",
     "eslint": "^7.0.0",
     "eslint-config-standard": "^14.1.1",
@@ -46,6 +48,7 @@
     "eslint-plugin-unicorn": "^19.0.1",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.2",
+    "typescript": "^3.8.3",
     "yaspeller": "^7.0.0"
   },
   "husky": {
@@ -59,7 +62,7 @@
     "package.json": "./check-peer.js"
   },
   "eslintConfig": {
-    "extends": "./"
+    "extends": "./ts"
   },
   "yaspeller": {
     "lang": "en",

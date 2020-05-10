@@ -6,7 +6,9 @@ for (let i in globals.jest) {
 }
 
 module.exports = {
-  extends: 'standard',
+  extends: [
+    'standard'
+  ],
   plugins: [
     'jest',
     'security',
@@ -39,17 +41,16 @@ module.exports = {
     'node/no-missing-require': 'error',
     'node/global-require': 'error',
 
-    'unicorn/prefer-starts-ends-with': 'error',
-    'unicorn/prefer-includes': 'error',
-    'unicorn/no-for-loop': 'error',
-
     'prefer-let/prefer-let': 'error',
 
+    'unicorn/prefer-starts-ends-with': 'error',
     'unicorn/custom-error-definition': 'error',
     'unicorn/no-unused-properties': 'error',
     'unicorn/no-array-instanceof': 'error',
     'unicorn/prefer-event-key': 'error',
+    'unicorn/prefer-includes': 'error',
     'unicorn/better-regex': 'error',
+    'unicorn/no-for-loop': 'error',
 
     'import/order': ['error', {
       'groups': [
@@ -66,7 +67,6 @@ module.exports = {
     'template-curly-spacing': ['error', 'always'],
     'array-bracket-spacing': ['error', 'never'],
     'prefer-arrow-callback': 'error',
-    'no-dupe-class-members': 'error',
     'no-this-before-super': 'error',
     'func-name-matching': 'error',
     'prefer-rest-params': 'error',
@@ -114,8 +114,7 @@ module.exports = {
         'node/no-missing-require': ['error', {
           allowModules: ['worker_threads']
         }]
-      },
-      globals: jest
+      }
     },
     {
       files: ['*.test.js', '*.test.ts'],
