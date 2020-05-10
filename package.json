@@ -14,7 +14,7 @@
   "license": "MIT",
   "repository": "logux/eslint-config",
   "engines": {
-    "node": ">=8.3.0"
+    "node": ">=10.0.0"
   },
   "dependencies": {
     "globals": "^13.0.0"
