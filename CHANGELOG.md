@@ -1,6 +1,11 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 37.0
+* Use ESLint 7.
+* Add `jest/no-deprecated-functions`.
+* Add `@logux/eslint-config/ts` config with TypeScript support.
+
 ## 36.1.3
 * Update `eslint-plugin-unicorn`.
 * Update `globals`.
