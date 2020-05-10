@@ -37,6 +37,7 @@ module.exports = {
     'node/no-unpublished-require': 'error',
     'node/no-extraneous-require': 'error',
     'node/no-missing-require': 'error',
+    'node/global-require': 'error',
 
     'unicorn/prefer-starts-ends-with': 'error',
     'unicorn/prefer-includes': 'error',
@@ -79,7 +80,6 @@ module.exports = {
     'no-setter-return': 'error',
     'no-invalid-this': 'error',
     'no-dupe-else-if': 'error',
-    'global-require': 'error',
     'no-unused-vars': ['error', {
       args: 'after-used',
       vars: 'all'
@@ -138,7 +138,7 @@ module.exports = {
         'jest/valid-title': 'error',
         'jest/prefer-todo': 'error',
 
-        'global-require': 'off'
+        'node/global-require': 'off'
       },
       globals: jest
     }
