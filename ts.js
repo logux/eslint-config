@@ -36,7 +36,6 @@ module.exports = {
         '@typescript-eslint/no-useless-constructor': 'error',
         '@typescript-eslint/prefer-optional-chain': 'error',
         '@typescript-eslint/no-dupe-class-members': 'error',
-        '@typescript-eslint/no-invalid-void-type': 'error',
         '@typescript-eslint/no-use-before-define': ['error', {
           functions: false,
           classes: false,
