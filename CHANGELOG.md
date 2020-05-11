@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 37.1.1
+* Fix `@typescript-eslint` ESLint overrides.
+
 ## 37.1
 * Remove `@typescript-eslint/no-invalid-void-type` rule.
 * Fix `singleline` option for `@typescript-eslint/member-delimiter-style`.

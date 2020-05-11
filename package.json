@@ -1,6 +1,6 @@
 {
   "name": "@logux/eslint-config",
-  "version": "37.0.2",
+  "version": "37.1.1",
   "description": "An ESLint shareable config for Logux",
   "keywords": [
     "logux",
