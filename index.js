@@ -1,25 +1,22 @@
 let globals = require('globals')
 
-let jest = { }
+let jest = {}
 for (let i in globals.jest) {
   if (i !== 'test' && i !== 'xtest') jest[i] = globals.jest[i]
 }
 
 module.exports = {
-  extends: [
-    'standard'
-  ],
   plugins: [
     'jest',
     'security',
     'node',
     'unicorn',
     'prefer-let',
-    'node'
+    'node',
+    'prettierx'
   ],
+  extends: ['standard'],
   rules: {
-    'standard/no-callback-literal': 'off',
-
     'security/detect-possible-timing-attacks': 'error',
     'security/detect-eval-with-expression': 'error',
     'security/detect-non-literal-require': 'error',
@@ -29,13 +26,19 @@ module.exports = {
     'security/detect-unsafe-regex': 'error',
     'security/detect-new-buffer': 'error',
 
-    'node/no-unsupported-features/node-builtins': ['error', {
-      ignores: ['worker_threads']
-    }],
+    'node/no-unsupported-features/node-builtins': [
+      'error',
+      {
+        ignores: ['worker_threads']
+      }
+    ],
     'node/no-unsupported-features/es-builtins': 'error',
-    'node/no-unsupported-features/es-syntax': ['error', {
-      ignores: ['modules', 'dynamicImport']
-    }],
+    'node/no-unsupported-features/es-syntax': [
+      'error',
+      {
+        ignores: ['modules', 'dynamicImport']
+      }
+    ],
     'node/no-unpublished-require': 'error',
     'node/no-extraneous-require': 'error',
     'node/no-missing-require': 'error',
@@ -52,20 +55,30 @@ module.exports = {
     'unicorn/better-regex': 'error',
     'unicorn/no-for-loop': 'error',
 
-    'import/order': ['error', {
-      'groups': [
-        ['builtin', 'external'],
-        ['internal', 'parent', 'sibling', 'index']
-      ],
-      'newlines-between': 'always'
-    }],
+    'import/order': [
+      'error',
+      {
+        'groups': [
+          ['builtin', 'external'],
+          ['internal', 'parent', 'sibling', 'index']
+        ],
+        'newlines-between': 'always'
+      }
+    ],
+
+    'prettierx/options': [
+      'error',
+      {
+        semi: false,
+        singleQuote: true,
+        quoteProps: 'consistent',
+        spaceBeforeFunctionParen: true
+      }
+    ],
 
     'nonblock-statement-body-position': 'error',
     'prefer-exponentiation-operator': 'error',
     'no-misleading-character-class': 'error',
-    'computed-property-spacing': ['error', 'never'],
-    'template-curly-spacing': ['error', 'always'],
-    'array-bracket-spacing': ['error', 'never'],
     'prefer-arrow-callback': 'error',
     'no-this-before-super': 'error',
     'func-name-matching': 'error',
@@ -80,23 +93,47 @@ module.exports = {
     'no-setter-return': 'error',
     'no-invalid-this': 'error',
     'no-dupe-else-if': 'error',
-    'no-unused-vars': ['error', {
-      args: 'after-used',
-      vars: 'all'
-    }],
+    'no-unused-vars': [
+      'error',
+      {
+        args: 'after-used',
+        vars: 'all'
+      }
+    ],
     'require-yield': 'error',
-    'arrow-spacing': 'error',
     'no-new-symbol': 'error',
     'getter-return': 'error',
     'for-direction': 'error',
-    'arrow-parens': ['error', 'as-needed'],
     'no-lonely-if': 'error',
-    'prefer-const': 'off',
-    'quote-props': ['error', 'consistent-as-needed'],
     'no-shadow': 'error',
-    'max-len': ['error', 80],
     'no-var': 'error',
-    'no-new': 'off'
+
+    'standard/no-callback-literal': 'off',
+
+    'no-whitespace-before-property': 'off',
+    'space-before-function-paren': 'off',
+    'computed-property-spacing': 'off',
+    'no-mixed-spaces-and-tabs': 'off',
+    'array-bracket-spacing': 'off',
+    'space-before-blocks': 'off',
+    'no-trailing-spaces': 'off',
+    'space-infix-ops': 'off',
+    'space-in-parens': 'off',
+    'no-multi-spaces': 'off',
+    'keyword-spacing': 'off',
+    'no-extra-parens': 'off',
+    'space-unary-ops': 'off',
+    'spaced-comment': 'off',
+    'comma-spacing': 'off',
+    'arrow-spacing': 'off',
+    'prefer-const': 'off',
+    'brace-style': 'off',
+    'quote-props': 'off',
+    'max-len': 'off',
+    'no-new': 'off',
+    'quotes': 'off',
+    'indent': 'off',
+    'semi': 'off'
   },
   parserOptions: {
     sourceType: 'module'
@@ -111,21 +148,20 @@ module.exports = {
       files: ['test/*', 'test/**/*', '*.test.js', '*.test.ts'],
       rules: {
         'node/no-unpublished-require': 'off',
-        'node/no-missing-require': ['error', {
-          allowModules: ['worker_threads']
-        }]
+        'node/no-missing-require': [
+          'error',
+          {
+            allowModules: ['worker_threads']
+          }
+        ]
       }
     },
     {
       files: ['*.test.js', '*.test.ts'],
-      extends: [
-        'plugin:jest/recommended',
-        'plugin:jest/style'
-      ],
+      extends: ['plugin:jest/recommended', 'plugin:jest/style'],
       rules: {
         'jest/require-to-throw-message': 'error',
         'jest/no-deprecated-functions': 'error',
-        'jest/valid-expect-in-promise': 'off',
         'jest/prefer-hooks-on-top': 'error',
         'jest/no-duplicate-hooks': 'error',
         'jest/consistent-test-it': ['error', { fn: 'it' }],
@@ -133,9 +169,11 @@ module.exports = {
         'jest/no-truthy-falsy': 'error',
         'jest/lowercase-name': 'error',
         'jest/prefer-spy-on': 'error',
-        'jest/expect-expect': 'off',
         'jest/valid-title': 'error',
         'jest/prefer-todo': 'error',
+
+        'jest/valid-expect-in-promise': 'off',
+        'jest/expect-expect': 'off',
 
         'node/global-require': 'off'
       },

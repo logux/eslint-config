@@ -17,13 +17,13 @@ Shareable code style and best practice for [Logux] projects.
 Pure JavaScript:
 
 ```sh
-yarn add --dev @logux/eslint-config eslint-config-standard eslint-plugin-promise eslint-plugin-jest eslint-plugin-node eslint-plugin-standard eslint-plugin-security eslint-plugin-import eslint-plugin-prefer-let eslint-plugin-unicorn eslint
+yarn add --dev @logux/eslint-config eslint-config-standard eslint-plugin-promise eslint-plugin-jest eslint-plugin-node eslint-plugin-standard eslint-plugin-security eslint-plugin-import eslint-plugin-prefer-let eslint-plugin-prettierx eslint-plugin-unicorn eslint
 ```
 
 TypeScript:
 
 ```sh
-yarn add --dev @logux/eslint-config @typescript-eslint/eslint-plugin @typescript-eslint/parser typescript eslint-config-standard eslint-plugin-promise eslint-plugin-jest eslint-plugin-node eslint-plugin-standard eslint-plugin-security eslint-plugin-import eslint-plugin-prefer-let eslint-plugin-unicorn eslint
+yarn add --dev @logux/eslint-config @typescript-eslint/eslint-plugin @typescript-eslint/parser typescript eslint-config-standard eslint-plugin-promise eslint-plugin-jest eslint-plugin-node eslint-plugin-standard eslint-plugin-security eslint-plugin-import eslint-plugin-prefer-let eslint-plugin-prettierx eslint-plugin-unicorn eslint
 ```
 
 

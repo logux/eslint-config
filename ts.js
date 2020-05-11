@@ -7,10 +7,7 @@ module.exports = {
     tsconfigRootDir: process.cwd(),
     project: ['./tsconfig.json']
   },
-  plugins: [
-    ...base.plugins,
-    '@typescript-eslint'
-  ],
+  plugins: [...base.plugins, '@typescript-eslint'],
   overrides: [
     ...base.overrides,
     {
@@ -25,23 +22,29 @@ module.exports = {
         '@typescript-eslint/prefer-namespace-keyword': 'error',
         '@typescript-eslint/no-unnecessary-condition': 'error',
         '@typescript-eslint/type-annotation-spacing': 'error',
-        '@typescript-eslint/member-delimiter-style': ['error', {
-          multiline: {
-            delimiter: 'none'
-          },
-          singleline: {
-            delimiter: 'comma'
+        '@typescript-eslint/member-delimiter-style': [
+          'error',
+          {
+            multiline: {
+              delimiter: 'none'
+            },
+            singleline: {
+              delimiter: 'comma'
+            }
           }
-        }],
+        ],
         '@typescript-eslint/restrict-plus-operands': 'error',
         '@typescript-eslint/no-useless-constructor': 'error',
         '@typescript-eslint/prefer-optional-chain': 'error',
         '@typescript-eslint/no-dupe-class-members': 'error',
-        '@typescript-eslint/no-use-before-define': ['error', {
-          functions: false,
-          classes: false,
-          variables: false
-        }],
+        '@typescript-eslint/no-use-before-define': [
+          'error',
+          {
+            functions: false,
+            classes: false,
+            variables: false
+          }
+        ],
         '@typescript-eslint/no-empty-interface': 'error',
         '@typescript-eslint/unified-signatures': 'error',
         '@typescript-eslint/func-call-spacing': ['error', 'never'],
@@ -49,48 +52,22 @@ module.exports = {
         '@typescript-eslint/no-for-in-array': 'error',
         '@typescript-eslint/no-var-requires': 'error',
         '@typescript-eslint/no-explicit-any': 'error',
-        '@typescript-eslint/no-extra-parens': ['error', 'functions'],
         '@typescript-eslint/await-thenable': 'error',
-        '@typescript-eslint/comma-spacing': ['error', {
-          before: false,
-          after: true
-        }],
-        '@typescript-eslint/dot-notation': ['error', {
-          allowKeywords: true
-        }],
-        '@typescript-eslint/brace-style': ['error', '1tbs', {
-          allowSingleLine: true
-        }],
-        '@typescript-eslint/keyword-spacing': ['error', {
-          before: true,
-          after: true
-        }],
-        '@typescript-eslint/no-unused-expressions': ['error', {
-          allowShortCircuit: true,
-          allowTernary: true,
-          allowTaggedTemplates: true
-        }],
+        '@typescript-eslint/dot-notation': [
+          'error',
+          {
+            allowKeywords: true
+          }
+        ],
+        '@typescript-eslint/no-unused-expressions': [
+          'error',
+          {
+            allowShortCircuit: true,
+            allowTernary: true,
+            allowTaggedTemplates: true
+          }
+        ],
         '@typescript-eslint/array-type': 'error',
-        '@typescript-eslint/quotes': ['error', 'single', {
-          avoidEscape: true,
-          allowTemplateLiterals: false
-        }],
-        '@typescript-eslint/indent': ['error', 2, {
-          SwitchCase: 1,
-          VariableDeclarator: 1,
-          outerIIFEBody: 1,
-          MemberExpression: 1,
-          FunctionDeclaration: { parameters: 1, body: 1 },
-          FunctionExpression: { parameters: 1, body: 1 },
-          CallExpression: { arguments: 1 },
-          ArrayExpression: 1,
-          ObjectExpression: 1,
-          ImportDeclaration: 1,
-          flatTernaryExpressions: false,
-          ignoreComments: false,
-          ignoredNodes: ['TemplateLiteral *']
-        }],
-        '@typescript-eslint/semi': ['error', 'never'],
 
         'no-useless-constructor': 'off',
         'no-unused-expressions': 'off',
@@ -98,15 +75,8 @@ module.exports = {
         'no-use-before-define': 'off',
         'func-callspacing': 'off',
         'no-invalid-this': 'off',
-        'no-extra-parens': 'off',
-        'keyword-spacing': 'off',
         'no-unused-vars': 'off',
-        'comma-spacing': 'off',
-        'dot-notation': 'off',
-        'brace-style': 'off',
-        'quotes': 'off',
-        'indent': 'off',
-        'semi': 'off'
+        'dot-notation': 'off'
       }
     }
   ]
