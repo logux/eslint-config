@@ -30,6 +30,9 @@ module.exports = {
         '@typescript-eslint/member-delimiter-style': ['error', {
           multiline: {
             delimiter: 'none'
+          },
+          singleline: {
+            delimiter: 'comma'
           }
         }],
         '@typescript-eslint/restrict-plus-operands': 'error',
