@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 37.0.1
+* Fix TypeScript parser options.
+
 ## 37.0
 * Use ESLint 7.
 * Add `jest/no-deprecated-functions`.
