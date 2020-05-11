@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 38.0
+* Add `prettierx` for auto-formatting.
+
 ## 37.2
 * Do not use extends `@typescript-eslint` recommended configs.
 
