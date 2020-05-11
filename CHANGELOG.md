@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 37.2
+* Do not use extends `@typescript-eslint` recommended configs.
+
 ## 37.1.1
 * Fix `@typescript-eslint` ESLint overrides.
 
