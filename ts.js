@@ -3,6 +3,10 @@ let base = require('./')
 module.exports = {
   ...base,
   parser: '@typescript-eslint/parser',
+  parserOptions: {
+    tsconfigRootDir: process.cwd(),
+    project: ['./tsconfig.json']
+  },
   plugins: [
     ...base.plugins,
     '@typescript-eslint'

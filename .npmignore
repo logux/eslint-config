@@ -1,8 +1,5 @@
-node_modules/
 yarn-error.log
 yarn.lock
 
-.editorconfig
-.travis.yml
-
 check-peer.js
+tsconfig.json
