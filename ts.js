@@ -15,17 +15,16 @@ module.exports = {
     ...base.overrides,
     {
       files: ['*.ts'],
-      extends: [
-        'plugin:@typescript-eslint/recommended',
-        'plugin:@typescript-eslint/recommended-requiring-type-checking'
-      ],
       rules: {
         '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error',
         '@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
         '@typescript-eslint/no-unnecessary-type-assertion': 'error',
+        '@typescript-eslint/adjacent-overload-signatures': 'error',
         '@typescript-eslint/space-before-function-paren': ['error', 'always'],
         '@typescript-eslint/strict-boolean-expressions': 'error',
+        '@typescript-eslint/prefer-namespace-keyword': 'error',
         '@typescript-eslint/no-unnecessary-condition': 'error',
+        '@typescript-eslint/type-annotation-spacing': 'error',
         '@typescript-eslint/member-delimiter-style': ['error', {
           multiline: {
             delimiter: 'none'
@@ -43,11 +42,15 @@ module.exports = {
           classes: false,
           variables: false
         }],
+        '@typescript-eslint/no-empty-interface': 'error',
         '@typescript-eslint/unified-signatures': 'error',
         '@typescript-eslint/func-call-spacing': ['error', 'never'],
         '@typescript-eslint/no-invalid-this': 'error',
-        '@typescript-eslint/no-extra-parens': ['error', 'functions'],
         '@typescript-eslint/no-for-in-array': 'error',
+        '@typescript-eslint/no-var-requires': 'error',
+        '@typescript-eslint/no-explicit-any': 'error',
+        '@typescript-eslint/no-extra-parens': ['error', 'functions'],
+        '@typescript-eslint/await-thenable': 'error',
         '@typescript-eslint/comma-spacing': ['error', {
           before: false,
           after: true
