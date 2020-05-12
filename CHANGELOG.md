@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 38.1
+* Allow to use `any` in tests.
+
 ## 38.0
 * Add `prettierx` for auto-formatting.
 
