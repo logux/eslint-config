@@ -23,7 +23,7 @@
     "eslint": "^7.0.0",
     "eslint-config-standard": "^14.1.1",
     "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-jest": "^23.10.0",
+    "eslint-plugin-jest": "^23.11.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prefer-let": "^1.0.1",
     "eslint-plugin-prettierx": "^0.11.0",
@@ -33,14 +33,14 @@
     "eslint-plugin-unicorn": "^19.0.1"
   },
   "devDependencies": {
-    "@logux/sharec-config": "^0.6.4",
-    "@typescript-eslint/eslint-plugin": "^2.31.0",
-    "@typescript-eslint/parser": "^2.31.0",
+    "@logux/sharec-config": "^0.7.2",
+    "@typescript-eslint/eslint-plugin": "^2.32.0",
+    "@typescript-eslint/parser": "^2.32.0",
     "clean-publish": "^1.1.7",
     "eslint": "^7.0.0",
     "eslint-config-standard": "^14.1.1",
     "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-jest": "^23.10.0",
+    "eslint-plugin-jest": "^23.11.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prefer-let": "^1.0.1",
     "eslint-plugin-prettierx": "^0.11.0",
@@ -50,7 +50,7 @@
     "eslint-plugin-unicorn": "^19.0.1",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.2",
-    "typescript": "^3.8.3",
+    "typescript": "^3.9.2",
     "yaspeller": "^7.0.0"
   },
   "husky": {
@@ -60,7 +60,7 @@
   },
   "lint-staged": {
     "*.md": "yaspeller",
-    "*.js": "eslint",
+    "*.js": "eslint --fix",
     "package.json": "./check-peer.js"
   },
   "eslintConfig": {
@@ -85,6 +85,6 @@
   },
   "sharec": {
     "config": "@logux/sharec-config",
-    "version": "0.6.4"
+    "version": "0.7.2"
   }
 }
