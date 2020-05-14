@@ -34,8 +34,8 @@
   },
   "devDependencies": {
     "@logux/sharec-config": "^0.7.2",
-    "@typescript-eslint/eslint-plugin": "^2.32.0",
-    "@typescript-eslint/parser": "^2.32.0",
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
     "clean-publish": "^1.1.7",
     "eslint": "^7.0.0",
     "eslint-config-standard": "^14.1.1",

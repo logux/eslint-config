@@ -17,6 +17,13 @@ module.exports = {
         '@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
         '@typescript-eslint/no-unnecessary-type-assertion': 'error',
         '@typescript-eslint/adjacent-overload-signatures': 'error',
+        '@typescript-eslint/lines-between-class-members': [
+          'error',
+          'always',
+          {
+            exceptAfterSingleLine: true
+          }
+        ],
         '@typescript-eslint/space-before-function-paren': ['error', 'always'],
         '@typescript-eslint/strict-boolean-expressions': 'error',
         '@typescript-eslint/prefer-namespace-keyword': 'error',
@@ -69,6 +76,7 @@ module.exports = {
         ],
         '@typescript-eslint/array-type': 'error',
 
+        'lines-between-class-members': 'off',
         'no-useless-constructor': 'off',
         'no-unused-expressions': 'off',
         'no-dupe-class-members': 'off',
