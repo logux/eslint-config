@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 39.0
+* Add `unicorn/prefer-optional-catch-binding` rule.
+
 ## 38.1
 * Allow to use `any` in tests.
 
