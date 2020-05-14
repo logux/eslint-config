@@ -46,6 +46,7 @@ module.exports = {
 
     'prefer-let/prefer-let': 'error',
 
+    'unicorn/prefer-optional-catch-binding': 'error',
     'unicorn/prefer-starts-ends-with': 'error',
     'unicorn/custom-error-definition': 'error',
     'unicorn/no-unused-properties': 'error',
