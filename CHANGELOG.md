@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 39.0.1
+* Fix `index.js`.
+
 ## 39.0
 * Add `unicorn/prefer-optional-catch-binding` rule.
 
