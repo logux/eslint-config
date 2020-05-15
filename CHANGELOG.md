@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 39.0.2
+* Update `eslint-plugin-prettierx`.
+
 ## 39.0.1
 * Fix `index.js`.
 
