@@ -146,7 +146,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['test/*', 'test/**/*', '*.test.js', '*.test.ts'],
+      files: ['test/*', 'test/**/*', '*.test.{js,jsx}', '*.test.{ts,tsx}'],
       rules: {
         'node/no-unpublished-require': 'off',
         'node/no-missing-require': [
@@ -158,7 +158,7 @@ module.exports = {
       }
     },
     {
-      files: ['*.test.js', '*.test.ts'],
+      files: ['*.test.{js,jsx}', '*.test.{ts,tsx}'],
       extends: ['plugin:jest/recommended', 'plugin:jest/style'],
       rules: {
         'jest/require-to-throw-message': 'error',

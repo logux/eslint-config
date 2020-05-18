@@ -11,7 +11,7 @@ module.exports = {
   overrides: [
     ...base.overrides,
     {
-      files: ['*.ts'],
+      files: ['*.{ts,tsx}'],
       rules: {
         '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error',
         '@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
@@ -88,7 +88,7 @@ module.exports = {
       }
     },
     {
-      files: '*.test.ts',
+      files: '*.test.{ts,tsx}',
       rules: {
         '@typescript-eslint/no-explicit-any': 'off'
       }
