@@ -163,11 +163,17 @@ module.exports = {
       rules: {
         'jest/require-to-throw-message': 'error',
         'jest/no-deprecated-functions': 'error',
+        'jest/no-restricted-matchers': [
+          'error',
+          {
+            toBeTruthy: 'Avoid `toBeTruthy`',
+            toBeFalsy: 'Avoid `toBeFalsy`'
+          }
+        ],
         'jest/prefer-hooks-on-top': 'error',
         'jest/no-duplicate-hooks': 'error',
         'jest/consistent-test-it': ['error', { fn: 'it' }],
         'jest/prefer-called-with': 'error',
-        'jest/no-truthy-falsy': 'error',
         'jest/lowercase-name': 'error',
         'jest/prefer-spy-on': 'error',
         'jest/valid-title': 'error',
