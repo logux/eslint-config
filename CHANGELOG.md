@@ -1,6 +1,10 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 39.0.3
+* Fix JSX support.
+* Replace deprecated Jest rule.
+
 ## 39.0.2
 * Update `eslint-plugin-prettierx`.
 

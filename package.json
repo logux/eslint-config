@@ -1,6 +1,6 @@
 {
   "name": "@logux/eslint-config",
-  "version": "39.0.2",
+  "version": "39.0.3",
   "description": "An ESLint shareable config for Logux",
   "keywords": [
     "logux",
@@ -80,7 +80,8 @@
       "ES2015",
       "js",
       "configs",
-      "ES6"
+      "ES6",
+      "JSX"
     ]
   },
   "sharec": {
