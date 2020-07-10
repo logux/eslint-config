@@ -76,6 +76,8 @@ module.exports = {
         ],
         '@typescript-eslint/array-type': 'error',
 
+        'import/extensions': ['error', 'always', { ignorePackages: true }],
+
         'lines-between-class-members': 'off',
         'no-useless-constructor': 'off',
         'no-unused-expressions': 'off',
