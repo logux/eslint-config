@@ -1,6 +1,10 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 40.0
+* Force file extensions for imports in TypeScript.
+* Use `;` as member delimiter.
+
 ## 39.0.3
 * Fix JSX support.
 * Replace deprecated Jest rule.
