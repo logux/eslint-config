@@ -72,6 +72,7 @@ module.exports = {
       {
         semi: false,
         singleQuote: true,
+        trailingComma: 'none',
         quoteProps: 'consistent',
         spaceBeforeFunctionParen: true
       }
