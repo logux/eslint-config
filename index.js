@@ -71,9 +71,10 @@ module.exports = {
       'error',
       {
         semi: false,
+        quoteProps: 'consistent',
+        arrowParens: 'avoid',
         singleQuote: true,
         trailingComma: 'none',
-        quoteProps: 'consistent',
         spaceBeforeFunctionParen: true
       }
     ],
