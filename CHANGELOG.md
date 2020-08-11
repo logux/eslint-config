@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 40.0.3
+* Fix arrow function parentheses.
+
 ## 40.0.2
 * Update `eslint-plugin-prettierx`.
 
