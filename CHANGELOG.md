@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 40.0.4
+* Update `eslint-plugin-jest`.
+
 ## 40.0.3
 * Fix arrow function parentheses.
 
