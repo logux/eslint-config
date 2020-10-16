@@ -1,6 +1,10 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 41.0
+* Add `no-loop-func` rule.
+* Update `eslint-plugin-unicorn`.
+
 ## 40.0.5
 * Update `eslint-plugin-unicorn`.
 
