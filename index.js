@@ -107,6 +107,7 @@ module.exports = {
     'no-new-symbol': 'error',
     'getter-return': 'error',
     'for-direction': 'error',
+    'no-loop-func': 'error',
     'no-lonely-if': 'error',
     'no-shadow': 'error',
     'no-var': 'error',
