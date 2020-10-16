@@ -20,36 +20,36 @@
     "globals": "^13.2.0"
   },
   "peerDependencies": {
-    "eslint": "^7.9.0",
+    "eslint": "^7.11.0",
     "eslint-config-standard": "^14.1.1",
-    "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-jest": "^24.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.1.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prefer-let": "^1.1.0",
     "eslint-plugin-prettierx": "^0.14.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-security": "^1.4.0",
     "eslint-plugin-standard": "^4.0.1",
-    "eslint-plugin-unicorn": "^22.0.0"
+    "eslint-plugin-unicorn": "^23.0.0"
   },
   "devDependencies": {
-    "@logux/sharec-config": "^0.7.4",
-    "@typescript-eslint/eslint-plugin": "^4.1.1",
-    "@typescript-eslint/parser": "^4.1.1",
+    "@logux/sharec-config": "^0.7.6",
+    "@typescript-eslint/eslint-plugin": "^4.4.1",
+    "@typescript-eslint/parser": "^4.4.1",
     "clean-publish": "^1.1.8",
-    "eslint": "^7.9.0",
+    "eslint": "^7.11.0",
     "eslint-config-standard": "^14.1.1",
-    "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-jest": "^24.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.1.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prefer-let": "^1.1.0",
     "eslint-plugin-prettierx": "^0.14.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-security": "^1.4.0",
     "eslint-plugin-standard": "^4.0.1",
-    "eslint-plugin-unicorn": "^22.0.0",
+    "eslint-plugin-unicorn": "^23.0.0",
     "husky": "^4.3.0",
-    "lint-staged": "^10.4.0",
+    "lint-staged": "^10.4.1",
     "typescript": "^4.0.3",
     "yaspeller": "^7.0.0"
   },
@@ -86,6 +86,6 @@
   },
   "sharec": {
     "config": "@logux/sharec-config",
-    "version": "0.7.4"
+    "version": "0.7.6"
   }
 }
