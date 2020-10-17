@@ -60,7 +60,7 @@ module.exports = {
         '@typescript-eslint/no-var-requires': 'error',
         '@typescript-eslint/no-explicit-any': 'error',
         '@typescript-eslint/await-thenable': 'error',
-        '@typescript-eslint/no-loop-error': 'error',
+        '@typescript-eslint/no-loop-func': 'error',
         '@typescript-eslint/dot-notation': [
           'error',
           {
