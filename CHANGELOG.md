@@ -1,9 +1,12 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 41.0.1
+* Fixed typo in TypeScript config.
+
 ## 41.0
-* Add `no-loop-func` rule.
-* Update `eslint-plugin-unicorn`.
+* Added `no-loop-func` rule.
+* Updated `eslint-plugin-unicorn`.
 
 ## 40.0.5
 * Update `eslint-plugin-unicorn`.
