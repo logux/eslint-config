@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 41.0.2
+* Update `eslint-config-standard`.
+
 ## 41.0.1
 * Fixed typo in TypeScript config.
 
