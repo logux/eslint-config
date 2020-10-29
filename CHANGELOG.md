@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 42.0
+* Many new rules in Standard 16.
+
 ## 41.0.2
 * Update `eslint-config-standard`.
 
