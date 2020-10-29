@@ -110,7 +110,6 @@ module.exports = {
     'no-loop-func': 'error',
     'no-lonely-if': 'error',
     'no-shadow': 'error',
-    'no-var': 'error',
 
     'standard/no-callback-literal': 'off',
 
