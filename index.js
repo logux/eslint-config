@@ -113,6 +113,8 @@ module.exports = {
 
     'standard/no-callback-literal': 'off',
 
+    'node/no-callback-literal': 'off',
+
     'no-whitespace-before-property': 'off',
     'space-before-function-paren': 'off',
     'computed-property-spacing': 'off',
