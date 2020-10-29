@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 42.1
+* Disable `node/no-callback-literal` rule.
+
 ## 42.0
 * Many new rules in Standard 16.
 
