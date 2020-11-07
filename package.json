@@ -20,7 +20,7 @@
     "globals": "^13.3.0"
   },
   "peerDependencies": {
-    "eslint": "^7.12.1",
+    "eslint": "^7.13.0",
     "eslint-config-standard": "^16.0.1",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jest": "^24.1.0",
@@ -34,11 +34,11 @@
   },
   "devDependencies": {
     "@logux/eslint-config": "^42.2.0",
-    "@logux/sharec-config": "^0.8.2",
+    "@logux/sharec-config": "^0.8.3",
     "@typescript-eslint/eslint-plugin": "^4.6.1",
     "@typescript-eslint/parser": "^4.6.1",
     "clean-publish": "^1.1.8",
-    "eslint": "^7.12.1",
+    "eslint": "^7.13.0",
     "eslint-config-standard": "^16.0.1",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jest": "^24.1.0",
@@ -87,6 +87,6 @@
   },
   "sharec": {
     "config": "@logux/sharec-config",
-    "version": "0.8.2"
+    "version": "0.8.3"
   }
 }
