@@ -110,8 +110,6 @@ module.exports = {
     'no-lonely-if': 'error',
     'no-shadow': 'error',
 
-    'standard/no-callback-literal': 'off',
-
     'node/no-callback-literal': 'off',
 
     'no-whitespace-before-property': 'off',
