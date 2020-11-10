@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 42.2.1
+* Removed `eslint-standard-plugin` from `peerDependencies`.
+
 ## 42.2
 * Removed `no-loop-func` rule.
 
