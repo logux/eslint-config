@@ -17,7 +17,7 @@ module.exports = {
         '@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
         '@typescript-eslint/no-unnecessary-type-assertion': 'error',
         '@typescript-eslint/adjacent-overload-signatures': 'error',
-        '@typescript-eslint/no-confusing-void-expression': 'error',
+        // '@typescript-eslint/no-confusing-void-expression': 'error',
         '@typescript-eslint/lines-between-class-members': [
           'error',
           'always',
