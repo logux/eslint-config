@@ -95,6 +95,12 @@ module.exports = {
       rules: {
         '@typescript-eslint/no-explicit-any': 'off'
       }
+    },
+    {
+      files: '*.d.ts',
+      rules: {
+        'unicorn/custom-error-definition': 'off'
+      }
     }
   ]
 }
