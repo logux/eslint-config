@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 42.2.2
+* Disabled `Disable unicorn/custom-error-definition` in `*.d.ts`.
+
 ## 42.2.1
 * Removed `eslint-standard-plugin` from `peerDependencies`.
 
