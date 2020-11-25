@@ -2,16 +2,16 @@ let base = require('./')
 
 module.exports = {
   ...base,
-  parser: '@typescript-eslint/parser',
-  parserOptions: {
-    tsconfigRootDir: process.cwd(),
-    project: ['./tsconfig.json']
-  },
   plugins: [...base.plugins, '@typescript-eslint'],
   overrides: [
     ...base.overrides,
     {
-      files: ['*.{ts,tsx}'],
+      files: ['*.ts', '*.tsx'],
+      parser: '@typescript-eslint/parser',
+      parserOptions: {
+        tsconfigRootDir: process.cwd(),
+        project: ['./tsconfig.json']
+      },
       rules: {
         '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error',
         '@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
