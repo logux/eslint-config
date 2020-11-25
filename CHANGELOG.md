@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 42.2.3
+* Removed TypeScript parser for JavaScript files.
+
 ## 42.2.2
 * Disabled `Disable unicorn/custom-error-definition` in `*.d.ts`.
 
