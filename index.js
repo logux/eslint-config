@@ -6,7 +6,15 @@ for (let i in globals.jest) {
 }
 
 module.exports = {
-  plugins: ['jest', 'security', 'node', 'unicorn', 'prefer-let', 'prettierx'],
+  plugins: [
+    'import',
+    'jest',
+    'security',
+    'node',
+    'unicorn',
+    'prefer-let',
+    'prettierx'
+  ],
   extends: ['standard'],
   rules: {
     'security/detect-possible-timing-attacks': 'error',
