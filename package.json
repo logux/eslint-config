@@ -32,10 +32,9 @@
     "eslint-plugin-unicorn": "^23.0.0"
   },
   "devDependencies": {
-    "@logux/eslint-config": "^42.2.2",
     "@logux/sharec-config": "^0.8.5",
-    "@typescript-eslint/eslint-plugin": "^4.8.2",
-    "@typescript-eslint/parser": "^4.8.2",
+    "@typescript-eslint/eslint-plugin": "^4.9.0",
+    "@typescript-eslint/parser": "^4.9.0",
     "clean-publish": "^1.1.8",
     "eslint": "^7.14.0",
     "eslint-config-standard": "^16.0.2",
