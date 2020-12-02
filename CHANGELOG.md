@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 42.3
+* Removed `@typescript-eslint/strict-boolean-expressions` rule.
+
 ## 42.2.3
 * Removed TypeScript parser for JavaScript files.
 
