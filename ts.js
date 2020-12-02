@@ -26,7 +26,6 @@ module.exports = {
           }
         ],
         '@typescript-eslint/space-before-function-paren': ['error', 'always'],
-        '@typescript-eslint/strict-boolean-expressions': 'error',
         '@typescript-eslint/prefer-namespace-keyword': 'error',
         '@typescript-eslint/no-unnecessary-condition': 'error',
         '@typescript-eslint/type-annotation-spacing': 'error',
