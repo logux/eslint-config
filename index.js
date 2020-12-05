@@ -82,6 +82,7 @@ module.exports = {
     'nonblock-statement-body-position': 'error',
     'prefer-exponentiation-operator': 'error',
     'no-misleading-character-class': 'error',
+    // 'no-unsafe-optional-chaining': 'error',
     'prefer-arrow-callback': 'error',
     'no-this-before-super': 'error',
     'func-name-matching': 'error',
