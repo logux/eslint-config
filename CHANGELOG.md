@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 43.1
+* Removed `unicorn/no-lonely-if` rule.
+
 ## 43.0
 * Added `@typescript-eslint/no-confusing-void-expression` rule.
 * Added `unicorn/empty-brace-spaces` rule.
