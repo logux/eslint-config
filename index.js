@@ -51,9 +51,12 @@ module.exports = {
     'unicorn/custom-error-definition': 'error',
     'unicorn/no-unused-properties': 'error',
     'unicorn/no-array-instanceof': 'error',
+    'unicorn/empty-brace-spaces': 'error',
     'unicorn/prefer-event-key': 'error',
+    'unicorn/prefer-date-now': 'error',
     'unicorn/prefer-includes': 'error',
     'unicorn/better-regex': 'error',
+    'unicorn/no-lonely-if': 'error',
     'unicorn/no-for-loop': 'error',
 
     'import/order': [
@@ -82,7 +85,7 @@ module.exports = {
     'nonblock-statement-body-position': 'error',
     'prefer-exponentiation-operator': 'error',
     'no-misleading-character-class': 'error',
-    // 'no-unsafe-optional-chaining': 'error',
+    'no-unsafe-optional-chaining': 'error',
     'prefer-arrow-callback': 'error',
     'no-this-before-super': 'error',
     'func-name-matching': 'error',
