@@ -56,7 +56,6 @@ module.exports = {
     'unicorn/prefer-date-now': 'error',
     'unicorn/prefer-includes': 'error',
     'unicorn/better-regex': 'error',
-    'unicorn/no-lonely-if': 'error',
     'unicorn/no-for-loop': 'error',
 
     'import/order': [
