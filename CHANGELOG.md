@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 43.1.1
+* Update `eslint-plugin-unicorn`.
+
 ## 43.1
 * Removed `unicorn/no-lonely-if` rule.
 
