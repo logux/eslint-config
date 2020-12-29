@@ -46,13 +46,13 @@ module.exports = {
 
     'prefer-let/prefer-let': 'error',
 
+    'unicorn/prefer-string-starts-ends-with': 'error',
     'unicorn/prefer-optional-catch-binding': 'error',
-    'unicorn/prefer-starts-ends-with': 'error',
+    'unicorn/prefer-keyboard-event-key': 'error',
     'unicorn/custom-error-definition': 'error',
     'unicorn/no-unused-properties': 'error',
-    'unicorn/no-array-instanceof': 'error',
+    'unicorn/no-instanceof-array': 'error',
     'unicorn/empty-brace-spaces': 'error',
-    'unicorn/prefer-event-key': 'error',
     'unicorn/prefer-date-now': 'error',
     'unicorn/prefer-includes': 'error',
     'unicorn/better-regex': 'error',
