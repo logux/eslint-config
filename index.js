@@ -46,6 +46,8 @@ module.exports = {
 
     'prefer-let/prefer-let': 'error',
 
+    // 'unicorn/prefer-default-parameters': 'error',
+    // 'unicorn/prefer-array-some': 'error',
     'unicorn/prefer-string-starts-ends-with': 'error',
     'unicorn/prefer-optional-catch-binding': 'error',
     'unicorn/prefer-keyboard-event-key': 'error',
