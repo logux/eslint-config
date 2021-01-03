@@ -1,8 +1,13 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 44.0
+* Added `@typescript-eslint/no-unused-vars` rule.
+* Added `unicorn/prefer-default-parameters` rule.
+* Added `unicorn/prefer-array-some` rule.
+
 ## 43.1.1
-* Update `eslint-plugin-unicorn`.
+* Updated `eslint-plugin-unicorn`.
 
 ## 43.1
 * Removed `unicorn/no-lonely-if` rule.
