@@ -61,6 +61,7 @@ module.exports = {
         '@typescript-eslint/no-explicit-any': 'error',
         '@typescript-eslint/await-thenable': 'error',
         '@typescript-eslint/no-unused-vars': 'error',
+        '@typescript-eslint/no-redeclare': 'error',
         '@typescript-eslint/dot-notation': [
           'error',
           {
@@ -87,6 +88,7 @@ module.exports = {
         'func-callspacing': 'off',
         'no-invalid-this': 'off',
         'no-unused-vars': 'off',
+        'no-redeclare': 'off',
         'dot-notation': 'off'
       }
     },
