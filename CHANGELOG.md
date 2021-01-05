@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 44.0.1
+* Fixed `no-redeclare` in TypeScript.
+
 ## 44.0
 * Added `@typescript-eslint/no-unused-vars` rule.
 * Added `unicorn/prefer-default-parameters` rule.
