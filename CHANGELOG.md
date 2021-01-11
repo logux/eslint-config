@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 44.0.2
+* Updated `eslint-plugin-unicorn`.
+
 ## 44.0.1
 * Fixed `no-redeclare` in TypeScript.
 
