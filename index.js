@@ -59,6 +59,7 @@ module.exports = {
     'unicorn/prefer-includes': 'error',
     'unicorn/better-regex': 'error',
     'unicorn/no-for-loop': 'error',
+    // 'unicorn/prefer-regexp-test': 'error',
 
     'import/order': [
       'error',
