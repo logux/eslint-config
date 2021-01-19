@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 44.0.3
+* Fixed `object-curly-spacing` in TypeScript.
+
 ## 44.0.2
 * Updated `eslint-plugin-unicorn`.
 
