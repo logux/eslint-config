@@ -52,7 +52,7 @@ module.exports = {
             variables: false
           }
         ],
-        '@typescript-eslint/object-curly-spacing': 'error',
+        '@typescript-eslint/object-curly-spacing': ['error', 'always'],
         '@typescript-eslint/no-empty-interface': 'error',
         '@typescript-eslint/unified-signatures': 'error',
         '@typescript-eslint/func-call-spacing': ['error', 'never'],
