@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 44.0.4
+* Fixed `@typescript-eslint/object-curly-spacing` option.
+
 ## 44.0.3
 * Fixed `object-curly-spacing` in TypeScript.
 
