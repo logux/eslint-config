@@ -52,6 +52,7 @@ module.exports = {
             variables: false
           }
         ],
+        '@typescript-eslint/object-curly-spacing': 'error',
         '@typescript-eslint/no-empty-interface': 'error',
         '@typescript-eslint/unified-signatures': 'error',
         '@typescript-eslint/func-call-spacing': ['error', 'never'],
@@ -85,6 +86,7 @@ module.exports = {
         'no-unused-expressions': 'off',
         'no-dupe-class-members': 'off',
         'no-use-before-define': 'off',
+        'object-curly-spacing': 'off',
         'func-callspacing': 'off',
         'no-invalid-this': 'off',
         'no-unused-vars': 'off',
