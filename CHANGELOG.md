@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 44.0.5
+* Updated `eslint-plugin-prettierx`.
+
 ## 44.0.4
 * Fixed `@typescript-eslint/object-curly-spacing` option.
 
