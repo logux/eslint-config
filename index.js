@@ -75,12 +75,12 @@ module.exports = {
     'prettierx/options': [
       'error',
       {
-        semi: false,
-        quoteProps: 'consistent',
+        spaceBeforeFunctionParen: true,
+        trailingComma: 'none',
         arrowParens: 'avoid',
         singleQuote: true,
-        trailingComma: 'none',
-        spaceBeforeFunctionParen: true
+        quoteProps: 'consistent',
+        semi: false
       }
     ],
 
