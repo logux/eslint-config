@@ -97,6 +97,7 @@ module.exports = {
     {
       files: '*.test.{ts,tsx}',
       rules: {
+        '@typescript-eslint/no-unused-expressions': 'off',
         '@typescript-eslint/no-explicit-any': 'off'
       }
     },

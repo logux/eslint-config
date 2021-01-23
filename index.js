@@ -191,7 +191,9 @@ module.exports = {
         'jest/valid-expect-in-promise': 'off',
         'jest/expect-expect': 'off',
 
-        'node/global-require': 'off'
+        'node/global-require': 'off',
+
+        'no-unused-expressions': 'off'
       },
       globals: jest
     }
