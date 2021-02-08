@@ -76,8 +76,6 @@ module.exports = {
       'error',
       {
         spaceBeforeFunctionParen: true,
-        // breakLongMethodChains: true,
-        breakLongMethodChains: false,
         trailingComma: 'none',
         arrowParens: 'avoid',
         singleQuote: true,
