@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 44.1.1
+* Updated `eslint-plugin-prettierx`.
+
 ## 44.1
 * Disabled `no-unused-expressions` rule in tests.
 
