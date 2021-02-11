@@ -79,7 +79,11 @@ module.exports = {
         ],
         '@typescript-eslint/array-type': 'error',
 
-        'import/extensions': ['error', 'always', { ignorePackages: true }],
+        'import/extensions': [
+          'error',
+          'ignorePackages',
+          { js: 'never', jsx: 'never', ts: 'never', tsx: 'never' }
+        ]
 
         'lines-between-class-members': 'off',
         'no-useless-constructor': 'off',
