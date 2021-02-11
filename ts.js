@@ -83,7 +83,7 @@ module.exports = {
           'error',
           'ignorePackages',
           { js: 'never', jsx: 'never', ts: 'never', tsx: 'never' }
-        ]
+        ],
 
         'lines-between-class-members': 'off',
         'no-useless-constructor': 'off',
