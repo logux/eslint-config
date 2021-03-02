@@ -91,7 +91,8 @@ module.exports = {
         'no-invalid-this': 'off',
         'no-unused-vars': 'off',
         'no-redeclare': 'off',
-        'dot-notation': 'off'
+        'dot-notation': 'off',
+        'no-undef': 'off'
       }
     },
     {
