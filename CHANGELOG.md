@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 44.2
+* Disable `no-undef` for TypeScript.
+
 ## 44.1.2
 * Updated `eslint-plugin-unicorn`.
 
