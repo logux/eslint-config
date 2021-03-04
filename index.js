@@ -61,6 +61,7 @@ module.exports = {
     'unicorn/no-for-loop': 'error',
     // 'unicorn/prefer-regexp-test': 'error',
 
+    // 'import/newline-after-import': 'error',
     'import/order': [
       'error',
       {
