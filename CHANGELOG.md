@@ -1,8 +1,15 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 45.0
+* Added `@typescript-eslint/explicit-function-return-type`.
+* Added `import/newline-after-import`.
+* Added `unicorn/prefer-regexp-test`.
+* Added `no-console`.
+* Use test rules for stories.
+
 ## 44.2
-* Disable `no-undef` for TypeScript.
+* Disabled `no-undef` for TypeScript.
 
 ## 44.1.2
 * Updated `eslint-plugin-unicorn`.
