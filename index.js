@@ -114,6 +114,7 @@ module.exports = {
     'getter-return': 'error',
     'for-direction': 'error',
     'no-lonely-if': 'error',
+    // 'no-console': 'error',
     'no-shadow': 'error',
 
     'node/no-callback-literal': 'off',
