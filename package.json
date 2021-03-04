@@ -46,16 +46,12 @@
     "eslint-plugin-promise": "^4.3.1",
     "eslint-plugin-security": "^1.4.0",
     "eslint-plugin-unicorn": "^28.0.2",
-    "husky": "^4.3.8",
     "lint-staged": "^10.5.4",
+    "simple-pre-commit": "^1.2.1",
     "typescript": "^4.2.2",
     "yaspeller": "^7.0.0"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
+  "simple-pre-commit": "npx lint-staged",
   "lint-staged": {
     "*.md": "yaspeller",
     "*.js": "eslint --fix",
