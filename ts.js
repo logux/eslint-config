@@ -99,6 +99,7 @@ module.exports = {
       }
     },
     {
+      // files: '*.{test.ts,test.tsx,stories.tsx}',
       files: '*.test.{ts,tsx}',
       rules: {
         '@typescript-eslint/no-unused-expressions': 'off',
