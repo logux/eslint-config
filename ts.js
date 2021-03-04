@@ -16,9 +16,12 @@ module.exports = {
         '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error',
         '@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
         '@typescript-eslint/no-unnecessary-type-assertion': 'error',
-        // "@typescript-eslint/explicit-function-return-type":  ["error", {
-        //   "allowExpressions": true
-        // }],
+        '@typescript-eslint/explicit-function-return-type': [
+          'error',
+          {
+            allowExpressions: true
+          }
+        ],
         '@typescript-eslint/adjacent-overload-signatures': 'error',
         '@typescript-eslint/no-confusing-void-expression': 'error',
         '@typescript-eslint/lines-between-class-members': [
@@ -99,8 +102,7 @@ module.exports = {
       }
     },
     {
-      // files: '*.{test.ts,test.tsx,stories.tsx}',
-      files: '*.test.{ts,tsx}',
+      files: '*.{test.ts,test.tsx,stories.tsx}',
       rules: {
         '@typescript-eslint/no-unused-expressions': 'off',
         '@typescript-eslint/no-explicit-any': 'off'

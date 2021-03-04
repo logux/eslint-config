@@ -54,14 +54,14 @@ module.exports = {
     'unicorn/no-unused-properties': 'error',
     'unicorn/no-instanceof-array': 'error',
     'unicorn/empty-brace-spaces': 'error',
+    'unicorn/prefer-regexp-test': 'error',
     'unicorn/prefer-array-some': 'error',
     'unicorn/prefer-date-now': 'error',
     'unicorn/prefer-includes': 'error',
     'unicorn/better-regex': 'error',
     'unicorn/no-for-loop': 'error',
-    // 'unicorn/prefer-regexp-test': 'error',
 
-    // 'import/newline-after-import': 'error',
+    'import/newline-after-import': 'error',
     'import/order': [
       'error',
       {
@@ -115,7 +115,7 @@ module.exports = {
     'getter-return': 'error',
     'for-direction': 'error',
     'no-lonely-if': 'error',
-    // 'no-console': 'error',
+    'no-console': 'error',
     'no-shadow': 'error',
 
     'node/no-callback-literal': 'off',
