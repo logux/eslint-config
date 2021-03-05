@@ -31,21 +31,8 @@ module.exports = {
             exceptAfterSingleLine: true
           }
         ],
-        '@typescript-eslint/space-before-function-paren': ['error', 'always'],
         '@typescript-eslint/prefer-namespace-keyword': 'error',
         '@typescript-eslint/no-unnecessary-condition': 'error',
-        '@typescript-eslint/type-annotation-spacing': 'error',
-        '@typescript-eslint/member-delimiter-style': [
-          'error',
-          {
-            multiline: {
-              delimiter: 'none'
-            },
-            singleline: {
-              delimiter: 'semi'
-            }
-          }
-        ],
         '@typescript-eslint/restrict-plus-operands': 'error',
         '@typescript-eslint/no-useless-constructor': 'error',
         '@typescript-eslint/prefer-optional-chain': 'error',
@@ -58,10 +45,8 @@ module.exports = {
             variables: false
           }
         ],
-        '@typescript-eslint/object-curly-spacing': ['error', 'always'],
         '@typescript-eslint/no-empty-interface': 'error',
         '@typescript-eslint/unified-signatures': 'error',
-        '@typescript-eslint/func-call-spacing': ['error', 'never'],
         '@typescript-eslint/no-invalid-this': 'error',
         '@typescript-eslint/no-for-in-array': 'error',
         '@typescript-eslint/no-var-requires': 'error',
