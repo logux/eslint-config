@@ -1,6 +1,10 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 45.1
+* Disabled `unicorn/prefer-regexp-test`.
+* Disabled `no-console` in type tests.
+
 ## 45.0
 * Added `@typescript-eslint/explicit-function-return-type`.
 * Added `import/newline-after-import`.
