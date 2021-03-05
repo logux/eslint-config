@@ -54,7 +54,6 @@ module.exports = {
     'unicorn/no-unused-properties': 'error',
     'unicorn/no-instanceof-array': 'error',
     'unicorn/empty-brace-spaces': 'error',
-    'unicorn/prefer-regexp-test': 'error',
     'unicorn/prefer-array-some': 'error',
     'unicorn/prefer-date-now': 'error',
     'unicorn/prefer-includes': 'error',
