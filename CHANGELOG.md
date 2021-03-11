@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 45.2
+* Removed `eslint-plugin-prettierx`.
+
 ## 45.1
 * Disabled `unicorn/prefer-regexp-test`.
 * Disabled `no-console` in type tests.
