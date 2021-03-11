@@ -45,11 +45,13 @@
     "eslint-plugin-security": "^1.4.0",
     "eslint-plugin-unicorn": "^28.0.2",
     "lint-staged": "^10.5.4",
-    "simple-pre-commit": "^1.2.1",
+    "simple-git-hooks": "^2.0.2",
     "typescript": "^4.2.3",
     "yaspeller": "^7.0.0"
   },
-  "simple-pre-commit": "npx lint-staged",
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
   "lint-staged": {
     "*.md": "yaspeller",
     "*.js": "eslint --fix",
