@@ -31,7 +31,7 @@
     "eslint-plugin-unicorn": "^30.0.0"
   },
   "devDependencies": {
-    "@logux/sharec-config": "^0.9.0",
+    "@logux/sharec-config": "^0.10.1",
     "@typescript-eslint/eslint-plugin": "^4.22.0",
     "@typescript-eslint/parser": "^4.22.0",
     "clean-publish": "^2.1.1",
@@ -92,6 +92,6 @@
   },
   "sharec": {
     "config": "@logux/sharec-config",
-    "version": "0.9.0"
+    "version": "0.10.1"
   }
 }
