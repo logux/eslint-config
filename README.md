@@ -44,3 +44,11 @@ For TypeScript:
     "extends": "@logux/eslint-config/ts"
   }
 ```
+
+For ESM-only projects:
+
+```js
+  "eslintConfig": {
+    "extends": "@logux/eslint-config/esm"
+  }
+```
