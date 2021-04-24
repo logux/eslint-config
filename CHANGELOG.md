@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 45.4
+* Disabled `unicorn/prefer-node-protocol`.
+
 ## 45.3
 * Added config for ESM-only projects.
 * Updated `eslint-plugin-unicorn`.
