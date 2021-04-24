@@ -5,7 +5,14 @@ module.exports = {
   plugins: [...base.plugins],
   rules: {
     ...base.rules,
-    'unicorn/prefer-module': 'error'
+    'unicorn/prefer-module': 'error',
+    'import/extensions': [
+      'error',
+      'always',
+      {
+        ignorePackages: true
+      }
+    ]
   },
   overrides: [
     ...base.overrides,
