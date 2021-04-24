@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 45.4.1
+* Fix `import/extensions` rule for ESM projects.
+
 ## 45.4
 * Disabled `unicorn/prefer-node-protocol`.
 
