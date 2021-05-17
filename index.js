@@ -6,14 +6,7 @@ for (let i in globals.jest) {
 }
 
 module.exports = {
-  plugins: [
-    'import',
-    'jest',
-    'security',
-    'node',
-    'unicorn',
-    'prefer-let'
-  ],
+  plugins: ['import', 'jest', 'security', 'node', 'unicorn', 'prefer-let'],
   extends: ['standard'],
   rules: {
     'security/detect-possible-timing-attacks': 'error',
@@ -63,7 +56,7 @@ module.exports = {
       'error',
       {
         'groups': [
-          ['builtin', 'external'],
+          ['type', 'builtin', 'external'],
           ['internal', 'parent', 'sibling', 'index']
         ],
         'newlines-between': 'always'
