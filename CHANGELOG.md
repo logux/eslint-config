@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 45.4.3
+* Updated `eslint-plugin-import`.
+
 ## 45.4.2
 * Updated `eslint-plugin-unicorn`.
 
