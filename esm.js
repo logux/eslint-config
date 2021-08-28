@@ -5,6 +5,7 @@ module.exports = {
   plugins: [...base.plugins],
   rules: {
     ...base.rules,
+    // 'unicorn/prefer-node-protocol': 'error',
     'unicorn/prefer-module': 'error',
     'import/extensions': [
       'error',
