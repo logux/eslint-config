@@ -20,35 +20,35 @@
     "globals": "^13.11.0"
   },
   "peerDependencies": {
-    "eslint": "^7.32.0",
+    "eslint": "^8.0.0",
     "eslint-config-standard": "^16.0.3",
-    "eslint-plugin-import": "^2.24.2",
-    "eslint-plugin-jest": "^24.4.0",
+    "eslint-plugin-import": "^2.25.1",
+    "eslint-plugin-jest": "^25.0.5",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prefer-let": "^1.1.0",
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-security": "^1.4.0",
-    "eslint-plugin-unicorn": "^36.0.0"
+    "eslint-plugin-unicorn": "^37.0.1"
   },
   "devDependencies": {
-    "@logux/sharec-config": "^0.11.0",
-    "@typescript-eslint/eslint-plugin": "^4.31.0",
-    "@typescript-eslint/parser": "^4.31.0",
-    "clean-publish": "^2.2.0",
-    "eslint": "^7.32.0",
+    "@logux/sharec-config": "^0.12.2",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "clean-publish": "^3.4.1",
+    "eslint": "^8.0.0",
     "eslint-config-standard": "^16.0.3",
-    "eslint-plugin-import": "^2.24.2",
-    "eslint-plugin-jest": "^24.4.0",
+    "eslint-plugin-import": "^2.25.1",
+    "eslint-plugin-jest": "^25.0.5",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prefer-let": "^1.1.0",
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-security": "^1.4.0",
-    "eslint-plugin-unicorn": "^36.0.0",
-    "lint-staged": "^11.1.2",
-    "prettier": "^2.4.0",
+    "eslint-plugin-unicorn": "^37.0.1",
+    "lint-staged": "^11.2.3",
+    "prettier": "^2.4.1",
     "simple-git-hooks": "^2.6.1",
-    "typescript": "^4.4.3",
-    "yaspeller": "^7.0.0"
+    "typescript": "^4.4.4",
+    "yaspeller": "^7.2.0"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
@@ -72,6 +72,9 @@
   "eslintConfig": {
     "extends": "./ts"
   },
+  "clean-publish": {
+    "cleanDocs": true
+  },
   "yaspeller": {
     "lang": "en",
     "ignoreCapitalization": true,
@@ -93,6 +96,6 @@
   },
   "sharec": {
     "config": "@logux/sharec-config",
-    "version": "0.11.0"
+    "version": "0.12.2"
   }
 }

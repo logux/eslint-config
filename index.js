@@ -183,7 +183,6 @@ module.exports = {
         'jest/no-duplicate-hooks': 'error',
         'jest/consistent-test-it': ['error', { fn: 'it' }],
         'jest/prefer-called-with': 'error',
-        'jest/lowercase-name': 'error',
         'jest/prefer-spy-on': 'error',
         'jest/valid-title': 'error',
         'jest/prefer-todo': 'error',
