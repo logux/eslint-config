@@ -1,8 +1,11 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## 45.4.9
+## 46.0
+* Added `jest/prefer-to-be` rule.
 * Updated ESLint.
+* Updated `eslint-plugin-jest`.
+* Updated `eslint-plugin-unicorn`.
 
 ## 45.4.8
 * Updated `eslint-plugin-unicorn`.
