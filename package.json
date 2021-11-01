@@ -25,7 +25,6 @@
     "eslint-plugin-promise": "^5.1.1"
   },
   "devDependencies": {
-    "@logux/sharec-config": "^0.13.1",
     "@typescript-eslint/eslint-plugin": "^5.2.0",
     "@typescript-eslint/parser": "^5.2.0",
     "clean-publish": "^3.4.2",
@@ -54,9 +53,5 @@
   },
   "clean-publish": {
     "cleanDocs": true
-  },
-  "sharec": {
-    "config": "@logux/sharec-config",
-    "version": "0.13.1"
   }
 }
