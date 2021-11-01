@@ -1,5 +1,5 @@
 module.exports = {
-  plugins: ['import', 'security', 'node', 'unicorn', 'prefer-let'],
+  plugins: ['import', 'security', 'node', 'prefer-let'],
   extends: ['standard'],
   rules: {
     'security/detect-possible-timing-attacks': 'error',
@@ -30,19 +30,6 @@ module.exports = {
     'node/global-require': 'error',
 
     'prefer-let/prefer-let': 'error',
-
-    'unicorn/prefer-string-starts-ends-with': 'error',
-    'unicorn/prefer-optional-catch-binding': 'error',
-    'unicorn/prefer-default-parameters': 'error',
-    'unicorn/prefer-keyboard-event-key': 'error',
-    'unicorn/custom-error-definition': 'error',
-    'unicorn/no-unused-properties': 'error',
-    'unicorn/no-instanceof-array': 'error',
-    'unicorn/prefer-array-some': 'error',
-    'unicorn/prefer-date-now': 'error',
-    'unicorn/prefer-includes': 'error',
-    'unicorn/better-regex': 'error',
-    'unicorn/no-for-loop': 'error',
 
     'import/newline-after-import': 'error',
     'import/order': [

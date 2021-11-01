@@ -5,8 +5,6 @@ module.exports = {
   plugins: [...base.plugins],
   rules: {
     ...base.rules,
-    // 'unicorn/prefer-node-protocol': 'error',
-    'unicorn/prefer-module': 'error',
     'import/extensions': [
       'error',
       'always',
@@ -14,14 +12,5 @@ module.exports = {
         ignorePackages: true
       }
     ]
-  },
-  overrides: [
-    ...base.overrides,
-    {
-      files: '*.cjs',
-      rules: {
-        'unicorn/prefer-module': 'off'
-      }
-    }
-  ]
+  }
 }

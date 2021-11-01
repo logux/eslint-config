@@ -102,12 +102,6 @@ module.exports = {
       rules: {
         'no-console': 'off'
       }
-    },
-    {
-      files: '*.d.ts',
-      rules: {
-        'unicorn/custom-error-definition': 'off'
-      }
     }
   ]
 }
