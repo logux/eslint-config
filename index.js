@@ -1,12 +1,5 @@
-let globals = require('globals')
-
-let jest = {}
-for (let i in globals.jest) {
-  if (i !== 'test' && i !== 'xtest') jest[i] = globals.jest[i]
-}
-
 module.exports = {
-  plugins: ['import', 'jest', 'security', 'node', 'unicorn', 'prefer-let'],
+  plugins: ['import', 'security', 'node', 'unicorn', 'prefer-let'],
   extends: ['standard'],
   rules: {
     'security/detect-possible-timing-attacks': 'error',
@@ -168,33 +161,10 @@ module.exports = {
     },
     {
       files: ['*.test.{js,jsx}', '*.test.{ts,tsx}'],
-      extends: ['plugin:jest/recommended', 'plugin:jest/style'],
       rules: {
-        'jest/require-to-throw-message': 'error',
-        'jest/no-deprecated-functions': 'error',
-        'jest/no-restricted-matchers': [
-          'error',
-          {
-            toBeTruthy: 'Avoid `toBeTruthy`',
-            toBeFalsy: 'Avoid `toBeFalsy`'
-          }
-        ],
-        'jest/prefer-hooks-on-top': 'error',
-        'jest/no-duplicate-hooks': 'error',
-        'jest/consistent-test-it': ['error', { fn: 'it' }],
-        'jest/prefer-called-with': 'error',
-        'jest/prefer-spy-on': 'error',
-        'jest/valid-title': 'error',
-        'jest/prefer-todo': 'error',
-
-        'jest/valid-expect-in-promise': 'off',
-        'jest/expect-expect': 'off',
-
         'node/global-require': 'off',
-
         'no-unused-expressions': 'off'
-      },
-      globals: jest
+      }
     }
   ]
 }
