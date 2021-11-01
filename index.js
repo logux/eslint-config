@@ -1,16 +1,7 @@
 module.exports = {
-  plugins: ['import', 'security', 'node', 'prefer-let'],
+  plugins: ['import', 'node', 'prefer-let'],
   extends: ['standard'],
   rules: {
-    'security/detect-possible-timing-attacks': 'error',
-    'security/detect-eval-with-expression': 'error',
-    'security/detect-non-literal-require': 'error',
-    'security/detect-non-literal-regexp': 'error',
-    'security/detect-pseudoRandomBytes': 'error',
-    'security/detect-buffer-noassert': 'error',
-    'security/detect-unsafe-regex': 'error',
-    'security/detect-new-buffer': 'error',
-
     'node/no-unsupported-features/node-builtins': [
       'error',
       {
