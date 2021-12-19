@@ -1,13 +1,16 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 46.1.1
+* Updated `eslint-plugin-promise`.
+
 ## 46.1
 * Removed `eslint-plugin-unicorn` plugin.
 * Removed `eslint-plugin-security` plugin.
 * Removed `eslint-plugin-jest` plugin.
 
 ## 46.0.1
-* Update `eslint-plugin-prefer-let`.
+* Updated `eslint-plugin-prefer-let`.
 
 ## 46.0
 * Added `jest/prefer-to-be` rule.
