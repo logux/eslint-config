@@ -58,6 +58,7 @@ module.exports = {
         '@typescript-eslint/await-thenable': 'error',
         '@typescript-eslint/no-unused-vars': 'error',
         '@typescript-eslint/no-redeclare': 'error',
+        '@typescript-eslint/no-shadow': 'error',
         '@typescript-eslint/dot-notation': [
           'error',
           {
@@ -87,6 +88,7 @@ module.exports = {
         'no-unused-vars': 'off',
         'no-redeclare': 'off',
         'dot-notation': 'off',
+        'no-shadow': 'off',
         'no-undef': 'off'
       }
     },
