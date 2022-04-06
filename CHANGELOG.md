@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 46.1.2
+* Fixed `no-shadow` for Type Script (by Yuri Mikhin).
+
 ## 46.1.1
 * Updated `eslint-plugin-promise`.
 
