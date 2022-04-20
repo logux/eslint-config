@@ -1,24 +1,24 @@
 module.exports = {
-  plugins: ['import', 'node', 'prefer-let'],
+  plugins: ['import', 'n', 'prefer-let'],
   extends: ['standard'],
   rules: {
-    'node/no-unsupported-features/node-builtins': [
+    'n/no-unsupported-features/node-builtins': [
       'error',
       {
         ignores: ['worker_threads']
       }
     ],
-    'node/no-unsupported-features/es-builtins': 'error',
-    'node/no-unsupported-features/es-syntax': [
+    'n/no-unsupported-features/es-builtins': 'error',
+    'n/no-unsupported-features/es-syntax': [
       'error',
       {
         ignores: ['modules', 'dynamicImport']
       }
     ],
-    'node/no-unpublished-require': 'error',
-    'node/no-extraneous-require': 'error',
-    'node/no-missing-require': 'error',
-    'node/global-require': 'error',
+    'n/no-unpublished-require': 'error',
+    'n/no-extraneous-require': 'error',
+    'n/no-missing-require': 'error',
+    'n/global-require': 'error',
 
     'prefer-let/prefer-let': 'error',
 
@@ -65,7 +65,7 @@ module.exports = {
     'no-console': 'error',
     'no-shadow': 'error',
 
-    'node/no-callback-literal': 'off',
+    'n/no-callback-literal': 'off',
 
     'no-whitespace-before-property': 'off',
     'space-before-function-paren': 'off',
@@ -128,8 +128,8 @@ module.exports = {
     {
       files: ['test/*', 'test/**/*', '*.test.{js,jsx}', '*.test.{ts,tsx}'],
       rules: {
-        'node/no-unpublished-require': 'off',
-        'node/no-missing-require': [
+        'n/no-unpublished-require': 'off',
+        'n/no-missing-require': [
           'error',
           {
             allowModules: ['worker_threads']
@@ -140,7 +140,7 @@ module.exports = {
     {
       files: ['*.test.{js,jsx}', '*.test.{ts,tsx}'],
       rules: {
-        'node/global-require': 'off',
+        'n/global-require': 'off',
         'no-unused-expressions': 'off'
       }
     }
