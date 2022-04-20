@@ -1,6 +1,10 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 47.0
+* Replaced `eslint-plugin-node` to `eslint-plugin-n`.
+* Moved to Standard 17.
+
 ## 46.1.2
 * Fixed `no-shadow` for Type Script (by Yuri Mikhin).
 
