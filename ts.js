@@ -24,10 +24,6 @@ module.exports = {
         ],
         '@typescript-eslint/adjacent-overload-signatures': 'error',
         '@typescript-eslint/no-confusing-void-expression': 'error',
-        // '@typescript-eslint/consistent-type-definitions': [
-        //   'error',
-        //   'interface'
-        // ],
         '@typescript-eslint/lines-between-class-members': [
           'error',
           'always',
@@ -96,7 +92,8 @@ module.exports = {
       files: '*.{test.ts,test.tsx,stories.tsx}',
       rules: {
         '@typescript-eslint/no-unused-expressions': 'off',
-        '@typescript-eslint/no-explicit-any': 'off'
+        '@typescript-eslint/no-explicit-any': 'off',
+        'n/no-unsupported-features/es-syntax': 'off'
       }
     },
     {
