@@ -89,10 +89,11 @@ module.exports = {
       }
     },
     {
-      files: '*.{test.ts,test.tsx,stories.tsx}',
+      files: ['*.{test.ts,test.tsx,stories.tsx}', 'types.ts'],
       rules: {
         '@typescript-eslint/no-unused-expressions': 'off',
         '@typescript-eslint/no-explicit-any': 'off',
+
         'n/no-unsupported-features/es-syntax': 'off'
       }
     },
