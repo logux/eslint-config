@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 47.1
+* Removed `n/no-unsupported-features/es-syntax` for tests on TypeScript.
+
 ## 47.0
 * Replaced `eslint-plugin-node` to `eslint-plugin-n`.
 * Moved to Standard 17.
