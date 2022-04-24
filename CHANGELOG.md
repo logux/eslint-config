@@ -1,6 +1,11 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 47.2
+* Removed unused expression rule for types tests.
+* Removed `any` rule for types tests.
+* Removed ES syntax rules for types tests.
+
 ## 47.1
 * Removed `n/no-unsupported-features/es-syntax` for tests on TypeScript.
 
