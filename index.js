@@ -38,6 +38,7 @@ module.exports = {
 
     'prefer-exponentiation-operator': 'error',
     'no-misleading-character-class': 'error',
+    'no-new-native-nonconstructor': 'error',
     'no-unsafe-optional-chaining': 'error',
     'prefer-arrow-callback': 'error',
     'no-this-before-super': 'error',
@@ -60,7 +61,6 @@ module.exports = {
       }
     ],
     'require-yield': 'error',
-    'no-new-symbol': 'error',
     'getter-return': 'error',
     'for-direction': 'error',
     'no-lonely-if': 'error',
