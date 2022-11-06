@@ -1,6 +1,10 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 48.0
+* Added `promise/no-multiple-resolved` rule.
+* Replaced `no-new-symbol` to `no-new-native-nonconstructor`.
+
 ## 47.2
 * Removed unused expression rule for types tests.
 * Removed `any` rule for types tests.
