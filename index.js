@@ -1,7 +1,9 @@
 module.exports = {
-  plugins: ['import', 'n', 'prefer-let'],
+  plugins: ['import', 'n', 'prefer-let', 'promise'],
   extends: ['standard'],
   rules: {
+    'promise/no-multiple-resolved': 'error',
+
     'n/no-unsupported-features/node-builtins': [
       'error',
       {
