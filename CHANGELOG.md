@@ -1,6 +1,11 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 49.0
+* Moved type imports to a separated group.
+* Added `@typescript-eslint/no-mixed-enums` rule.
+* Added `@typescript-eslint/no-import-type-side-effects` rule.
+
 ## 48.0
 * Added `promise/no-multiple-resolved` rule.
 * Replaced `no-new-symbol` to `no-new-native-nonconstructor`.
