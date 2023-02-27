@@ -29,7 +29,8 @@ module.exports = {
       'error',
       {
         'groups': [
-          ['type', 'builtin', 'external'],
+          ['type'],
+          ['builtin', 'external'],
           ['internal', 'parent', 'sibling', 'index']
         ],
         'newlines-between': 'always'
