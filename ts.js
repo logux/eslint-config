@@ -24,6 +24,7 @@ module.exports = {
         ],
         '@typescript-eslint/adjacent-overload-signatures': 'error',
         '@typescript-eslint/no-confusing-void-expression': 'error',
+        '@typescript-eslint/no-import-type-side-effects': 'error',
         '@typescript-eslint/lines-between-class-members': [
           'error',
           'always',
@@ -51,6 +52,7 @@ module.exports = {
         '@typescript-eslint/no-for-in-array': 'error',
         '@typescript-eslint/no-var-requires': 'error',
         '@typescript-eslint/no-explicit-any': 'error',
+        '@typescript-eslint/no-mixed-enums': 'error',
         '@typescript-eslint/await-thenable': 'error',
         '@typescript-eslint/no-unused-vars': 'error',
         '@typescript-eslint/no-redeclare': 'error',
