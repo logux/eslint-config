@@ -1,6 +1,10 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 50.0
+* Add rule to enforce all type imports as `import type`.
+* Removed Node.js 14 support.
+
 ## 49.0
 * Moved type imports to a separated group.
 * Added `@typescript-eslint/no-mixed-enums` rule.
