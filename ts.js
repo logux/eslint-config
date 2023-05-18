@@ -34,6 +34,7 @@ module.exports = {
         ],
         '@typescript-eslint/prefer-namespace-keyword': 'error',
         '@typescript-eslint/no-unnecessary-condition': 'error',
+        '@typescript-eslint/consistent-type-imports': 'error',
         '@typescript-eslint/restrict-plus-operands': 'error',
         '@typescript-eslint/no-useless-constructor': 'error',
         '@typescript-eslint/prefer-optional-chain': 'error',
