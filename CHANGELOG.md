@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 51.0
+* Add `eslint-plugin-perfectionist` with alphabetical order.
+
 ## 50.0
 * Add rule to enforce all type imports as `import type`.
 * Removed Node.js 14 support.
