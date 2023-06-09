@@ -1,143 +1,21 @@
 module.exports = {
-  plugins: ['import', 'n', 'prefer-let', 'promise'],
-  extends: ['standard'],
-  rules: {
-    'promise/no-multiple-resolved': 'error',
-
-    'n/no-unsupported-features/node-builtins': [
-      'error',
-      {
-        ignores: ['worker_threads']
-      }
-    ],
-    'n/no-unsupported-features/es-builtins': 'error',
-    'n/no-unsupported-features/es-syntax': [
-      'error',
-      {
-        ignores: ['modules', 'dynamicImport']
-      }
-    ],
-    'n/no-unpublished-require': 'error',
-    'n/no-extraneous-require': 'error',
-    'n/no-missing-require': 'error',
-    'n/global-require': 'error',
-
-    'prefer-let/prefer-let': 'error',
-
-    'import/newline-after-import': 'error',
-    'import/order': [
-      'error',
-      {
-        'groups': [
-          ['type'],
-          ['builtin', 'external'],
-          ['internal', 'parent', 'sibling', 'index']
-        ],
-        'newlines-between': 'always'
-      }
-    ],
-
-    'prefer-exponentiation-operator': 'error',
-    'no-misleading-character-class': 'error',
-    'no-new-native-nonconstructor': 'error',
-    'no-unsafe-optional-chaining': 'error',
-    'prefer-arrow-callback': 'error',
-    'no-this-before-super': 'error',
-    'func-name-matching': 'error',
-    'prefer-rest-params': 'error',
-    'no-useless-return': 'error',
-    'consistent-return': 'error',
-    'no-nested-ternary': 'error',
-    'constructor-super': 'error',
-    'block-scoped-var': 'error',
-    'object-shorthand': 'error',
-    'no-setter-return': 'error',
-    'no-invalid-this': 'error',
-    'no-dupe-else-if': 'error',
-    'no-unused-vars': [
-      'error',
-      {
-        args: 'after-used',
-        vars: 'all'
-      }
-    ],
-    'require-yield': 'error',
-    'getter-return': 'error',
-    'for-direction': 'error',
-    'no-lonely-if': 'error',
-    'no-console': 'error',
-    'no-shadow': 'error',
-
-    'n/no-callback-literal': 'off',
-
-    'no-whitespace-before-property': 'off',
-    'space-before-function-paren': 'off',
-    'computed-property-spacing': 'off',
-    'no-mixed-spaces-and-tabs': 'off',
-    'object-property-newline': 'off',
-    'no-multiple-empty-lines': 'off',
-    'generator-star-spacing': 'off',
-    'template-curly-spacing': 'off',
-    'array-bracket-spacing': 'off',
-    'object-curly-newline': 'off',
-    'template-tag-spacing': 'off',
-    'object-curly-spacing': 'off',
-    'space-before-blocks': 'off',
-    'no-floating-decimal': 'off',
-    'rest-spread-spacing': 'off',
-    'no-trailing-spaces': 'off',
-    'operator-linebreak': 'off',
-    'yield-star-spacing': 'off',
-    'multiline-ternary': 'off',
-    'func-call-spacing': 'off',
-    'space-infix-ops': 'off',
-    'space-in-parens': 'off',
-    'no-multi-spaces': 'off',
-    'keyword-spacing': 'off',
-    'no-extra-parens': 'off',
-    'space-unary-ops': 'off',
-    'spaced-comment': 'off',
-    'block-spacing': 'off',
-    'padded-blocks': 'off',
-    'comma-spacing': 'off',
-    'arrow-spacing': 'off',
-    'semi-spacing': 'off',
-    'prefer-const': 'off',
-    'dot-location': 'off',
-    'comma-dangle': 'off',
-    'unicode-bom': 'off',
-    'brace-style': 'off',
-    'comma-style': 'off',
-    'quote-props': 'off',
-    'key-spacing': 'off',
-    'new-parens': 'off',
-    'wrap-iife': 'off',
-    'eol-last': 'off',
-    'max-len': 'off',
-    'no-new': 'off',
-    'quotes': 'off',
-    'indent': 'off',
-    'semi': 'off'
-  },
-  parserOptions: {
-    sourceType: 'module'
-  },
   env: {
     browser: true,
-    node: true,
-    es6: true
+    es6: true,
+    node: true
   },
+  extends: ['standard', 'plugin:perfectionist/recommended-alphabetical'],
   overrides: [
     {
       files: ['test/*', 'test/**/*', '*.test.{js,jsx}', '*.test.{ts,tsx}'],
       rules: {
-        'n/no-unpublished-require': 'off',
         'n/no-missing-require': [
           'error',
           {
             allowModules: ['worker_threads']
           }
-        ]
+        ],
+        'n/no-unpublished-require': 'off'
       }
     },
     {
@@ -147,5 +25,140 @@ module.exports = {
         'no-unused-expressions': 'off'
       }
     }
-  ]
+  ],
+  parserOptions: {
+    sourceType: 'module'
+  },
+  plugins: ['import', 'n', 'prefer-let', 'promise', 'perfectionist'],
+  rules: {
+    'array-bracket-spacing': 'off',
+
+    'arrow-spacing': 'off',
+    'block-scoped-var': 'error',
+    'block-spacing': 'off',
+    'brace-style': 'off',
+    'comma-dangle': 'off',
+    'comma-spacing': 'off',
+    'comma-style': 'off',
+
+    'computed-property-spacing': 'off',
+
+    'consistent-return': 'error',
+
+    'constructor-super': 'error',
+    'dot-location': 'off',
+    'eol-last': 'off',
+    'for-direction': 'error',
+    'func-call-spacing': 'off',
+    'func-name-matching': 'error',
+    'generator-star-spacing': 'off',
+    'getter-return': 'error',
+    'indent': 'off',
+    'key-spacing': 'off',
+    'keyword-spacing': 'off',
+    'max-len': 'off',
+    'multiline-ternary': 'off',
+    'n/global-require': 'error',
+    'n/no-callback-literal': 'off',
+    'n/no-extraneous-require': 'error',
+    'n/no-missing-require': 'error',
+    'n/no-unpublished-require': 'error',
+    'n/no-unsupported-features/es-builtins': 'error',
+    'n/no-unsupported-features/es-syntax': [
+      'error',
+      {
+        ignores: ['modules', 'dynamicImport']
+      }
+    ],
+    'n/no-unsupported-features/node-builtins': [
+      'error',
+      {
+        ignores: ['worker_threads']
+      }
+    ],
+    'new-parens': 'off',
+    'no-console': 'error',
+    'no-dupe-else-if': 'error',
+
+    'no-extra-parens': 'off',
+
+    'no-floating-decimal': 'off',
+    'no-invalid-this': 'error',
+    'no-lonely-if': 'error',
+    'no-misleading-character-class': 'error',
+    'no-mixed-spaces-and-tabs': 'off',
+    'no-multi-spaces': 'off',
+    'no-multiple-empty-lines': 'off',
+    'no-nested-ternary': 'error',
+    'no-new': 'off',
+    'no-new-native-nonconstructor': 'error',
+    'no-setter-return': 'error',
+    'no-shadow': 'error',
+    'no-this-before-super': 'error',
+    'no-trailing-spaces': 'off',
+    'no-unsafe-optional-chaining': 'error',
+    'no-unused-vars': [
+      'error',
+      {
+        args: 'after-used',
+        vars: 'all'
+      }
+    ],
+    'no-useless-return': 'error',
+    'no-whitespace-before-property': 'off',
+    'object-curly-newline': 'off',
+    'object-curly-spacing': 'off',
+    'object-property-newline': 'off',
+    'object-shorthand': 'error',
+    'operator-linebreak': 'off',
+    'padded-blocks': 'off',
+    'perfectionist/sort-imports': [
+      'error',
+      {
+        'groups': [
+          'side-effect',
+          ['builtin-type', 'type', 'builtin', 'external', 'unknown'],
+          [
+            'internal-type',
+            'parent-type',
+            'sibling-type',
+            'index-type',
+            'internal',
+            'parent',
+            'sibling',
+            'index'
+          ],
+          ['style'],
+          ['object']
+        ],
+        'newlines-between': 'always',
+        'order': 'asc',
+        'read-tsconfig': false,
+        'type': 'alphabetical'
+      }
+    ],
+    'prefer-arrow-callback': 'error',
+    'prefer-const': 'off',
+    'prefer-exponentiation-operator': 'error',
+    'prefer-let/prefer-let': 'error',
+    'prefer-rest-params': 'error',
+    'promise/no-multiple-resolved': 'error',
+    'quote-props': 'off',
+    'quotes': 'off',
+    'require-yield': 'error',
+    'rest-spread-spacing': 'off',
+    'semi': 'off',
+    'semi-spacing': 'off',
+    'space-before-blocks': 'off',
+    'space-before-function-paren': 'off',
+    'space-in-parens': 'off',
+    'space-infix-ops': 'off',
+    'space-unary-ops': 'off',
+    'spaced-comment': 'off',
+    'template-curly-spacing': 'off',
+    'template-tag-spacing': 'off',
+    'unicode-bom': 'off',
+    'wrap-iife': 'off',
+    'yield-star-spacing': 'off'
+  }
 }
