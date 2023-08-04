@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 51.0.1
+* Fixed docs.
+
 ## 51.0
 * Add `eslint-plugin-perfectionist` with alphabetical order.
 
