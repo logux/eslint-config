@@ -5,7 +5,7 @@ module.exports = {
   overrides: [
     ...base.overrides,
     {
-      files: ['*.ts', '*.tsx'],
+      files: ['*.ts', '*.tsx', '*.svelte'],
       parser: '@typescript-eslint/parser',
       parserOptions: {
         project: ['./tsconfig.json'],
