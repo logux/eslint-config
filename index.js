@@ -112,7 +112,6 @@ module.exports = {
     'object-shorthand': 'error',
     'operator-linebreak': 'off',
     'padded-blocks': 'off',
-    'perfectionist/sort-svelte-attributes': 'off',
     'perfectionist/sort-imports': [
       'error',
       {
@@ -137,6 +136,7 @@ module.exports = {
         'type': 'alphabetical'
       }
     ],
+    'perfectionist/sort-svelte-attributes': 'off',
     'prefer-arrow-callback': 'error',
     'prefer-const': 'off',
     'prefer-exponentiation-operator': 'error',
