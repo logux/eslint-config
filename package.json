@@ -38,7 +38,9 @@
     "eslint-plugin-prefer-let": "^3.0.1",
     "eslint-plugin-prefer-node-builtin-imports": "^0.0.3",
     "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-svelte": "^2.33.0",
     "simple-git-hooks": "^2.9.0",
+    "svelte": "^4.2.0",
     "typescript": "^5.2.2"
   },
   "simple-git-hooks": {
@@ -53,7 +55,7 @@
     "trailingComma": "none"
   },
   "eslintConfig": {
-    "extends": "./ts"
+    "extends": "./svelte"
   },
   "clean-publish": {
     "cleanDocs": true

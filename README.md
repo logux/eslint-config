@@ -29,7 +29,7 @@ pnpm add --save-dev @logux/eslint-config @typescript-eslint/eslint-plugin @types
 Svelte project:
 
 ```sh
-pnpm add --save-dev @logux/eslint-config eslint-plugin-svelte @typescript-eslint/eslint-plugin @typescript-eslint/parser typescript eslint-config-standard eslint-plugin-promise eslint-plugin-n eslint-plugin-import eslint-plugin-prefer-let eslint-plugin-perfectionist eslint-plugin-prefer-node-builtin-imports eslint
+pnpm add --save-dev @logux/eslint-config eslint-plugin-svelte svelte @typescript-eslint/eslint-plugin @typescript-eslint/parser typescript eslint-config-standard eslint-plugin-promise eslint-plugin-n eslint-plugin-import eslint-plugin-prefer-let eslint-plugin-perfectionist eslint-plugin-prefer-node-builtin-imports eslint
 ```
 
 
