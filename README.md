@@ -37,18 +37,10 @@ For JavaScript add config to `package.json` or other ESLint configs.
   }
 ```
 
-For TypeScript:
+For TypeScript or ESM-only project:
 
 ```js
   "eslintConfig": {
     "extends": "@logux/eslint-config/ts"
-  }
-```
-
-For ESM-only projects:
-
-```js
-  "eslintConfig": {
-    "extends": "@logux/eslint-config/esm"
   }
 ```
