@@ -1,6 +1,11 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 52.0
+* Added rule to force `node:` prefix for built-in modules.
+* Added `*/test/*` to add tests rules.
+* Added Svelte config.
+
 ## 51.0.3
 * Updated `eslint-plugin-perfectionist`.
 
@@ -11,10 +16,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 * Fixed docs.
 
 ## 51.0
-* Add `eslint-plugin-perfectionist` with alphabetical order.
+* Added `eslint-plugin-perfectionist` with alphabetical order.
 
 ## 50.0
-* Add rule to enforce all type imports as `import type`.
+* Added rule to enforce all type imports as `import type`.
 * Removed Node.js 14 support.
 
 ## 49.0
