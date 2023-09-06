@@ -19,7 +19,7 @@ module.exports = {
       }
     },
     {
-      files: ['*.test.{js,jsx}', '*.test.{ts,tsx}'],
+      files: ['*.test.{js,jsx}', '*.test.{ts,tsx}', '*/test/*'],
       rules: {
         'n/global-require': 'off',
         'no-unused-expressions': 'off'

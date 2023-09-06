@@ -90,7 +90,7 @@ module.exports = {
       }
     },
     {
-      files: ['*.{test.ts,test.tsx,stories.tsx}', 'types.ts'],
+      files: ['*.{test.ts,test.tsx,stories.tsx}', 'types.ts', '*/test/*'],
       rules: {
         '@typescript-eslint/no-explicit-any': 'off',
         '@typescript-eslint/no-unused-expressions': 'off',
