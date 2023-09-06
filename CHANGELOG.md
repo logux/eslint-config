@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 51.0.3
+* Updated `eslint-plugin-perfectionist`.
+
 ## 51.0.2
 * Fixed TypeScript rules in Svelte.
 
