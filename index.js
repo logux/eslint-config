@@ -112,6 +112,7 @@ module.exports = {
     'object-shorthand': 'error',
     'operator-linebreak': 'off',
     'padded-blocks': 'off',
+    'perfectionist/sort-svelte-attributes': 'off',
     'perfectionist/sort-imports': [
       'error',
       {
@@ -133,7 +134,6 @@ module.exports = {
         ],
         'newlines-between': 'always',
         'order': 'asc',
-        'read-tsconfig': false,
         'type': 'alphabetical'
       }
     ],
