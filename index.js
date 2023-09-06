@@ -29,23 +29,30 @@ module.exports = {
   parserOptions: {
     sourceType: 'module'
   },
-  plugins: ['import', 'n', 'prefer-let', 'promise', 'perfectionist'],
+  plugins: [
+    'import',
+    'n',
+    'prefer-let',
+    'promise',
+    'perfectionist',
+    'prefer-node-builtin-imports'
+  ],
   rules: {
     'array-bracket-spacing': 'off',
-
     'arrow-spacing': 'off',
+
     'block-scoped-var': 'error',
     'block-spacing': 'off',
     'brace-style': 'off',
     'comma-dangle': 'off',
     'comma-spacing': 'off',
     'comma-style': 'off',
-
     'computed-property-spacing': 'off',
 
     'consistent-return': 'error',
 
     'constructor-super': 'error',
+
     'dot-location': 'off',
     'eol-last': 'off',
     'for-direction': 'error',
@@ -79,10 +86,10 @@ module.exports = {
     'new-parens': 'off',
     'no-console': 'error',
     'no-dupe-else-if': 'error',
-
     'no-extra-parens': 'off',
 
     'no-floating-decimal': 'off',
+
     'no-invalid-this': 'error',
     'no-lonely-if': 'error',
     'no-misleading-character-class': 'error',
@@ -141,6 +148,7 @@ module.exports = {
     'prefer-const': 'off',
     'prefer-exponentiation-operator': 'error',
     'prefer-let/prefer-let': 'error',
+    'prefer-node-builtin-imports/prefer-node-builtin-imports': 'error',
     'prefer-rest-params': 'error',
     'promise/no-multiple-resolved': 'error',
     'quote-props': 'off',

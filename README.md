@@ -17,13 +17,13 @@ Shareable code style and best practice for [Logux] projects.
 Pure JavaScript:
 
 ```sh
-pnpm add --save-dev @logux/eslint-config eslint-config-standard eslint-plugin-promise eslint-plugin-n eslint-plugin-import eslint-plugin-prefer-let eslint-plugin-perfectionist eslint
+pnpm add --save-dev @logux/eslint-config eslint-config-standard eslint-plugin-promise eslint-plugin-n eslint-plugin-import eslint-plugin-prefer-let eslint-plugin-perfectionist eslint-plugin-prefer-node-builtin-imports eslint
 ```
 
 TypeScript or ESM-only project:
 
 ```sh
-pnpm add --save-dev @logux/eslint-config @typescript-eslint/eslint-plugin @typescript-eslint/parser typescript eslint-config-standard eslint-plugin-promise eslint-plugin-n eslint-plugin-import eslint-plugin-prefer-let eslint-plugin-perfectionist eslint
+pnpm add --save-dev @logux/eslint-config @typescript-eslint/eslint-plugin @typescript-eslint/parser typescript eslint-config-standard eslint-plugin-promise eslint-plugin-n eslint-plugin-import eslint-plugin-prefer-let eslint-plugin-perfectionist eslint-plugin-prefer-node-builtin-imports eslint
 ```
 
 

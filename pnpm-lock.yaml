@@ -32,6 +32,9 @@ devDependencies:
   eslint-plugin-prefer-let:
     specifier: ^3.0.1
     version: 3.0.1
+  eslint-plugin-prefer-node-builtin-imports:
+    specifier: ^0.0.3
+    version: 0.0.3(eslint@8.48.0)
   eslint-plugin-promise:
     specifier: ^6.1.1
     version: 6.1.1(eslint@8.48.0)
@@ -745,6 +748,15 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       requireindex: 1.2.0
+    dev: true
+
+  /eslint-plugin-prefer-node-builtin-imports@0.0.3(eslint@8.48.0):
+    resolution: {integrity: sha512-teo8L8gmjyggs9jScstOJ5Id3K6SCXYFjIRGARAfcGRl6s/wAFPxujc27nPwBJmEI1IYHElZD6X5SICfq7ATxQ==}
+    engines: {node: ^14.17.0 || ^16.0.0 || >= 18.0.0}
+    peerDependencies:
+      eslint: '>=7'
+    dependencies:
+      eslint: 8.48.0
     dev: true
 
   /eslint-plugin-promise@6.1.1(eslint@8.48.0):
