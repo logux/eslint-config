@@ -26,6 +26,12 @@ TypeScript or ESM-only project:
 pnpm add --save-dev @logux/eslint-config @typescript-eslint/eslint-plugin @typescript-eslint/parser typescript eslint-config-standard eslint-plugin-promise eslint-plugin-n eslint-plugin-import eslint-plugin-prefer-let eslint-plugin-perfectionist eslint-plugin-prefer-node-builtin-imports eslint
 ```
 
+Svelte project:
+
+```sh
+pnpm add --save-dev @logux/eslint-config eslint-plugin-svelte @typescript-eslint/eslint-plugin @typescript-eslint/parser typescript eslint-config-standard eslint-plugin-promise eslint-plugin-n eslint-plugin-import eslint-plugin-prefer-let eslint-plugin-perfectionist eslint-plugin-prefer-node-builtin-imports eslint
+```
+
 
 ## Usage
 
@@ -42,5 +48,13 @@ For TypeScript or ESM-only project:
 ```js
   "eslintConfig": {
     "extends": "@logux/eslint-config/ts"
+  }
+```
+
+For Svelte project:
+
+```js
+  "eslintConfig": {
+    "extends": "@logux/eslint-config/svelte"
   }
 ```
