@@ -35,7 +35,7 @@ module.exports = {
     'prefer-let',
     'promise',
     'perfectionist',
-    'prefer-node-builtin-imports'
+    'node-import'
   ],
   rules: {
     'array-bracket-spacing': 'off',
@@ -113,6 +113,7 @@ module.exports = {
     ],
     'no-useless-return': 'error',
     'no-whitespace-before-property': 'off',
+    'node-import/prefer-node-protocol': 'error',
     'object-curly-newline': 'off',
     'object-curly-spacing': 'off',
     'object-property-newline': 'off',
@@ -148,7 +149,6 @@ module.exports = {
     'prefer-const': 'off',
     'prefer-exponentiation-operator': 'error',
     'prefer-let/prefer-let': 'error',
-    'prefer-node-builtin-imports/prefer-node-builtin-imports': 'error',
     'prefer-rest-params': 'error',
     'promise/no-multiple-resolved': 'error',
     'quote-props': 'off',

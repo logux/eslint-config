@@ -26,15 +26,15 @@ devDependencies:
   eslint-plugin-n:
     specifier: ^16.0.2
     version: 16.0.2(eslint@8.48.0)
+  eslint-plugin-node-import:
+    specifier: ^1.0.0
+    version: 1.0.0(eslint@8.48.0)
   eslint-plugin-perfectionist:
     specifier: ^2.0.0
     version: 2.0.0(eslint@8.48.0)(svelte@4.2.0)(typescript@5.2.2)
   eslint-plugin-prefer-let:
     specifier: ^3.0.1
     version: 3.0.1
-  eslint-plugin-prefer-node-builtin-imports:
-    specifier: ^0.0.3
-    version: 0.0.3(eslint@8.48.0)
   eslint-plugin-promise:
     specifier: ^6.1.1
     version: 6.1.1(eslint@8.48.0)
@@ -805,6 +805,15 @@ packages:
       semver: 7.5.4
     dev: true
 
+  /eslint-plugin-node-import@1.0.0(eslint@8.48.0):
+    resolution: {integrity: sha512-Bd/WOaPTbe7mo/wJFMAKdMQYr1CrOG0fQ1mVI9TCXBFCzNeKAw3Xz2gq/Os8oXeSy8XrAuSt/xPxLQPjhC6Uyw==}
+    engines: {node: ^14.18.0 || ^16.0.0 || >= 18.0.0}
+    peerDependencies:
+      eslint: '>=7'
+    dependencies:
+      eslint: 8.48.0
+    dev: true
+
   /eslint-plugin-perfectionist@2.0.0(eslint@8.48.0)(svelte@4.2.0)(typescript@5.2.2):
     resolution: {integrity: sha512-VqUk5WR7Dj8L0gNPqn7bl7NTHFYB8l5um4wo7hkMp0Dl+k8RHDAsOef4pPrty6G8vjnzvb3xIZNNshmDJI8SdA==}
     peerDependencies:
@@ -838,15 +847,6 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       requireindex: 1.2.0
-    dev: true
-
-  /eslint-plugin-prefer-node-builtin-imports@0.0.3(eslint@8.48.0):
-    resolution: {integrity: sha512-teo8L8gmjyggs9jScstOJ5Id3K6SCXYFjIRGARAfcGRl6s/wAFPxujc27nPwBJmEI1IYHElZD6X5SICfq7ATxQ==}
-    engines: {node: ^14.17.0 || ^16.0.0 || >= 18.0.0}
-    peerDependencies:
-      eslint: '>=7'
-    dependencies:
-      eslint: 8.48.0
     dev: true
 
   /eslint-plugin-promise@6.1.1(eslint@8.48.0):
