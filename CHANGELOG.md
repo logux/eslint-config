@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 52.0.1
+* Replaced plugin for `node:` protocol.
+
 ## 52.0
 * Added rule to force `node:` prefix for built-in modules.
 * Added `*/test/*` to add tests rules.
