@@ -19,6 +19,7 @@ module.exports = {
         'svelte/infinite-reactive-loop': 'error',
         'svelte/no-at-debug-tags': 'error',
         'svelte/no-extra-reactive-curlies': 'error',
+        'svelte/no-inline-styles': 'error',
         'svelte/no-reactive-literals': 'error',
         'svelte/no-reactive-reassign': 'error',
         'svelte/no-unused-class-name': 'error',
