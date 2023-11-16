@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 52.0.2
+* Fixed `eslint-plugin-perfectionist` update.
+
 ## 52.0.1
 * Replaced plugin for `node:` protocol.
 
