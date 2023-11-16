@@ -136,7 +136,7 @@ module.exports = {
             'sibling',
             'index'
           ],
-          ['style'],
+          ['side-effect-style', 'style'],
           ['object']
         ],
         'newlines-between': 'always',
