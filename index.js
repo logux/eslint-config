@@ -125,6 +125,7 @@ module.exports = {
       {
         'groups': [
           'side-effect',
+          ['side-effect-style', 'style'],
           ['builtin-type', 'type', 'builtin', 'external', 'unknown'],
           [
             'internal-type',
@@ -136,7 +137,6 @@ module.exports = {
             'sibling',
             'index'
           ],
-          ['side-effect-style', 'style'],
           ['object']
         ],
         'newlines-between': 'always',
