@@ -7,54 +7,60 @@ Shareable code style and best practice for [Logux] projects.
 
 [Logux]: https://logux.org/
 
-<a href="https://evilmartians.com/?utm_source=logux-docs">
-  <img src="https://evilmartians.com/badges/sponsored-by-evil-martians.svg"
-       alt="Sponsored by Evil Martians" width="236" height="54">
-</a>
+---
+
+<img src="https://cdn.evilmartians.com/badges/logo-no-label.svg" alt="" width="22" height="16" />  Made in <b><a href="https://evilmartians.com/devtools?utm_source=logux-eslint-config&utm_campaign=devtools-button&utm_medium=github">Evil Martians</a></b>, product consulting for <b>developer tools</b>.
+
+---
 
 ## Install
 
-Pure JavaScript:
+Pure JavaScript or TypeScript:
 
 ```sh
-pnpm add --save-dev @logux/eslint-config eslint-config-standard eslint-plugin-promise eslint-plugin-n eslint-plugin-import eslint-plugin-prefer-let eslint-plugin-perfectionist eslint-plugin-node-import eslint
-```
-
-TypeScript or ESM-only project:
-
-```sh
-pnpm add --save-dev @logux/eslint-config @typescript-eslint/eslint-plugin @typescript-eslint/parser typescript eslint-config-standard eslint-plugin-promise eslint-plugin-n eslint-plugin-import eslint-plugin-prefer-let eslint-plugin-perfectionist eslint-plugin-node-import eslint
+pnpm add --save-dev @logux/eslint-config eslint
 ```
 
 Svelte project:
 
 ```sh
-pnpm add --save-dev @logux/eslint-config eslint-plugin-svelte svelte @typescript-eslint/eslint-plugin @typescript-eslint/parser typescript eslint-config-standard eslint-plugin-promise eslint-plugin-n eslint-plugin-import eslint-plugin-prefer-let eslint-plugin-perfectionist eslint-plugin-node-import eslint
+pnpm add --save-dev @logux/eslint-config eslint-plugin-svelte svelte eslint
 ```
 
 
 ## Usage
 
-For JavaScript add config to `package.json` or other ESLint configs.
+Create `eslint.config.js`.
+
+For JavaScript:.
 
 ```js
-  "eslintConfig": {
-    "extends": "@logux/eslint-config"
-  }
+import loguxConfig from '@logux/eslint-config'
+
+/** @type {import('eslint').Linter.FlatConfig[]} */
+export default [
+  ...loguxConfig,
+]
 ```
 
-For TypeScript or ESM-only project:
+For TypeScript project:
 
 ```js
-  "eslintConfig": {
-    "extends": "@logux/eslint-config/ts"
-  }
+import loguxTsConfig from '@logux/eslint-config/ts'
+
+/** @type {import('eslint').Linter.FlatConfig[]} */
+export default [
+  ...loguxTsConfig,
+]
 ```
 
 For Svelte project:
 
 ```js
-  "eslintConfig": {
-    "extends": "@logux/eslint-config/svelte"
-  }
+import loguxSvelteConfig from '@logux/eslint-config/svelte'
+
+/** @type {import('eslint').Linter.FlatConfig[]} */
+export default [
+  ...loguxSvelteConfig,
+]
 ```
