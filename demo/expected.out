@@ -1,11 +1,11 @@
 
-/home/ai/Dev/logux-eslint-config/demo/index.js
+/logux-eslint-config/demo/index.js
   5:1  error  Unexpected console statement  no-console
 
-/home/ai/Dev/logux-eslint-config/demo/index.svelte
+/logux-eslint-config/demo/index.svelte
   2:13  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
 
-/home/ai/Dev/logux-eslint-config/demo/index.ts
+/logux-eslint-config/demo/index.ts
   1:8  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
 
 ✖ 3 problems (3 errors, 0 warnings)
