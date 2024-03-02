@@ -4,6 +4,10 @@ import tseslint from 'typescript-eslint'
 
 import ts from './ts.js'
 
+let tsRules = ts.find(
+  config => config.files && config.files.includes('**/*.ts')
+).rules
+
 export default [
   {
     languageOptions: {
@@ -15,7 +19,7 @@ export default [
   },
   ...ts,
   {
-    files: ['*.svelte'],
+    files: ['**/*.svelte'],
     languageOptions: {
       parser: svelteParser,
       parserOptions: {
@@ -23,10 +27,12 @@ export default [
       }
     },
     plugins: {
+      '@typescript-eslint': tseslint.plugin,
       svelte
     },
     processor: 'svelte/svelte',
     rules: {
+      ...tsRules,
       'import/first': 'off',
       'no-undef-init': 'off',
       'no-use-before-define': 'off',

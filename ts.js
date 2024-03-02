@@ -12,7 +12,7 @@ export default [
     }
   },
   {
-    files: ['*.ts', '*.tsx', '*.svelte'],
+    files: ['**/*.ts', '**/*.tsx'],
     languageOptions: {
       parser: tseslint.parser,
       parserOptions: {

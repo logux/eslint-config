@@ -8,7 +8,7 @@
     "eslint-config"
   ],
   "scripts": {
-    "test": "eslint ."
+    "test": "eslint *.js && node demo/test.js"
   },
   "author": "Andrey Sitnik <andrey@sitnik.ru>",
   "license": "MIT",
