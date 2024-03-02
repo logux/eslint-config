@@ -8,29 +8,23 @@
     "eslint-config"
   ],
   "scripts": {
-    "test": "eslint . && ./check-peer.js"
+    "test": "eslint ."
   },
   "author": "Andrey Sitnik <andrey@sitnik.ru>",
   "license": "MIT",
   "repository": "logux/eslint-config",
   "engines": {
-    "node": ">=10.0.0"
+    "node": ">=18.0.0"
   },
-  "peerDependencies": {
-    "eslint": "^8.57.0",
-    "eslint-config-standard": "^17.1.0",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-n": "^16.6.2",
-    "eslint-plugin-node-import": "^1.0.4",
-    "eslint-plugin-perfectionist": "^2.5.0",
-    "eslint-plugin-prefer-let": "^3.0.1",
-    "eslint-plugin-promise": "^6.1.1"
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
   },
-  "devDependencies": {
+  "dependencies": {
+    "@eslint/eslintrc": "^3.0.2",
     "@typescript-eslint/eslint-plugin": "^7.1.0",
     "@typescript-eslint/parser": "^7.1.0",
-    "clean-publish": "^4.2.0",
-    "eslint": "^8.57.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-n": "^16.6.2",
@@ -39,12 +33,16 @@
     "eslint-plugin-prefer-let": "^3.0.1",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-svelte": "^2.35.1",
-    "simple-git-hooks": "^2.9.0",
+    "typescript-eslint": "^7.1.0"
+  },
+  "peerDependencies": {
+    "eslint": "^8.57.0"
+  },
+  "devDependencies": {
+    "clean-publish": "^4.3.0",
+    "eslint": "^8.57.0",
     "svelte": "^4.2.12",
     "typescript": "^5.3.3"
-  },
-  "simple-git-hooks": {
-    "pre-commit": "./check-peer.js"
   },
   "prettier": {
     "arrowParens": "avoid",
@@ -53,9 +51,6 @@
     "semi": false,
     "singleQuote": true,
     "trailingComma": "none"
-  },
-  "eslintConfig": {
-    "extends": "./svelte"
   },
   "clean-publish": {
     "cleanDocs": true

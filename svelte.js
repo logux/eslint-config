@@ -1,37 +1,47 @@
-let ts = require('./ts')
+import svelte from 'eslint-plugin-svelte'
+import svelteParser from 'svelte-eslint-parser'
+import tseslint from 'typescript-eslint'
 
-module.exports = {
-  ...ts,
-  overrides: [
-    ...ts.overrides,
-    {
-      extends: ['plugin:svelte/recommended'],
-      files: ['*.svelte'],
-      parser: 'svelte-eslint-parser',
+import ts from './ts.js'
+
+export default [
+  {
+    languageOptions: {
       parserOptions: {
-        parser: '@typescript-eslint/parser'
-      },
-      rules: {
-        'import/first': 'off',
-        'no-undef-init': 'off',
-        'no-use-before-define': 'off',
-        'svelte/block-lang': ['error', { script: 'ts' }],
-        'svelte/infinite-reactive-loop': 'error',
-        'svelte/no-at-debug-tags': 'error',
-        'svelte/no-extra-reactive-curlies': 'error',
-        'svelte/no-reactive-literals': 'error',
-        'svelte/no-reactive-reassign': 'error',
-        'svelte/no-unused-class-name': 'error',
-        'svelte/prefer-class-directive': 'error',
-        'svelte/require-each-key': 'error',
-        'svelte/require-optimized-style-attribute': 'error',
-        'svelte/sort-attributes': 'error',
-        'svelte/spaced-html-comment': 'error'
+        extraFileExtensions: ['.svelte'],
+        project: true
       }
     }
-  ],
-  parserOptions: {
-    extraFileExtensions: ['.svelte']
   },
-  plugins: [...ts.plugins, '@typescript-eslint']
-}
+  ...ts,
+  {
+    files: ['*.svelte'],
+    languageOptions: {
+      parser: svelteParser,
+      parserOptions: {
+        parser: tseslint.parser
+      }
+    },
+    plugins: {
+      svelte
+    },
+    processor: 'svelte/svelte',
+    rules: {
+      'import/first': 'off',
+      'no-undef-init': 'off',
+      'no-use-before-define': 'off',
+      'svelte/block-lang': ['error', { script: 'ts' }],
+      'svelte/infinite-reactive-loop': 'error',
+      'svelte/no-at-debug-tags': 'error',
+      'svelte/no-extra-reactive-curlies': 'error',
+      'svelte/no-reactive-literals': 'error',
+      'svelte/no-reactive-reassign': 'error',
+      'svelte/no-unused-class-name': 'error',
+      'svelte/prefer-class-directive': 'error',
+      'svelte/require-each-key': 'error',
+      'svelte/require-optimized-style-attribute': 'error',
+      'svelte/sort-attributes': 'error',
+      'svelte/spaced-html-comment': 'error'
+    }
+  }
+]
