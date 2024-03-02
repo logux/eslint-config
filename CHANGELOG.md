@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 53.0.0
+* Moved to flat config.
+
 ## 52.0.2
 * Fixed `eslint-plugin-perfectionist` update.
 
