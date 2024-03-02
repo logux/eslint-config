@@ -8,7 +8,7 @@ const FILES = join(import.meta.dirname, 'index.*')
 
 exec(`pnpm eslint --no-color ${FILES}`, (_, stdout) => {
   let fixed = stdout.replace(
-    /.*\/logux-eslint-config\//g,
+    /.*\/(logux-eslint-config|eslint-config)\//g,
     '/logux-eslint-config/'
   )
   if (fixed !== expected.toString()) {
