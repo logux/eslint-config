@@ -5,13 +5,6 @@ import base from './index.js'
 export default [
   ...base,
   {
-    languageOptions: {
-      parserOptions: {
-        project: true
-      }
-    }
-  },
-  {
     files: ['**/*.ts', '**/*.tsx'],
     languageOptions: {
       parser: tseslint.parser,
