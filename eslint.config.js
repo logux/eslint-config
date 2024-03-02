@@ -1,3 +1,8 @@
-import config from './svelte.js'
+import config from './index.js'
 
-export default config
+export default [
+  {
+    ignores: ['demo/index.*']
+  },
+  ...config
+]

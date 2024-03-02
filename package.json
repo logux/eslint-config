@@ -8,7 +8,9 @@
     "eslint-config"
   ],
   "scripts": {
-    "test": "eslint *.js && node demo/test.js"
+    "test:lint": "eslint .",
+    "test:demo": "node demo/test.js",
+    "test": "pnpm run /^test:/"
   },
   "author": "Andrey Sitnik <andrey@sitnik.ru>",
   "license": "MIT",
@@ -41,6 +43,7 @@
     "clean-publish": "^4.3.0",
     "eslint": "^8.57.0",
     "eslint-plugin-svelte": "^2.35.1",
+    "picocolors": "^1.0.0",
     "svelte": "^4.2.12",
     "typescript": "^5.3.3"
   },

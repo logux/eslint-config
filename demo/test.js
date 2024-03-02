@@ -1,19 +1,43 @@
 import { exec } from 'node:child_process'
-import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
+import pico from 'picocolors'
 
-let expected = readFileSync(join(import.meta.dirname, 'expected.out'))
+const JS = `/logux-eslint-config/demo/index.js
+  5:1  error  Unexpected console statement  no-console`
 
-const FILES = join(import.meta.dirname, 'index.*')
+const TS = `/logux-eslint-config/demo/index.ts
+  1:8  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any`
 
-exec(`pnpm eslint --no-color ${FILES}`, (_, stdout) => {
-  let fixed = stdout.replace(
-    /.*\/(logux-eslint-config|eslint-config)\//g,
-    '/logux-eslint-config/'
-  )
-  if (fixed !== expected.toString()) {
-    process.stderr.write(`Expected: ${expected}`)
-    process.stderr.write(`Actual: ${stdout}`)
+const SVELTE = `/logux-eslint-config/demo/index.svelte
+  2:13  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any`
+
+async function eslint(config, files) {
+  let path = join(import.meta.dirname, files)
+  let configPath = join(import.meta.dirname, '..', config)
+  return new Promise(resolve => {
+    exec(
+      `pnpm eslint --no-color --config ${configPath} ${path}`,
+      (_, stdout) => {
+        let fixed = stdout.replace(
+          /.*\/(logux-eslint-config|eslint-config)\//g,
+          '/logux-eslint-config/'
+        )
+        let trimmed = fixed.replace(/✖ \d+ problems?.*/, '').trim()
+        resolve(trimmed)
+      }
+    )
+  })
+}
+
+async function check(config, files, expected) {
+  let actual = await eslint(config, files)
+  if (actual !== expected) {
+    process.stderr.write(pico.green(`Expected:\n${expected}\n`))
+    process.stderr.write(pico.red(`Actual:\n${actual}\n`))
     process.exit(1)
   }
-})
+}
+
+await check('svelte.js', 'index.*', JS + '\n\n' + SVELTE + '\n\n' + TS)
+await check('ts.js', 'index.{ts,js}', JS + '\n\n' + TS)
+await check('index.js', 'index.js', JS)

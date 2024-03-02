@@ -43,6 +43,9 @@ devDependencies:
   eslint-plugin-svelte:
     specifier: ^2.35.1
     version: 2.35.1(eslint@8.57.0)(svelte@4.2.12)
+  picocolors:
+    specifier: ^1.0.0
+    version: 1.0.0
   svelte:
     specifier: ^4.2.12
     version: 4.2.12
