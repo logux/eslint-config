@@ -19,6 +19,8 @@
   "type": "module",
   "exports": {
     ".": "./index.js",
+    "./ts": "./ts.js",
+    "./svelte": "./svelte.js",
     "./package.json": "./package.json"
   },
   "dependencies": {
