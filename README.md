@@ -32,7 +32,7 @@ pnpm add --save-dev @logux/eslint-config eslint-plugin-svelte svelte eslint
 
 Create `eslint.config.js`.
 
-For JavaScript:.
+For JavaScript:
 
 ```js
 import loguxConfig from '@logux/eslint-config'
@@ -64,3 +64,5 @@ export default [
   ...loguxSvelteConfig,
 ]
 ```
+
+🚩 This project utilizes ESLint with a flat configuration. You may need to enable its support in your workspace.
