@@ -65,4 +65,7 @@ export default [
 ]
 ```
 
-🚩 This project utilizes ESLint with a flat configuration. You may need to enable its support in your workspace.
+This project utilizes ESLint with a flat configuration.
+You may need to enable its support in your workspace:
+
+* **VS Code:** enable `eslint.experimental.useFlatConfig`.
