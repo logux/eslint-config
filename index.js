@@ -92,6 +92,7 @@ export default [
           vars: 'all'
         }
       ],
+      'no-useless-assignment': 'error',
       'no-useless-return': 'error',
       'no-whitespace-before-property': 'off',
       'node-import/prefer-node-protocol': 'error',
@@ -129,9 +130,9 @@ export default [
       'prefer-arrow-callback': 'error',
       'prefer-const': 'off',
       'prefer-exponentiation-operator': 'error',
-      'prefer-let/prefer-let': 'error',
+      // 'prefer-let/prefer-let': 'error',
       'prefer-rest-params': 'error',
-      'promise/no-multiple-resolved': 'error',
+      // 'promise/no-multiple-resolved': 'error',
       'quote-props': 'off',
       'quotes': 'off',
       'require-yield': 'error',
