@@ -26,10 +26,8 @@ export default [
     },
     rules: {
       ...eslintPerfectionist.configs['recommended-alphabetical'].rules,
-
       'array-bracket-spacing': 'off',
       'arrow-spacing': 'off',
-
       'block-scoped-var': 'error',
       'block-spacing': 'off',
       'brace-style': 'off',
@@ -37,9 +35,7 @@ export default [
       'comma-spacing': 'off',
       'comma-style': 'off',
       'computed-property-spacing': 'off',
-
       'constructor-super': 'error',
-
       'dot-location': 'off',
       'eol-last': 'off',
       'for-direction': 'error',
@@ -74,9 +70,7 @@ export default [
       'no-console': 'error',
       'no-dupe-else-if': 'error',
       'no-extra-parens': 'off',
-
       'no-floating-decimal': 'off',
-
       'no-invalid-this': 'error',
       'no-lonely-if': 'error',
       'no-misleading-character-class': 'error',
