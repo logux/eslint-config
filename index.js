@@ -1,7 +1,6 @@
 import { FlatCompat } from '@eslint/eslintrc'
 import eslintImport from 'eslint-plugin-import'
 import eslintN from 'eslint-plugin-n'
-import eslintNodeImport from 'eslint-plugin-node-import'
 import eslintPerfectionist from 'eslint-plugin-perfectionist'
 import eslintPreferLet from 'eslint-plugin-prefer-let'
 import eslintPromise from 'eslint-plugin-promise'
@@ -19,7 +18,6 @@ export default [
     plugins: {
       'import': eslintImport,
       'n': eslintN,
-      'node-import': eslintNodeImport,
       'perfectionist': eslintPerfectionist,
       'prefer-let': eslintPreferLet,
       'promise': eslintPromise
@@ -66,6 +64,7 @@ export default [
           ignores: ['worker_threads']
         }
       ],
+      'n/prefer-node-protocol': 'error',
       'new-parens': 'off',
       'no-console': 'error',
       'no-dupe-else-if': 'error',
@@ -94,7 +93,6 @@ export default [
       ],
       'no-useless-return': 'error',
       'no-whitespace-before-property': 'off',
-      'node-import/prefer-node-protocol': 'error',
       'object-curly-newline': 'off',
       'object-curly-spacing': 'off',
       'object-property-newline': 'off',
