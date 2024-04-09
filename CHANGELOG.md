@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 53.0.1
+* Reduce dependencies by using `node:` protocol rule from `eslint-plugin-n`.
+
 ## 53.0.0
 * Moved to flat config.
 
