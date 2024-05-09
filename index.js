@@ -1,3 +1,4 @@
+import { fixupPluginRules } from '@eslint/compat'
 import { FlatCompat } from '@eslint/eslintrc'
 import eslintImport from 'eslint-plugin-import'
 import eslintN from 'eslint-plugin-n'
@@ -9,8 +10,10 @@ let compat = new FlatCompat({
   baseDirectory: import.meta.dirname
 })
 
+let standard = compat.extends('eslint-config-standard')
+
 export default [
-  ...compat.extends('eslint-config-standard'),
+  ...standard,
   {
     languageOptions: {
       sourceType: 'module'
@@ -19,7 +22,7 @@ export default [
       'import': eslintImport,
       'n': eslintN,
       'perfectionist': eslintPerfectionist,
-      'prefer-let': eslintPreferLet,
+      'prefer-let': fixupPluginRules(eslintPreferLet),
       'promise': eslintPromise
     },
     rules: {
@@ -129,7 +132,6 @@ export default [
       'prefer-exponentiation-operator': 'error',
       'prefer-let/prefer-let': 'error',
       'prefer-rest-params': 'error',
-      'promise/no-multiple-resolved': 'error',
       'quote-props': 'off',
       'quotes': 'off',
       'require-yield': 'error',
