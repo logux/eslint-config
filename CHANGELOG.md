@@ -1,6 +1,10 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 53.1.0
+* Fixed ESLint 9 support.
+* Removed `promise/no-multiple-resolved` rule to fix ESLint 9 support.
+
 ## 53.0.1
 * Reduce dependencies by using `node:` protocol rule from `eslint-plugin-n`.
 
