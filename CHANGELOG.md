@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 53.2.0
+* Disabled `n/no-unsupported-features/node-builtins` for tests.
+
 ## 53.1.0
 * Fixed ESLint 9 support.
 * Removed `promise/no-multiple-resolved` rule to fix ESLint 9 support.
