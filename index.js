@@ -155,6 +155,7 @@ export default [
     files: ['**/*.test.{js,jsx}', '**/*.test.{ts,tsx}'],
     rules: {
       'n/global-require': 'off',
+      'n/no-unsupported-features/node-builtins': 'off',
       'no-unused-expressions': 'off'
     }
   }
