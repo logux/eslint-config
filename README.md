@@ -9,7 +9,7 @@ Shareable code style and best practice for [Logux] projects.
 
 ---
 
-<img src="https://cdn.evilmartians.com/badges/logo-no-label.svg" alt="" width="22" height="16" />  Made in <b><a href="https://evilmartians.com/devtools?utm_source=logux-eslint-config&utm_campaign=devtools-button&utm_medium=github">Evil Martians</a></b>, product consulting for <b>developer tools</b>.
+<img src="https://cdn.evilmartians.com/badges/logo-no-label.svg" alt="" width="22" height="16" />  Made at <b><a href="https://evilmartians.com/devtools?utm_source=logux-eslint-config&utm_campaign=devtools-button&utm_medium=github">Evil Martians</a></b>, product consulting for <b>developer tools</b>.
 
 ---
 
@@ -27,7 +27,6 @@ Svelte project:
 pnpm add --save-dev @logux/eslint-config eslint-plugin-svelte svelte eslint
 ```
 
-
 ## Usage
 
 Create `eslint.config.js`.
@@ -38,9 +37,7 @@ For JavaScript:
 import loguxConfig from '@logux/eslint-config'
 
 /** @type {import('eslint').Linter.FlatConfig[]} */
-export default [
-  ...loguxConfig,
-]
+export default [...loguxConfig]
 ```
 
 For TypeScript project:
@@ -49,9 +46,7 @@ For TypeScript project:
 import loguxTsConfig from '@logux/eslint-config/ts'
 
 /** @type {import('eslint').Linter.FlatConfig[]} */
-export default [
-  ...loguxTsConfig,
-]
+export default [...loguxTsConfig]
 ```
 
 For Svelte project:
@@ -60,12 +55,10 @@ For Svelte project:
 import loguxSvelteConfig from '@logux/eslint-config/svelte'
 
 /** @type {import('eslint').Linter.FlatConfig[]} */
-export default [
-  ...loguxSvelteConfig,
-]
+export default [...loguxSvelteConfig]
 ```
 
 This project utilizes ESLint with a flat configuration.
 You may need to enable its support in your workspace:
 
-* **VS Code:** enable `eslint.experimental.useFlatConfig`.
+- **VS Code:** enable `eslint.experimental.useFlatConfig`.
