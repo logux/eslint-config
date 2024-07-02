@@ -132,6 +132,7 @@ export default [
       'prefer-exponentiation-operator': 'error',
       'prefer-let/prefer-let': 'error',
       'prefer-rest-params': 'error',
+      'promise/no-multiple-resolved': 'error',
       'quote-props': 'off',
       'quotes': 'off',
       'require-yield': 'error',
