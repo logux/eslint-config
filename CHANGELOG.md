@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 53.2.1
+* Updated plugins to remove ESLint 9 compatibility dependencies.
+
 ## 53.2.0
 * Disabled `n/no-unsupported-features/node-builtins` for tests.
 
