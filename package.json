@@ -26,13 +26,12 @@
     "./package.json": "./package.json"
   },
   "dependencies": {
-    "@eslint/compat": "^1.1.1",
     "@eslint/eslintrc": "^3.1.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-n": "^17.9.0",
     "eslint-plugin-perfectionist": "^2.11.0",
-    "eslint-plugin-prefer-let": "^3.0.1",
+    "eslint-plugin-prefer-let": "^4.0.0",
     "eslint-plugin-promise": "^6.4.0",
     "typescript-eslint": "^7.16.0"
   },
@@ -51,7 +50,7 @@
   },
   "devDependencies": {
     "clean-publish": "^5.0.0",
-    "eslint": "^9.6.0",
+    "eslint": "^9.7.0",
     "eslint-plugin-svelte": "^2.42.0",
     "picocolors": "^1.0.1",
     "svelte": "^4.2.18",

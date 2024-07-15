@@ -1,4 +1,3 @@
-import { fixupPluginRules } from '@eslint/compat'
 import { FlatCompat } from '@eslint/eslintrc'
 import eslintImport from 'eslint-plugin-import'
 import eslintN from 'eslint-plugin-n'
@@ -22,7 +21,7 @@ export default [
       'import': eslintImport,
       'n': eslintN,
       'perfectionist': eslintPerfectionist,
-      'prefer-let': fixupPluginRules(eslintPreferLet),
+      'prefer-let': eslintPreferLet,
       'promise': eslintPromise
     },
     rules: {
