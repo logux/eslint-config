@@ -1,6 +1,11 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 53.3
+* Removed `@typescript-eslint/lines-between-class-members` rule.
+* Moved to `eslint-plugin-perfectionist` 3.
+* Moved to TypeScript plugin 8.
+
 ## 53.2.1
 * Updated plugins to remove ESLint 9 compatibility dependencies.
 
