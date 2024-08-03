@@ -31,13 +31,6 @@ export default [
           allowExpressions: true
         }
       ],
-      '@typescript-eslint/lines-between-class-members': [
-        'error',
-        'always',
-        {
-          exceptAfterSingleLine: true
-        }
-      ],
       '@typescript-eslint/no-confusing-void-expression': 'error',
       '@typescript-eslint/no-dupe-class-members': 'error',
       '@typescript-eslint/no-empty-interface': 'error',
