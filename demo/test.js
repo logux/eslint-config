@@ -1,5 +1,5 @@
 import { exec } from 'node:child_process'
-import { join } from 'node:path'
+import { join, relative } from 'node:path'
 import pico from 'picocolors'
 
 const JS = `/logux-eslint-config/demo/index.js
@@ -11,13 +11,23 @@ const TS = `/logux-eslint-config/demo/index.ts
 const SVELTE = `/logux-eslint-config/demo/index.svelte
   2:13  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any`
 
+function cleanPath(path) {
+  return relative(process.cwd(), path).replace(/\\/g, '/')
+}
+
 async function eslint(config, files) {
   let path = join(import.meta.dirname, files)
   let configPath = join(import.meta.dirname, '..', config)
+  process.stderr.write(
+    pico.gray(`eslint --config ${cleanPath(configPath)} ${cleanPath(path)}\n`)
+  )
   return new Promise(resolve => {
     exec(
       `pnpm eslint --no-color --config ${configPath} ${path}`,
-      (_, stdout) => {
+      (_, stdout, stderr) => {
+        if (stderr) {
+          process.stderr.write(pico.red(stderr))
+        }
         let fixed = stdout.replace(
           /.*\/(logux-eslint-config|eslint-config)\//g,
           '/logux-eslint-config/'
