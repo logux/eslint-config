@@ -33,7 +33,7 @@ export default [
       ],
       '@typescript-eslint/no-confusing-void-expression': 'error',
       '@typescript-eslint/no-dupe-class-members': 'error',
-      '@typescript-eslint/no-empty-interface': 'error',
+      '@typescript-eslint/no-empty-object-type': 'error',
       '@typescript-eslint/no-explicit-any': 'error',
       '@typescript-eslint/no-for-in-array': 'error',
       '@typescript-eslint/no-import-type-side-effects': 'error',
