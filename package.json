@@ -28,12 +28,12 @@
   "dependencies": {
     "@eslint/eslintrc": "^3.1.0",
     "eslint-config-standard": "^17.1.0",
-    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-import": "^2.30.0",
     "eslint-plugin-n": "^17.10.2",
-    "eslint-plugin-perfectionist": "^3.2.0",
+    "eslint-plugin-perfectionist": "^3.4.0",
     "eslint-plugin-prefer-let": "^4.0.0",
     "eslint-plugin-promise": "^7.1.0",
-    "typescript-eslint": "^8.2.0"
+    "typescript-eslint": "^8.4.0"
   },
   "peerDependencies": {
     "eslint": "^8.57.0 || ^9.0.0",
@@ -49,11 +49,10 @@
     }
   },
   "devDependencies": {
-    "@types/eslint": "^9.6.1",
     "clean-publish": "^5.0.0",
-    "eslint": "^9.9.1",
+    "eslint": "^9.10.0",
     "eslint-plugin-svelte": "^2.43.0",
-    "picocolors": "^1.0.1",
+    "picocolors": "^1.1.0",
     "svelte": "^4.2.19",
     "typescript": "^5.5.4"
   },
