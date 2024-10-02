@@ -36,7 +36,7 @@ For JavaScript:
 ```js
 import loguxConfig from '@logux/eslint-config'
 
-/** @type {import('eslint').Linter.FlatConfig[]} */
+/** @type {import('eslint').Linter.Config[]} */
 export default [...loguxConfig]
 ```
 
@@ -45,7 +45,7 @@ For TypeScript project:
 ```js
 import loguxTsConfig from '@logux/eslint-config/ts'
 
-/** @type {import('eslint').Linter.FlatConfig[]} */
+/** @type {import('eslint').Linter.Config[]} */
 export default [...loguxTsConfig]
 ```
 
@@ -54,7 +54,7 @@ For Svelte project:
 ```js
 import loguxSvelteConfig from '@logux/eslint-config/svelte'
 
-/** @type {import('eslint').Linter.FlatConfig[]} */
+/** @type {import('eslint').Linter.Config[]} */
 export default [...loguxSvelteConfig]
 ```
 
