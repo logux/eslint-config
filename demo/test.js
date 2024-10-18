@@ -1,6 +1,6 @@
 import { exec } from 'node:child_process'
 import { join, relative } from 'node:path'
-import pico from 'picocolors'
+import { styleText } from 'node:util'
 
 const JS = `/logux-eslint-config/demo/index.js
   5:1  error  Unexpected console statement  no-console`
@@ -19,14 +19,17 @@ async function eslint(config, files) {
   let path = join(import.meta.dirname, files)
   let configPath = join(import.meta.dirname, '..', config)
   process.stderr.write(
-    pico.gray(`eslint --config ${cleanPath(configPath)} ${cleanPath(path)}\n`)
+    styleText(
+      'gray',
+      `eslint --config ${cleanPath(configPath)} ${cleanPath(path)}\n`
+    )
   )
   return new Promise(resolve => {
     exec(
       `pnpm eslint --no-color --config ${configPath} ${path}`,
       (_, stdout, stderr) => {
         if (stderr) {
-          process.stderr.write(pico.red(stderr))
+          process.stderr.write(styleText('red', stderr))
         }
         let fixed = stdout.replace(
           /.*\/(logux-eslint-config|eslint-config)\//g,
@@ -42,8 +45,8 @@ async function eslint(config, files) {
 async function check(config, files, expected) {
   let actual = await eslint(config, files)
   if (actual !== expected) {
-    process.stderr.write(pico.green(`Expected:\n${expected}\n`))
-    process.stderr.write(pico.red(`Actual:\n${actual}\n`))
+    process.stderr.write(styleText('green', `Expected:\n${expected}\n`))
+    process.stderr.write(styleText('red', `Actual:\n${actual}\n`))
     process.exit(1)
   }
 }

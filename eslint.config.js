@@ -4,5 +4,13 @@ export default [
   {
     ignores: ['demo/index.*']
   },
-  ...config
+  ...config,
+  {
+    rules: {
+      'n/no-unsupported-features/node-builtins': [
+        'error',
+        { ignores: ['util.styleText'] }
+      ]
+    }
+  }
 ]
