@@ -106,7 +106,8 @@ export default [
         {
           groups: [
             'side-effect',
-            ['side-effect-style', 'style'],
+            'side-effect-style',
+            'style',
             ['builtin-type', 'type', 'builtin', 'external', 'unknown'],
             [
               'internal-type',
