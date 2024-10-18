@@ -72,7 +72,11 @@ export default [
       'dot-notation': 'off',
 
       'func-callspacing': 'off',
-      'import/extensions': ['error', 'always', { ignorePackages: true }],
+      'import/extensions': [
+        'error',
+        'always',
+        { checkTypeImports: true, ignorePackages: true }
+      ],
       'lines-between-class-members': 'off',
       'no-dupe-class-members': 'off',
       'no-invalid-this': 'off',
