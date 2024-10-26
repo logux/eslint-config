@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 53.4.2
+* Fixed Svelte peer dependency warning.
+
 ## 53.4.1
 * Fixed `eslint-plugin-perfectionist` config.
 * Fixed linting extension for `import type` and export type`.
