@@ -91,7 +91,7 @@ export default [
     }
   },
   {
-    files: ['*.{test.ts,test.tsx,stories.tsx}', 'types.ts', '*/test/*'],
+    files: ['*.{test.ts,test.tsx,stories.tsx}', 'types.ts', '**/test/*'],
     rules: {
       '@typescript-eslint/no-explicit-any': 'off',
       '@typescript-eslint/no-unused-expressions': 'off'
