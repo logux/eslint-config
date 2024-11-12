@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 53.5.0
+* Removed `n/no-unpublished-require` rule from any files in `test` folder.
+
 ## 53.4.2
 * Fixed Svelte peer dependency warning.
 
