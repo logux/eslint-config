@@ -37,7 +37,10 @@ export default [
       '@typescript-eslint/no-explicit-any': 'error',
       '@typescript-eslint/no-for-in-array': 'error',
       '@typescript-eslint/no-import-type-side-effects': 'error',
-      '@typescript-eslint/no-invalid-this': 'error',
+      '@typescript-eslint/no-invalid-this': [
+        'error',
+        { capIsConstructor: true }
+      ],
       '@typescript-eslint/no-mixed-enums': 'error',
       '@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
       '@typescript-eslint/no-redeclare': 'error',
