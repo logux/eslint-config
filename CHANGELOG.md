@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 53.5.1
+* Fixed issues with `@typescript-eslint/no-invalid-this` rule.
+
 ## 53.5.0
 * Removed `n/no-unpublished-require` rule from any files in `test` folder.
 
