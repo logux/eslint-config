@@ -33,7 +33,7 @@
     "eslint-plugin-perfectionist": "^3.9.1",
     "eslint-plugin-prefer-let": "^4.0.0",
     "eslint-plugin-promise": "^7.2.1",
-    "typescript-eslint": "^8.23.0"
+    "typescript-eslint": "^8.24.0"
   },
   "peerDependencies": {
     "eslint": "^8.57.0 || ^9.0.0",
@@ -50,9 +50,9 @@
   },
   "devDependencies": {
     "clean-publish": "^5.1.0",
-    "eslint": "^9.20.0",
+    "eslint": "^9.20.1",
     "eslint-plugin-svelte": "^2.46.1",
-    "svelte": "^5.19.9",
+    "svelte": "^5.20.0",
     "typescript": "^5.7.3"
   },
   "prettier": {
