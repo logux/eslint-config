@@ -11,6 +11,15 @@ const TS = `/logux-eslint-config/demo/index.ts
 const SVELTE = `/logux-eslint-config/demo/index.svelte
   2:13  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any`
 
+async function check(config, files, expected) {
+  let actual = await eslint(config, files)
+  if (actual !== expected) {
+    process.stderr.write(styleText('green', `Expected:\n${expected}\n`))
+    process.stderr.write(styleText('red', `Actual:\n${actual}\n`))
+    process.exit(1)
+  }
+}
+
 function cleanPath(path) {
   return relative(process.cwd(), path).replace(/\\/g, '/')
 }
@@ -40,15 +49,6 @@ async function eslint(config, files) {
       }
     )
   })
-}
-
-async function check(config, files, expected) {
-  let actual = await eslint(config, files)
-  if (actual !== expected) {
-    process.stderr.write(styleText('green', `Expected:\n${expected}\n`))
-    process.stderr.write(styleText('red', `Actual:\n${actual}\n`))
-    process.exit(1)
-  }
 }
 
 await check('svelte.js', 'index.*', JS + '\n\n' + SVELTE + '\n\n' + TS)
