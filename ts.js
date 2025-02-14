@@ -93,5 +93,9 @@ export default [
     rules: {
       'no-console': 'off'
     }
+  },
+  {
+    files: ['**/*.js'],
+    ...tseslint.configs.disableTypeChecked
   }
 ]
