@@ -1,6 +1,12 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 54.3.0
+* Removed `@typescript-eslint/no-dynamic-delete` rule.
+* Removed `@typescript-eslint/no-invalid-void-type` rule.
+* Removed `@typescript-eslint/no-unnecessary-type-parameters` rule.
+* Allowed numbers in `@typescript-eslint/restrict-template-expressions`.
+
 ## 54.2.0
 * Removed TS rules for JS files.
 
