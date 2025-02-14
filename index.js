@@ -126,6 +126,7 @@ export default [
           type: 'alphabetical'
         }
       ],
+      'perfectionist/sort-modules': 'off',
       'perfectionist/sort-svelte-attributes': 'off',
       'prefer-arrow-callback': 'error',
       'prefer-const': 'off',
