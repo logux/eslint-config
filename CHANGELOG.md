@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 54.1.0
+* Removed `perfectionist/sort-modules` rule.
+
 ## 54.0.0
 * Moved to `eslint-plugin-perfectionist` to 4.
 * Moved to TS strict type checked config.
