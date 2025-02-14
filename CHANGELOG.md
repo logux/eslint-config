@@ -4,8 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## 54.0.0
 * Moved to `eslint-plugin-perfectionist` to 4.
 * Moved to TS strict type checked config.
-* Added `@typescript-eslint/no-unsafe-type-assertion`.
-* Added `@typescript-eslint/no-misused-spread`.
+* Added `@typescript-eslint/no-unsafe-type-assertion` rule.
+* Added `@typescript-eslint/no-misused-spread` rule.
 
 ## 53.5.1
 * Fixed issues with `@typescript-eslint/no-invalid-this` rule.
