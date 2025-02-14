@@ -38,13 +38,16 @@ export default [
         }
       ],
       '@typescript-eslint/no-dupe-class-members': 'error',
+      '@typescript-eslint/no-dynamic-delete': 'off',
       '@typescript-eslint/no-import-type-side-effects': 'error',
       '@typescript-eslint/no-invalid-this': [
         'error',
         { capIsConstructor: true }
       ],
+      '@typescript-eslint/no-invalid-void-type': 'off',
       '@typescript-eslint/no-redeclare': 'error',
       '@typescript-eslint/no-shadow': 'error',
+      '@typescript-eslint/no-unnecessary-type-parameters': 'off',
       '@typescript-eslint/no-unsafe-type-assertion': 'error',
       '@typescript-eslint/no-unused-expressions': [
         'error',
@@ -64,6 +67,12 @@ export default [
       ],
       '@typescript-eslint/no-var-requires': 'error',
       '@typescript-eslint/prefer-optional-chain': 'error',
+      '@typescript-eslint/restrict-template-expressions': [
+        'error',
+        {
+          allowNumber: true
+        }
+      ],
       'dot-notation': 'off',
 
       'func-callspacing': 'off',
@@ -85,6 +94,7 @@ export default [
     files: ['*.{test.ts,test.tsx,stories.tsx}', 'types.ts', '**/test/*'],
     rules: {
       '@typescript-eslint/no-explicit-any': 'off',
+      '@typescript-eslint/no-floating-promises': 'off',
       '@typescript-eslint/no-unused-expressions': 'off'
     }
   },
@@ -96,6 +106,10 @@ export default [
   },
   {
     files: ['**/*.js', '**/*.cjs', '**/*.mjs'],
-    ...tseslint.configs.disableTypeChecked
+    ...tseslint.configs.disableTypeChecked,
+    rules: {
+      ...tseslint.configs.disableTypeChecked.rules,
+      '@typescript-eslint/no-dynamic-delete': 'off'
+    }
   }
 ]
