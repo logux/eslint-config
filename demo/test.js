@@ -2,13 +2,14 @@ import { exec } from 'node:child_process'
 import { join, relative } from 'node:path'
 import { styleText } from 'node:util'
 
-const JS = `/logux-eslint-config/demo/index.js
+const JS = `/logux-eslint-config/demo/a.js
   5:1  error  Unexpected console statement  no-console`
 
-const TS = `/logux-eslint-config/demo/index.ts
-  1:8  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any`
+const TS = `/logux-eslint-config/demo/b.ts
+  1:8   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  3:12  error  Unsafe assignment of an \`any\` value       @typescript-eslint/no-unsafe-assignment`
 
-const SVELTE = `/logux-eslint-config/demo/index.svelte
+const SVELTE = `/logux-eslint-config/demo/c.svelte
   2:13  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any`
 
 async function check(config, files, expected) {
@@ -25,17 +26,20 @@ function cleanPath(path) {
 }
 
 async function eslint(config, files) {
-  let path = join(import.meta.dirname, files)
+  let paths = files
+    .split(' ')
+    .map(i => join(import.meta.dirname, i))
+    .join(' ')
   let configPath = join(import.meta.dirname, '..', config)
   process.stderr.write(
     styleText(
       'gray',
-      `eslint --config ${cleanPath(configPath)} ${cleanPath(path)}\n`
+      `eslint --config ${cleanPath(configPath)} ${cleanPath(paths)}\n`
     )
   )
   return new Promise(resolve => {
     exec(
-      `pnpm eslint --no-color --config ${configPath} ${path}`,
+      `pnpm eslint --no-color --config ${configPath} ${paths}`,
       (_, stdout, stderr) => {
         if (stderr) {
           process.stderr.write(styleText('red', stderr))
@@ -51,6 +55,10 @@ async function eslint(config, files) {
   })
 }
 
-await check('svelte.js', 'index.*', JS + '\n\n' + SVELTE + '\n\n' + TS)
-await check('ts.js', 'index.{ts,js}', JS + '\n\n' + TS)
-await check('index.js', 'index.js', JS)
+await check(
+  'svelte.js',
+  'a.js b.ts c.svelte',
+  JS + '\n\n' + TS + '\n\n' + SVELTE
+)
+await check('ts.js', 'a.js b.ts', JS + '\n\n' + TS)
+await check('index.js', 'a.js', JS)

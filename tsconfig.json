@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "allowImportingTsExtensions": true,
     "target": "es2022",
     "module": "preserve",
     "skipLibCheck": true,
@@ -11,5 +12,6 @@
     "noUncheckedIndexedAccess": true,
     "noImplicitOverride": true,
     "noEmit": true
-  }
+  },
+  "include": ["**/*.js", "**/*.ts", "**/*.svelte"]
 }

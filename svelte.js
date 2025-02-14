@@ -8,20 +8,9 @@ let tsRules = ts.find(
   config => config.files && config.files.includes('**/*.ts')
 ).rules
 
-let globals = {}
-let cleanedTsConfig = ts.map(config => {
-  let cleaned = { ...config }
-  if (cleaned.languageOptions && cleaned.languageOptions.globals) {
-    globals = { ...globals, ...cleaned.languageOptions.globals }
-  }
-  delete cleaned.languageOptions
-  return cleaned
-})
-
 export default [
   {
     languageOptions: {
-      globals,
       parserOptions: {
         extraFileExtensions: ['.svelte'],
         project: true
@@ -29,7 +18,7 @@ export default [
       sourceType: 'module'
     }
   },
-  ...cleanedTsConfig,
+  ...ts,
   {
     files: ['**/*.svelte'],
     languageOptions: {
@@ -60,15 +49,6 @@ export default [
       'svelte/require-optimized-style-attribute': 'error',
       'svelte/sort-attributes': 'error',
       'svelte/spaced-html-comment': 'error'
-    }
-  },
-  {
-    files: ['**/*.ts', '**/*.tsx'],
-    languageOptions: {
-      parser: tseslint.parser,
-      parserOptions: {
-        project: true
-      }
     }
   }
 ]

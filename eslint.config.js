@@ -2,7 +2,7 @@ import config from './index.js'
 
 export default [
   {
-    ignores: ['demo/index.*']
+    ignores: ['demo/a.js', 'demo/b.ts', 'demo/c.svelte']
   },
   ...config,
   {
