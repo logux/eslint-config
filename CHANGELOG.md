@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 54.2.0
+* Removed TS rules for JS files.
+
 ## 54.1.0
 * Removed `perfectionist/sort-modules` rule.
 
