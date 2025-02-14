@@ -95,7 +95,7 @@ export default [
     }
   },
   {
-    files: ['**/*.js'],
+    files: ['**/*.js', '**/*.cjs', '**/*.mjs'],
     ...tseslint.configs.disableTypeChecked
   }
 ]
