@@ -1,6 +1,12 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 54.4.0
+* Removed some strict TS rules for tests.
+* Removed non-null assertion ban.
+* Fixed Svelte compatibility.
+* Fixed `.mts` support.
+
 ## 54.3.0
 * Removed `@typescript-eslint/no-dynamic-delete` rule.
 * Removed `@typescript-eslint/no-invalid-void-type` rule.
