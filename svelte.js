@@ -34,6 +34,7 @@ export default [
     processor: 'svelte/svelte',
     rules: {
       ...tsRules,
+      '@typescript-eslint/no-unsafe-assignment': 'off',
       'import/first': 'off',
       'no-undef-init': 'off',
       'no-use-before-define': 'off',
