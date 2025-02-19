@@ -4,9 +4,10 @@ import tseslint from 'typescript-eslint'
 
 import ts from './ts.js'
 
-let tsRules = ts.find(
-  config => config.files && config.files.includes('**/*.ts')
-).rules
+let tsRules = {}
+for (let config of ts.filter(i => i.files && i.files.includes('**/*.ts'))) {
+  tsRules = { ...tsRules, ...config.rules }
+}
 
 export default [
   {
@@ -38,7 +39,6 @@ export default [
       'import/first': 'off',
       'no-undef-init': 'off',
       'no-use-before-define': 'off',
-      'prefer-const': 'off',
       'svelte/block-lang': ['error', { script: 'ts' }],
       'svelte/infinite-reactive-loop': 'error',
       'svelte/no-at-debug-tags': 'error',
