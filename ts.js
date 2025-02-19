@@ -45,6 +45,7 @@ export default [
         { capIsConstructor: true }
       ],
       '@typescript-eslint/no-invalid-void-type': 'off',
+      '@typescript-eslint/no-non-null-assertion': 'off',
       '@typescript-eslint/no-redeclare': 'error',
       '@typescript-eslint/no-shadow': 'error',
       '@typescript-eslint/no-unnecessary-type-parameters': 'off',
