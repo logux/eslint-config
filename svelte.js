@@ -38,6 +38,7 @@ export default [
       'import/first': 'off',
       'no-undef-init': 'off',
       'no-use-before-define': 'off',
+      'prefer-const': 'off',
       'svelte/block-lang': ['error', { script: 'ts' }],
       'svelte/infinite-reactive-loop': 'error',
       'svelte/no-at-debug-tags': 'error',
