@@ -75,10 +75,8 @@ export default [
       ],
       '@typescript-eslint/unbound-method': 'off',
       'dot-notation': 'off',
-
       'func-callspacing': 'off',
-
-      'import/extensions': [
+      'import-x/extensions': [
         'error',
         'always',
         { checkTypeImports: true, ignorePackages: true }

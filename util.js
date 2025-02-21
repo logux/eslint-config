@@ -1,7 +1,7 @@
 export function removeLanguage(configs) {
   let globals = {}
   for (let config of configs) {
-    if (config.languageOptions.globals) {
+    if (config.languageOptions && config.languageOptions.globals) {
       globals = { ...globals, ...config.languageOptions.globals }
     }
     delete config.languageOptions

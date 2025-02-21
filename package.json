@@ -27,19 +27,17 @@
   },
   "dependencies": {
     "@eslint/eslintrc": "^3.2.0",
-    "eslint-config-standard": "^17.1.0",
-    "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-n": "^17.15.1",
     "eslint-plugin-perfectionist": "^4.9.0",
     "eslint-plugin-prefer-let": "^4.0.0",
-    "eslint-plugin-promise": "^7.2.1",
+    "neostandard": "^0.12.1",
     "typescript-eslint": "^8.24.1"
   },
   "peerDependencies": {
     "eslint": "^8.57.0 || ^9.0.0",
     "eslint-plugin-svelte": "^3.0.0-next.18",
-    "svelte-eslint-parser": "^1.0.0-next.13",
-    "svelte": "^4.2.12 || ^5.0.0"
+    "svelte": "^4.2.12 || ^5.0.0",
+    "svelte-eslint-parser": "^1.0.0-next.13"
   },
   "peerDependenciesMeta": {
     "eslint-plugin-svelte": {
@@ -56,8 +54,8 @@
     "clean-publish": "^5.1.0",
     "eslint": "^9.20.1",
     "eslint-plugin-svelte": "^3.0.0-next.18",
-    "svelte-eslint-parser": "^1.0.0-next.13",
     "svelte": "^5.20.2",
+    "svelte-eslint-parser": "^1.0.0-next.13",
     "typescript": "^5.7.3"
   },
   "prettier": {
