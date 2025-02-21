@@ -1,28 +1,26 @@
 import tseslint from 'typescript-eslint'
 
 import base from './index.js'
+import { collectRules } from './util.js'
+
+let tsRules = collectRules(tseslint.configs.strictTypeChecked)
 
 export default [
   ...base,
-  ...tseslint.configs.strictTypeChecked,
   {
-    files: ['**/*.js'],
-    languageOptions: {
-      parser: tseslint.parser,
-      parserOptions: {
-        project: true
-      }
-    }
-  },
-  {
-    files: ['**/*.ts', '**/*.tsx', '**/*.mts'],
+    files: ['**/*.ts', '**/*.tsx', '**/*.mts', '**/*.cts'],
     languageOptions: {
       parser: tseslint.parser,
       parserOptions: {
         project: true
       }
     },
+    name: 'logux/ts',
+    plugins: {
+      '@typescript-eslint': tseslint.plugin
+    },
     rules: {
+      ...tsRules,
       '@typescript-eslint/array-type': 'error',
       '@typescript-eslint/consistent-type-imports': 'error',
       '@typescript-eslint/dot-notation': [
@@ -93,6 +91,7 @@ export default [
   },
   {
     files: ['*.{test.ts,test.tsx,stories.tsx}', 'types.ts', '**/test/*'],
+    name: 'logux/ts-tests',
     rules: {
       '@typescript-eslint/no-explicit-any': 'off',
       '@typescript-eslint/no-floating-promises': 'off',
@@ -106,16 +105,9 @@ export default [
   },
   {
     files: ['**/types.ts'],
+    name: 'logux/type-tests',
     rules: {
       'no-console': 'off'
-    }
-  },
-  {
-    files: ['**/*.js', '**/*.cjs', '**/*.mjs'],
-    ...tseslint.configs.disableTypeChecked,
-    rules: {
-      ...tseslint.configs.disableTypeChecked.rules,
-      '@typescript-eslint/no-dynamic-delete': 'off'
     }
   }
 ]

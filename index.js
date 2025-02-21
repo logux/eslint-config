@@ -5,18 +5,28 @@ import eslintPerfectionist from 'eslint-plugin-perfectionist'
 import eslintPreferLet from 'eslint-plugin-prefer-let'
 import eslintPromise from 'eslint-plugin-promise'
 
+import { removeLanguage } from './util.js'
+
 let compat = new FlatCompat({
   baseDirectory: import.meta.dirname
 })
 
-let standard = compat.extends('eslint-config-standard')
+let [standard, globals] = removeLanguage(
+  compat.extends('eslint-config-standard')
+)
 
 export default [
   ...standard,
   {
     languageOptions: {
+      globals,
+      parserOptions: {
+        ecmaVersion: 2022,
+        jsx: true
+      },
       sourceType: 'module'
     },
+    name: 'logux/base',
     plugins: {
       'import': eslintImport,
       'n': eslintN,
@@ -156,6 +166,7 @@ export default [
   },
   {
     files: ['**/test/*'],
+    name: 'logux/test-fixtures',
     rules: {
       'n/no-unpublished-require': 'off',
       'n/no-unsupported-features/node-builtins': 'off'
@@ -163,6 +174,7 @@ export default [
   },
   {
     files: ['**/*.test.{js,jsx}', '**/*.test.{ts,tsx}'],
+    name: 'logux/tests',
     rules: {
       'n/global-require': 'off',
       'no-unused-expressions': 'off'

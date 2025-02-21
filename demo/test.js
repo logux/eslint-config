@@ -6,11 +6,10 @@ const JS = `/logux-eslint-config/demo/a.js
   5:1  error  Unexpected console statement  no-console`
 
 const TS = `/logux-eslint-config/demo/b.ts
-  1:8   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
-  3:12  error  Unsafe assignment of an \`any\` value       @typescript-eslint/no-unsafe-assignment`
+  1:15  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any`
 
 const SVELTE = `/logux-eslint-config/demo/c.svelte
-  2:13  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any`
+  5:13  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any`
 
 async function check(config, files, expected) {
   let actual = await eslint(config, files)

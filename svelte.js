@@ -3,11 +3,11 @@ import svelteParser from 'svelte-eslint-parser'
 import tseslint from 'typescript-eslint'
 
 import ts from './ts.js'
+import { collectRules } from './util.js'
 
-let tsRules = {}
-for (let config of ts.filter(i => i.files && i.files.includes('**/*.ts'))) {
-  tsRules = { ...tsRules, ...config.rules }
-}
+let tsRules = collectRules(
+  ts.filter(i => i.files && i.files.includes('**/*.ts'))
+)
 
 export default [
   {
@@ -36,6 +36,7 @@ export default [
     rules: {
       ...tsRules,
       '@typescript-eslint/no-unsafe-assignment': 'off',
+      '@typescript-eslint/no-unused-vars': 'error',
       'import/first': 'off',
       'no-undef-init': 'off',
       'no-use-before-define': 'off',
