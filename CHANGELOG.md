@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 55.0.0
+* Moved from Standard to Neostandard.
+
 ## 54.5.0
 * Fixed Svelte support.
 * Fixed `.cts` support.
