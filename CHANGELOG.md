@@ -1,6 +1,13 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 54.5.0
+* Fixed Svelte support.
+* Fixed `.cts` support.
+* Removed `@typescript-eslint/no-misused-promises` rule.
+* Removed `@typescript-eslint/unbound-method` rule.
+* Removed some strict TS rules for tests.
+
 ## 54.4.0
 * Removed some strict TS rules for tests.
 * Removed non-null assertion ban.
