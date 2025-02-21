@@ -5,7 +5,9 @@ import neostandard from 'neostandard'
 
 import { removeLanguage } from './util.js'
 
-let [standard, globals] = removeLanguage(neostandard({ noStyle: true }))
+let [standard, globals] = removeLanguage(
+  neostandard({ noJsx: true, noStyle: true })
+)
 
 export default [
   ...standard,
