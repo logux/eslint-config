@@ -110,5 +110,13 @@ export default [
     rules: {
       'no-console': 'off'
     }
+  },
+  {
+    files: ['**/*.cts'],
+    name: 'logux/cts',
+    rules: {
+      '@typescript-eslint/no-require-imports': 'off',
+      '@typescript-eslint/no-var-requires': 'off'
+    }
   }
 ]
