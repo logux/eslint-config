@@ -17,7 +17,8 @@ export default [
         project: true
       },
       sourceType: 'module'
-    }
+    },
+    name: 'logux/main-svelte'
   },
   ...ts,
   {
@@ -28,6 +29,7 @@ export default [
         parser: tseslint.parser
       }
     },
+    name: 'logux/svelte',
     plugins: {
       '@typescript-eslint': tseslint.plugin,
       svelte
