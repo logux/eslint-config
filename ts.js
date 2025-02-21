@@ -43,6 +43,7 @@ export default [
         { capIsConstructor: true }
       ],
       '@typescript-eslint/no-invalid-void-type': 'off',
+      '@typescript-eslint/no-misused-promises': 'off',
       '@typescript-eslint/no-non-null-assertion': 'off',
       '@typescript-eslint/no-redeclare': 'error',
       '@typescript-eslint/no-shadow': 'error',
@@ -72,6 +73,7 @@ export default [
           allowNumber: true
         }
       ],
+      '@typescript-eslint/unbound-method': 'off',
       'dot-notation': 'off',
 
       'func-callspacing': 'off',
