@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 55.1.0
+* Removed `@typescript-eslint/restrict-plus-operands` rule from
+
 ## 55.0.1
 * Reduced dependencies by coping rules from `neostandard`.
 
