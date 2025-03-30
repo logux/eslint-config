@@ -1,6 +1,12 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 55.2.0
+* Fixed test paths.
+* Removed `@typescript-eslint/ban-ts-comment` rule for tests.
+* Removed `@typescript-eslint/no-unsafe-return` rule for tests.
+* Removed `@typescript-eslint/no-floating-promises` for type tests.
+
 ## 55.1.0
 * Removed `@typescript-eslint/restrict-plus-operands` rule for tests.
 
