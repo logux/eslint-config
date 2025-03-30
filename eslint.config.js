@@ -9,7 +9,7 @@ export default [
     rules: {
       'n/no-unsupported-features/node-builtins': [
         'error',
-        { ignores: ['util.styleText'] }
+        { ignores: ['util.styleText', 'import.meta.dirname'] }
       ]
     }
   }

@@ -41,6 +41,8 @@ export default [
       '@typescript-eslint/no-unused-vars': 'error',
       'import/first': 'off',
       'no-undef-init': 'off',
+      // 'svelte/no-unused-props': 'error',
+      // 'no-unnecessary-state-wrap': 'error',
       'no-use-before-define': 'off',
       'svelte/block-lang': ['error', { script: 'ts' }],
       'svelte/infinite-reactive-loop': 'error',
