@@ -90,7 +90,7 @@ export default [
     }
   },
   {
-    files: ['**/*.{test.ts,test.tsx,stories.tsx}', 'types.ts', '**/test/*'],
+    files: ['**/*.{test.ts,test.tsx,stories.tsx}', '**/types.ts', '**/test/*'],
     name: 'logux/ts-tests',
     rules: {
       '@typescript-eslint/ban-ts-comment': 'off',
