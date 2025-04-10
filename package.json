@@ -27,13 +27,13 @@
   },
   "dependencies": {
     "@eslint/eslintrc": "^3.3.1",
-    "eslint-plugin-import-x": "^4.9.4",
+    "eslint-plugin-import-x": "^4.10.2",
     "eslint-plugin-n": "^17.17.0",
-    "eslint-plugin-perfectionist": "^4.10.1",
+    "eslint-plugin-perfectionist": "^4.11.0",
     "eslint-plugin-prefer-let": "^4.0.0",
     "eslint-plugin-promise": "^7.2.1",
     "globals": "^16.0.0",
-    "typescript-eslint": "^8.28.0"
+    "typescript-eslint": "^8.29.1"
   },
   "peerDependencies": {
     "eslint": "^8.57.0 || ^9.0.0",
@@ -54,11 +54,11 @@
   },
   "devDependencies": {
     "clean-publish": "^5.1.0",
-    "eslint": "^9.23.0",
-    "eslint-plugin-svelte": "^3.4.0",
-    "svelte": "^5.25.3",
-    "svelte-eslint-parser": "^1.1.1",
-    "typescript": "^5.8.2"
+    "eslint": "^9.24.0",
+    "eslint-plugin-svelte": "^3.5.1",
+    "svelte": "^5.25.11",
+    "svelte-eslint-parser": "^1.1.2",
+    "typescript": "^5.8.3"
   },
   "prettier": {
     "arrowParens": "avoid",
