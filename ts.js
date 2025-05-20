@@ -47,6 +47,7 @@ export default [
       '@typescript-eslint/no-non-null-assertion': 'off',
       '@typescript-eslint/no-redeclare': 'error',
       '@typescript-eslint/no-shadow': 'error',
+      // '@typescript-eslint/no-unnecessary-type-conversion': 'error',
       '@typescript-eslint/no-unnecessary-type-parameters': 'off',
       '@typescript-eslint/no-unsafe-type-assertion': 'error',
       '@typescript-eslint/no-unused-expressions': [

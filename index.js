@@ -42,7 +42,6 @@ export default [
           checkForEach: false
         }
       ],
-
       'block-scoped-var': 'error',
       'camelcase': [
         'error',
@@ -160,14 +159,13 @@ export default [
       'no-sparse-arrays': 'error',
       'no-template-curly-in-string': 'error',
       'no-this-before-super': 'error',
-
       'no-throw-literal': 'error',
+      // 'no-unassigned-vars': 'error',
       'no-undef': 'error',
       'no-undef-init': 'error',
       'no-unexpected-multiline': 'error',
       'no-unmodified-loop-condition': 'error',
       'no-unneeded-ternary': ['error', { defaultAssignment: false }],
-
       'no-unreachable': 'error',
       'no-unreachable-loop': 'error',
       'no-unsafe-finally': 'error',
