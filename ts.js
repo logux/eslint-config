@@ -46,7 +46,6 @@ export default [
       '@typescript-eslint/no-misused-promises': 'off',
       '@typescript-eslint/no-non-null-assertion': 'off',
       '@typescript-eslint/no-redeclare': 'error',
-      '@typescript-eslint/no-shadow': 'error',
       // '@typescript-eslint/no-unnecessary-type-conversion': 'error',
       '@typescript-eslint/no-unnecessary-type-parameters': 'off',
       '@typescript-eslint/no-unsafe-type-assertion': 'error',
@@ -56,14 +55,6 @@ export default [
           allowShortCircuit: true,
           allowTaggedTemplates: true,
           allowTernary: true
-        }
-      ],
-      '@typescript-eslint/no-use-before-define': [
-        'error',
-        {
-          classes: false,
-          functions: false,
-          variables: false
         }
       ],
       '@typescript-eslint/no-var-requires': 'error',
@@ -84,8 +75,6 @@ export default [
       ],
       'lines-between-class-members': 'off',
       'no-invalid-this': 'off',
-      'no-shadow': 'off',
-      'no-use-before-define': 'off',
       'object-curly-spacing': 'off',
       'prefer-const': 'off'
     }
