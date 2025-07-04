@@ -47,7 +47,7 @@ async function eslint(config, files) {
           /.*\/(logux-eslint-config|eslint-config)\//g,
           '/logux-eslint-config/'
         )
-        let trimmed = fixed.replace(/✖ \d+ problems?.*/, '').trim()
+        let trimmed = fixed.replace(/✖ \d+ problems?[\w\W]*/m, '').trim()
         resolve(trimmed)
       }
     )
