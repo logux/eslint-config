@@ -1,3 +1,4 @@
+import { diffChars } from 'diff'
 import { exec } from 'node:child_process'
 import { join, relative } from 'node:path'
 import { styleText } from 'node:util'
@@ -14,8 +15,13 @@ const SVELTE = `/logux-eslint-config/demo/c.svelte
 async function check(config, files, expected) {
   let actual = await eslint(config, files)
   if (actual !== expected) {
-    process.stderr.write(styleText('green', `Expected:\n${expected}\n`))
-    process.stderr.write(styleText('red', `Actual:\n${actual}\n`))
+    let diff = diffChars(expected, actual)
+    for (let part of diff) {
+      let color = 'grey'
+      if (part.added) color = 'green'
+      if (part.removed) color = 'red'
+      process.stderr.write(styleText(color, part.value))
+    }
     process.exit(1)
   }
 }
