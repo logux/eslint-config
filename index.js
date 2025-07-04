@@ -165,7 +165,7 @@ export default [
       'no-template-curly-in-string': 'error',
       'no-this-before-super': 'error',
       'no-throw-literal': 'error',
-      // 'no-unassigned-vars': 'error',
+      'no-unassigned-vars': 'error',
       'no-undef': 'error',
       'no-undef-init': 'error',
       'no-unexpected-multiline': 'error',
