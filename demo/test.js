@@ -4,7 +4,9 @@ import { join, relative } from 'node:path'
 import { styleText } from 'node:util'
 
 const JS = `/logux-eslint-config/demo/a.js
-  5:1  error  Unexpected console statement  no-console`
+  5:1   error    Unexpected console statement     no-console
+  7:1   error    Unexpected console statement     no-console
+  7:21  warning  Expected "a" to come before "b"  perfectionist/sort-objects`
 
 const TS = `/logux-eslint-config/demo/b.ts
   1:15  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any`

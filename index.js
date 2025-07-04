@@ -5,6 +5,8 @@ import eslintPreferLet from 'eslint-plugin-prefer-let'
 import promise from 'eslint-plugin-promise'
 import globals from 'globals'
 
+import { changeLevel } from './util.js'
+
 export default [
   {
     languageOptions: {
@@ -30,7 +32,10 @@ export default [
       promise
     },
     rules: {
-      ...eslintPerfectionist.configs['recommended-alphabetical'].rules,
+      ...changeLevel(
+        eslintPerfectionist.configs['recommended-alphabetical'].rules,
+        'warn'
+      ),
       'accessor-pairs': [
         'error',
         { enforceForClassMembers: true, setWithoutGet: true }
@@ -204,7 +209,7 @@ export default [
       'object-shorthand': 'error',
       'one-var': ['error', { initialized: 'never' }],
       'perfectionist/sort-imports': [
-        'error',
+        'warn',
         {
           groups: [
             'side-effect',

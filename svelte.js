@@ -56,8 +56,8 @@ export default [
       'svelte/require-each-key': 'error',
       // 'svelte/require-event-prefix': 'error',
       'svelte/require-optimized-style-attribute': 'error',
-      'svelte/sort-attributes': 'error',
-      'svelte/spaced-html-comment': 'error'
+      'svelte/sort-attributes': 'warn',
+      'svelte/spaced-html-comment': 'warn'
     }
   }
 ]
