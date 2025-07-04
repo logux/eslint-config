@@ -1,6 +1,15 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 56.0.0
+* Moved import/attrs order rules to warnings.
+* Added `no-unassigned-vars` rule.
+* Added `@typescript-eslint/no-unnecessary-type-conversion` rule.
+* Added `svelte/require-event-prefix` rule.
+* Added `svelte/no-add-event-listener` rule.
+* Added `svelte/no-unnecessary-state-wrap` rule.
+* Added `svelte/no-unused-props` rule.
+
 ## 55.2.1
 * Fixed type test paths.
 
