@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 56.1.0
+* Allowed `postcss` lang in Svelte `<style>`.
+
 ## 56.0.0
 * Moved import/attrs order rules to warnings.
 * Added `no-unassigned-vars` rule.
