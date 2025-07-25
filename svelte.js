@@ -42,7 +42,10 @@ export default [
       'import/first': 'off',
       'no-undef-init': 'off',
       'no-use-before-define': 'off',
-      'svelte/block-lang': ['error', { script: 'ts' }],
+      'svelte/block-lang': [
+        'error',
+        { script: 'ts', style: ['postcss', null] }
+      ],
       'svelte/infinite-reactive-loop': 'error',
       'svelte/no-add-event-listener': 'error',
       'svelte/no-at-debug-tags': 'error',
