@@ -56,6 +56,7 @@ export default [
           properties: 'never'
         }
       ],
+      // 'preserve-caught-error': 'error',
       'constructor-super': 'error',
       'curly': ['error', 'multi-line'],
       'default-case-last': 'error',
