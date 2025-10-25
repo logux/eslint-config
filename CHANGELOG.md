@@ -1,6 +1,10 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 57.0.0
+* Added `svelte/no-inspect` rule.
+* Added `preserve-caught-error` rule.
+
 ## 56.1.0
 * Allowed `postcss` lang in Svelte `<style>`.
 
