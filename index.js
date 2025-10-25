@@ -56,7 +56,6 @@ export default [
           properties: 'never'
         }
       ],
-      // 'preserve-caught-error': 'error',
       'constructor-super': 'error',
       'curly': ['error', 'multi-line'],
       'default-case-last': 'error',
@@ -243,6 +242,7 @@ export default [
       'prefer-regex-literals': ['error', { disallowRedundantWrapping: true }],
       'prefer-rest-params': 'error',
       'prefer-spread': 'error',
+      'preserve-caught-error': 'error',
       'promise/param-names': 'error',
       'require-yield': 'error',
       'symbol-description': 'error',
