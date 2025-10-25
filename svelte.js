@@ -50,6 +50,7 @@ export default [
       'svelte/no-add-event-listener': 'error',
       'svelte/no-at-debug-tags': 'error',
       'svelte/no-extra-reactive-curlies': 'error',
+      'svelte/no-inspect': 'error',
       'svelte/no-reactive-literals': 'error',
       'svelte/no-reactive-reassign': 'error',
       'svelte/no-unnecessary-state-wrap': 'error',
