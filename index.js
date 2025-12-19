@@ -215,20 +215,10 @@ export default [
             'side-effect',
             'side-effect-style',
             'style',
-            ['builtin-type', 'type', 'builtin', 'external', 'unknown'],
-            [
-              'internal-type',
-              'parent-type',
-              'sibling-type',
-              'index-type',
-              'internal',
-              'parent',
-              'sibling',
-              'index'
-            ],
-            ['object']
+            ['builtin', 'external', 'unknown'],
+            ['internal', 'parent', 'sibling', 'index']
           ],
-          newlinesBetween: 'always',
+          newlinesBetween: 1,
           order: 'asc',
           type: 'alphabetical'
         }
