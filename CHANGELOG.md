@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 57.0.1
+* Moved to `eslint-plugin-perfectionist` to 5.
+
 ## 57.0.0
 * Added `svelte/no-inspect` rule.
 * Added `preserve-caught-error` rule.
