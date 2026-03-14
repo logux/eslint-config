@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 57.0.3
+* Fixed `prefer-let` rule only for capitalized top-level vars.
+
 ## 57.0.2
 * Added ESLint 10 support.
 
