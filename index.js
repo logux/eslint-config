@@ -227,7 +227,7 @@ export default [
       'perfectionist/sort-svelte-attributes': 'off',
       'prefer-arrow-callback': 'error',
       'prefer-exponentiation-operator': 'error',
-      'prefer-let/prefer-let': 'error',
+      'prefer-let/prefer-let': ['error', { forceUpperCaseConst: true }],
       'prefer-promise-reject-errors': 'error',
       'prefer-regex-literals': ['error', { disallowRedundantWrapping: true }],
       'prefer-rest-params': 'error',
