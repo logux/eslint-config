@@ -2,7 +2,6 @@ import importX from 'eslint-plugin-import-x'
 import eslintN from 'eslint-plugin-n'
 import eslintPerfectionist from 'eslint-plugin-perfectionist'
 import eslintPreferLet from 'eslint-plugin-prefer-let'
-import promise from 'eslint-plugin-promise'
 import globals from 'globals'
 
 import { changeLevel } from './util.js'
@@ -28,8 +27,7 @@ export default [
       'import-x': importX,
       'n': eslintN,
       'perfectionist': eslintPerfectionist,
-      'prefer-let': eslintPreferLet,
-      promise
+      'prefer-let': eslintPreferLet
     },
     rules: {
       ...changeLevel(
@@ -233,7 +231,6 @@ export default [
       'prefer-rest-params': 'error',
       'prefer-spread': 'error',
       'preserve-caught-error': 'error',
-      'promise/param-names': 'error',
       'require-yield': 'error',
       'symbol-description': 'error',
       'use-isnan': [
