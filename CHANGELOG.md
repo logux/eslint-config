@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 57.1.0
+* Removed `promise/param-names` rule.
+
 ## 57.0.3
 * Fixed `prefer-let` rule only for capitalized top-level vars.
 
