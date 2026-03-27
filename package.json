@@ -12,7 +12,7 @@
     "test:demo": "node demo/test.js",
     "test": "pnpm run /^test:/"
   },
-  "author": "Andrey Sitnik <andrey@sitnik.ru>",
+  "author": "Andrey Sitnik <andrey@sitnik.es>",
   "license": "MIT",
   "repository": "logux/eslint-config",
   "engines": {
