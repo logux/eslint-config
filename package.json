@@ -28,11 +28,11 @@
   "dependencies": {
     "@eslint/eslintrc": "^3.3.5",
     "eslint-plugin-import-x": "^4.16.2",
-    "eslint-plugin-n": "^17.24.0",
-    "eslint-plugin-perfectionist": "^5.6.0",
-    "eslint-plugin-prefer-let": "^4.2.0",
-    "globals": "^17.4.0",
-    "typescript-eslint": "^8.57.0"
+    "eslint-plugin-n": "^18.0.1",
+    "eslint-plugin-perfectionist": "^5.9.0",
+    "eslint-plugin-prefer-let": "^4.2.2",
+    "globals": "^17.6.0",
+    "typescript-eslint": "^8.59.3"
   },
   "peerDependencies": {
     "eslint": "^8.57.0 || ^9.0.0 || ^10.0.0",
@@ -52,15 +52,15 @@
     }
   },
   "devDependencies": {
-    "actions-up": "^1.12.0",
-    "clean-publish": "^6.0.3",
-    "diff": "^8.0.3",
-    "eslint": "^10.0.3",
-    "eslint-plugin-svelte": "^3.15.2",
-    "multiocular": "^0.8.2",
-    "svelte": "^5.53.12",
-    "svelte-eslint-parser": "^1.6.0",
-    "typescript": "^5.9.3"
+    "actions-up": "^1.14.1",
+    "clean-publish": "^7.0.1",
+    "diff": "^9.0.0",
+    "eslint": "^10.3.0",
+    "eslint-plugin-svelte": "^3.17.1",
+    "multiocular": "^0.8.3",
+    "svelte": "^5.55.5",
+    "svelte-eslint-parser": "^1.6.1",
+    "typescript": "^6.0.3"
   },
   "prettier": {
     "arrowParens": "avoid",
