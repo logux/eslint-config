@@ -49,7 +49,7 @@ importers:
         specifier: ^0.8.2
         version: 0.8.2
       svelte:
-        specifier: ^5.53.12
+        specifier: ^5.55.7
         version: 5.55.7(@typescript-eslint/types@8.57.0)
       svelte-eslint-parser:
         specifier: ^1.6.0
@@ -458,8 +458,8 @@ packages:
     resolution: {integrity: sha512-qejHi7bcSD4hQAZE0tNAawRK1ZtafHDmMTMkrrIGgSLl7hTnQHmKCeB45xAcbfTqK2zowkM3j3bHt/4b/ARbYQ==}
     engines: {node: '>=0.3.1'}
 
-  dompurify@3.3.3:
-    resolution: {integrity: sha512-Oj6pzI2+RqBfFG+qOaOLbFXLQ90ARpcGG6UePL82bJLtdsa6CYJD7nmiU8MW9nQNOtCHV3lZ/Bzq1X0QYbBZCA==}
+  dompurify@3.4.3:
+    resolution: {integrity: sha512-VVwJidIJcp1hpg2OMXML3ZVRPYSZiq4aX7qBh83BSIpOaRDqI+qxhXjjIWnpzkOXhmp0L81lnoME1mnCc9H48A==}
 
   enhanced-resolve@5.20.0:
     resolution: {integrity: sha512-/ce7+jQ1PQ6rVXwe+jKEg5hW5ciicHwIQUagZkp6IufBoY3YDgdTTY1azVs0qoRgVmvsNB+rbjLJxDAeHHtwsQ==}
@@ -1438,7 +1438,7 @@ snapshots:
 
   diff@8.0.3: {}
 
-  dompurify@3.3.3:
+  dompurify@3.4.3:
     optionalDependencies:
       '@types/trusted-types': 2.0.7
 
@@ -1774,7 +1774,7 @@ snapshots:
     dependencies:
       '@logux/server': 0.14.0
       diff2html: 3.4.56
-      dompurify: 3.3.3
+      dompurify: 3.4.3
       highlight.js: 11.11.1
       marked: 17.0.4
       nanostores: 1.2.0
